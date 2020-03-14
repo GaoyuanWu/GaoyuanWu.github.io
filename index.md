@@ -1,16 +1,9 @@
-## Welcome to Gaoyuan's WORLD
+## Welcome 我的圆宝
 
-Hi there!
+I Miss ya.
 
-My name is Gaoyuan (Barry) Wu, a senior student @ [Tongji University](https://en.tongji.edu.cn/).
+Do you Miss me?
 
-I am a Civil Engineering Student.
+If u miss me, email to: [451771101@qq.com](emailto:451771101@qq.com).
 
-Born & raised in Chengdu, Sichuan, China.
-
-
-###  Contact
-
-Tel: +86 18721332175
-
-Email: [451771101@qq.com](mailto:451771101@qq.com)
+Love!
