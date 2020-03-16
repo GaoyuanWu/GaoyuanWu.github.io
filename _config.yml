@@ -1,68 +1,66 @@
-# Site
-title:              Massively
-bio:                'Jekyll version of the Massively theme by HTML5UP'
-description:        "Jekyll version of the Massively theme by HTML5UP"
-locale:             en_US
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+title: Gaoyuan Wu's World
+logo: "images/logo3.jpg" # You can add own logo image.
+description: Minimalistic Theme for Jekyll
+baseurl: "" # The subpath of your site, e.g. /blog
+url: "" # The base hostname & protocol for your site, e.g. http://example.com
 
-# Comments
-disqus_shortname:   default
+# Author Settings
+author:
+  name: Gaoyuan Wu
+  bio: Hi, my name is Gaoyuan Wu, you can call me Barry as well. Welcome to my site!
 
-# Social
-analytics-id:       "default"
-twitter:            default
-facebook:           default
-instagram:          default
-github:             default
+# Contact links
+twitter: https://twitter.com/BArry912/ # Add your Twitter handle
+facebook: https://facebook.com/ # Add your Facebook handle
+dribbble: https://dribbble.com/ # Add your Dribbble handle
+instagram: https://www.instagram.com/barry912/ # Add your Instagram handle
+pinterest: https://pinterest.com/ # Add your Pinterest handle
+email: wugaoyuan9@gmail.com # Add your Email address
 
-# personal
-location:           Los Angeles, CA
-phone:              310-318-5555
-email:              info@default.com # change this to your email to receive free emails for your contact submissions via Slapform.com
+# Hero Section
+hero: true # To enable the section hero, use the value true. To turn off use the value false.
+hero-title: Gaoyuan Wu's World # Add your hero title
+hero-subtitle: Chengdu Local, 1998; Civil Engineering Student; Madridsta. # Add your hero subtitle
+hero-image: images/logo4.jpg # Add background image in section hero
 
-# Other
-background_image:   /images/bg.jpg
-# Tip: The color palette and other styles can be configured in /_sass/lib/_vars.scss
-slapform_thankyou_page: /thank-you
+# Footer
+footer-image: images/logo5.jpg # Add background image in footer
 
-defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    permalink: "/blog/:title/"
-    layout: post
-    author:
+# Comment Section (Disqus)
+disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
 
-# Jekyll
-permalink:          /blog/:title/
-markdown:           kramdown
-highlighter:        rouge
-kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
-mathjax:            true
-sass:
-  sass_dir:         _sass
-  style:            compressed
+# Google Analytics
+google-analytics: "" # Add your identifier. For example UA-99631805-1.
 
-# Gems
-gems:
-  - jekyll-mentions
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-gist
+# Newsletter
+mailchimp: "" # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
   - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll/tagging
 
-paginate: 6
-paginate_path: "/blog/page:num/"
+paginate: 4
+paginate_path: "/page/:num"
 
-jekyll-mentions:
-    base_url: https://github.com
+# Pages Path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
 
-# Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
+include:
+  - _pages
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag_page
+tag_permalink_style:  pretty
+
+sass:
+  sass_dir: _sass
+  style: compressed
