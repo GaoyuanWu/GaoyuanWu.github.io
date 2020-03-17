@@ -1,27 +1,32 @@
 ---
 layout: page
-title: Research
-permalink: /research/
+title: Research & Projects
+permalink: /research_projects/
 image: images/logo8.jpg
 ---
 *2019 American Society of Civil Engineers (ASCE), Geowall Competition, San Jose State Univ., CA, USA.*
 
 
-## Undergraduate Experiences
+## Undergraduate Projects
 
-#### Tongji International Construction Festival, Shanghai, 2017
+> Tongji International Construction Festival, Shanghai, 2017
 
-My name is Gaoyuan(Barry) Wu, a senior student @  [Tongji University]. My major is civil engineering.
+* Designed and built the project called Skeleton using Polypropylene boards and bolts collaboratively with my teammates.
+![]({{site.baseurl}}/images/1-8.jpg)
+*Skeleton*
 
-I was born & raised in Chengdu, Sichuan, China. I love travel, movies, hip-hop music, soccer, and I support Real Madrid.
+> ASCE (American Society of Civil Engineers) MidPac Conference, GeoWall, California, 2019
 
-Shout out to all the people who have helped me in the past 22 years, especially my family and my girl: Winnie.
+* Collaboratively designed and constructed a Mechanically Stabilized Earth (MSE) retaining wall using Kraft Paper.
+* Finished a 22-page design report in English with my team; made a presentation during the conference. 
 
-This site will be used to share my life, thoughts, research and other interesting things to you guys.
+![]({{site.baseurl}}/images/1-9.jpg)
+*Prensentation @ 2019 MidPac*
 
-Hope u enjoy MY WORLD.
+> Analysis of Seismic Performance and Resilience of Bridges with Rocking Pile Group Foundations (Undergraduate Thesis)
+
+* Investigate the seismic response of the bridges with rocking foundations, for instance, beam acceleration, pile forces, maximum and residual displacements at pile top by conducting nonlinear time history analysis using SAP 2000 and OpenSees; implement parametric analysis of pier height, site conditions, layout of piles, etc.
+* Conduct a case study based on Shanghai Jiamin Elevated Road; compare conventional foundation with rocking foundation in their performance under unreasonable surcharge loads on adjacent soil layer.
 
 
-[Tongji University]: https://en.tongji.edu.cn/
-
-### Thanks for visiting my site
+>To be continued...
