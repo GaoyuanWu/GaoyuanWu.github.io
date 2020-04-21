@@ -5,15 +5,27 @@ permalink: /about/
 image: images/1-5.jpg
 ---
 
-My name is Gaoyuan(Barry) Wu, a senior student @  [Tongji University]. My major is civil engineering.
+My name is Gaoyuan(Barry) Wu, a senior student @  [Tongji University] and an incoming PhD candidate @ [Princeton University]. My major is civil engineering.
 
 I was born & raised in Chengdu, Sichuan, China. I love travel, movies, hip-hop music, soccer, and I support Real Madrid. Shout out to all the people who have helped me in the past 22 years, especially my family and my girl: Winnie. This site will be used to share my life, thoughts, research and other interesting moments of my life.
 
 Hope u enjoy MY WORLD.
 
 [Tongji University]: https://en.tongji.edu.cn/
+[Princeton University]: https://www.princeton.edu/
 
 ## Education
+> Princeton University (09/2020-07/2025)
+                                                                                   
+PhD Candidate in Civil Engineering;
+ [Creative & Resilient Urban Engineering (CRUE) Research Group, directed by Professor Maria Garlock.]
+
+[Creative & Resilient Urban Engineering (CRUE) Research Group, directed by Professor Maria Garlock.]:https://garlock.princeton.edu/
+
+
+* Gordon Y.S. Wu Fellowship in Engineering, 2020
+
+
 > Tongji University (09/2016-07/2020)
                                                                                    
 Bachelor of Engineering in Civil Engineering (Expected Jul. 2020); GPA:4.53/5.0 (90.29/100)
