@@ -1,55 +1,25 @@
-<!-- begin header -->
-<header class="header">
-  <div class="container">
-    <div class="row">
-      <div class="col col-12">
-        <div class="header-box">
-          <!-- begin logo -->
-          <div class="logo">
-            <a class="logo__link" href="{{ site.baseurl }}/">
-            {%if site.logo and site.logo != "" %}
-              <img class="logo__image" src="{{ site.logo | relative_url }}" alt="{{ site.title }}">
-            {% else %}
-              {{ site.title }}
-            {% endif %}
-            </a>
-          </div>
-          <!-- end logo -->
+<header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" href="{{ "" | prepend: site.baseurl | prepend: site.url }}/">
+      <img src="{{ "/assets/img/title.png" | absolute_url }}" alt="{{ site.title }}" />
+    </a>
 
-          <!-- begin main-nav -->
-          <nav class="main-nav">
+    <nav class="site-nav">
+      <a href="#" class="menu-icon"></a>
 
-            <div class="main-nav__box">
-              <i class="nav__close ion ion-md-close"></i>
-              <ul class="nav__list list-reset">
-                <li class="nav__item">
-                  <a href="{{ site.baseurl }}/" class="nav__link">Home</a>
-                </li>
-                {% for page in site.pages %}
-                  {% unless page.name == 'tags.html' or page.name == '404.html' %}
-                {% if page.title %}
-                <li class="nav__item">
-                  <a href="{{ page.url | prepend: site.baseurl }}" class="nav__link">{{ page.title }}</a>
-                </li>
-                {% endif %}
-                  {% endunless %}
-                {% endfor %}
-              </ul>
-            </div>
-
-          </nav>
-          <!-- end main-nav -->
-
-          <div class="nav-buttons">
-            <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
-            <i class="nav__icon nav__icon-search ion ion-md-search"></i>
-          </div>
-
-          <div class="header__overlay"></div>
-        </div>
+      <div class="menu">
+        {% for page in site.header.pages %}
+          {% if page.slug and page.slug != "" and page.slug != nil %}
+            {% assign page_link = page.slug %}
+          {% else %}
+            {% assign page_link = "/" | append: page.name | downcase %}
+          {% endif %}
+          {% assign page_link = page_link | absolute_url %}
+          <a class="page-link" href="{{ page_link }}">
+            {{ page.name }}
+          </a>
+        {% endfor %}
       </div>
-      {% include search.html %}
-    </div>
+    </nav>
   </div>
 </header>
-<!-- end header -->
