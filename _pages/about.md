@@ -17,6 +17,7 @@ I am from [Chengdu](https://en.wikipedia.org/wiki/Chengdu) (成都), a city in s
 
 What's New
 =====
+- Our new work *"A decoupled SPH-FEM analysis of hydrodynamic wave pressure on hyperbolic-paraboloid thin-shell coastal armor and corresponding structural response"* was accepted by *Engineering Structures* and is available online. Link [here](https://doi.org/10.1016/j.engstruct.2022.114738). **August, 2022**
 - I presented our work *"A Study on the Hydrodynamic Response of Hypar Thin Shell Against Waves via a Decoupled SPH-FEM Analysis"* at Engineering Mechanics Institute ([EMI](https://www.emi-conference.org/)) conference in Baltimore, MD. **June, 2022**
 
 

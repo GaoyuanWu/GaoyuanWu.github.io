@@ -11,49 +11,32 @@ redirect_from:
 
 Education
 ======
-* B.S. in Civil Engineering, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Civil Engineering, [Tongji University](https://en.tongji.edu.cn/), 2020
+* Ph.D in Civil Engineering, [Princeton University](https://www.princeton.edu), 2025 (expected)
 
-Work experience
+
+Professional experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* **Arup**, *Summer 2020*, *Shanghai, China*
+  * Summer intern, structural engineering group 
+  * Conceptual design and structural analysis of a footbridge using SAP2000
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+Teaching
+======
+* **CEE 262: Structures and the Urban Environment**, *Spring 2022*
+  * Teaching assistant: mini-lecture, lab instructor, oﬀice hours and grading 
+
+* **CEE 467: Design and Behavior of Steel Structures**, *Fall 2021*
+  * Teaching assistant: oﬀice hours and grading
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Software/Programming: Python, JAX, AutoCAD, DualSPHysics, LaTeX, OpenSees, Rhino, SAP2000
 
-Publications
+Selected Awards
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Princeton University Gordon Y.S. Wu Fellowship, *2020-2025*
+* Graduated with honor: Excellent Graduates Award of Shanghai, *2020*
+* The 3rd place in GeoWall Competition, ASCE MidPac, *2019*
+* Outstanding Student Award at Tongji University, *2018*
+* Tongji Scholarship of Excellence, *2017-2019*
