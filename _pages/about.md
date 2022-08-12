@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi y'all! I am Gaoyuan (Barry) Wu (吴高远), a Ph.D. student at [Princeton University](https://www.princeton.edu). I am currently working with Prof. [Maria Garlock](https://garlock.princeton.edu). My current research focuses on exploring new structural solutions (such as thin-shell structures) to coastal defense using numerical simulations. I am also interested in leveraging high-performance programming languages and machine learning (ML) to boost structural shape optimization.
+Hi y'all! I am Gaoyuan (Barry) Wu (吴高远), a Ph.D. student at [Princeton University](https://www.princeton.edu). I am currently working with Prof. [Maria Garlock](https://garlock.princeton.edu). My current research focuses on exploring new structural solutions (such as thin-shell structures) to coastal defense using numerical simulations. I am also interested in leveraging high-performance computing (HPC), accelerated linear algebra (XLA) and machine learning (ML) to boost structural shape optimization.
 
 Before coming to Princeton, I spent 4 years in Shanghai at Tongji University, where I did my undergraduate studies in civil engineering with a focus in bridge engineering.
 
