@@ -21,7 +21,7 @@ What's New
 - I presented our work *"A Study on the Hydrodynamic Response of Hypar Thin Shell Against Waves via a Decoupled SPH-FEM Analysis"* at Engineering Mechanics Institute ([EMI](https://www.emi-conference.org/)) conference in Baltimore, MD. **June, 2022**
 
 
-# Small Projects
+# Projects
 ## FEM solver of structural dynamics problem for 2D frame system
 
 This is my final project for APC523 (Numerical Algorithms for Scientific Computing). It can be used for the following problems:
