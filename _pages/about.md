@@ -32,8 +32,8 @@ What's New
 
 Here is an implementation of JaxSSO to form-find a structure inspired by [Mannheim Multihalle](https://mannheim-multihalle.de/en/architecture/) using simple gradient descent. (First photo credit to Daniel Lukac)
 
-<img src="/images/MannheimMultihalle.jpg" alt="drawing" width="600"/>
-<img src="/images/MM_opt.jpg" alt="drawing" width="600"/>
+<img src="/images/MannheimMultihalle.jpg" alt="drawing" width="800"/>
+<img src="/images/MM_opt.jpg" alt="drawing" width="800"/>
 
 ## FEM solver of structural dynamics problem for 2D frame system
 
