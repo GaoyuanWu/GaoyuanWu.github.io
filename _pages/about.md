@@ -31,8 +31,9 @@ What's New
 * Form finding based on finite element analysis (FEA) and optimization theory
 
 Here is an implementation of JaxSSO to form-find a structure inspired by [Mannheim Multihalle](https://mannheim-multihalle.de/en/architecture/) using simple gradient descent. (First photo credit to Daniel Lukac)
-![alt text](https://github.com/GaoyuanWu/JaxSSO/blob/main/data/images/MannheimMultihalle.jpg)
-![alt text](https://github.com/GaoyuanWu/JaxSSO/blob/main/data/images/MM_opt.jpg)
+
+<img src="/images/MannheimMultihalle.jpg" alt="drawing" width="600"/>
+<img src="/images/MM_opt.jpg" alt="drawing" width="600"/>
 
 ## FEM solver of structural dynamics problem for 2D frame system
 
