@@ -17,11 +17,23 @@ I am from [Chengdu](https://en.wikipedia.org/wiki/Chengdu) (成都), a city in s
 
 What's New
 =====
+- Preprint *"A framework for structural shape optimization based on automatic differentiation, the adjoint method and accelerated linear algebra"* is available online. Link [here](https://arxiv.org/abs/2211.15409). Code for this project is available in its [repo](https://github.com/GaoyuanWu/JaxSSO) with a few examples, check them out. **November, 2022**
 - Our new work *"A decoupled SPH-FEM analysis of hydrodynamic wave pressure on hyperbolic-paraboloid thin-shell coastal armor and corresponding structural response"* was accepted by *Engineering Structures* and is available online. Link [here](https://doi.org/10.1016/j.engstruct.2022.114738). **August, 2022**
-- I presented our work *"A Study on the Hydrodynamic Response of Hypar Thin Shell Against Waves via a Decoupled SPH-FEM Analysis"* at Engineering Mechanics Institute ([EMI](https://www.emi-conference.org/)) conference in Baltimore, MD. **June, 2022**
 
 
 # Projects
+## [JaxSSO](https://github.com/GaoyuanWu/JaxSSO): A framework for structural shape optimization based on automatic differentiation (AD) and the adjoint method, enabled by [JAX](https://github.com/google/jax).
+
+### Features
+* Automatic differentiation (AD): an easy and accurate way for gradient evaluation. The implementation of AD avoids deriving derivatives manually or trauncation errors from numerical differentiation.
+* Acclerated linear algebra (XLA) and just-in-time compilation: these features in JAX boost the gradient evaluation
+* Hardware acceleration: run on GPUs and TPUs for **faster** experience.
+* Form finding based on finite element analysis (FEA) and optimization theory
+
+Here is an implementation of JaxSSO to form-find a structure inspired by [Mannheim Multihalle](https://mannheim-multihalle.de/en/architecture/) using simple gradient descent. (First photo credit to Daniel Lukac)
+![alt text](https://github.com/GaoyuanWu/JaxSSO/blob/main/data/images/MannheimMultihalle.jpg)
+![alt text](https://github.com/GaoyuanWu/JaxSSO/blob/main/data/images/MM_opt.jpg)
+
 ## FEM solver of structural dynamics problem for 2D frame system
 
 This is my final project for APC523 (Numerical Algorithms for Scientific Computing). It can be used for the following problems:
