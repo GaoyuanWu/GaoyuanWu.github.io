@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi y'all! I am Gaoyuan (Barry) Wu (吴高远), a Ph.D. student at [Princeton University](https://www.princeton.edu). I am currently working with Prof. [Maria Garlock](https://garlock.princeton.edu). My current research focuses on exploring new structural solutions (such as thin-shell structures) to coastal defense using numerical simulations. I am also interested in leveraging high-performance computing (HPC), accelerated linear algebra (XLA) and machine learning (ML) to boost structural shape optimization.
+Hi all! I am Gaoyuan (Barry) Wu (吴高远), a Ph.D. student at [Princeton University](https://www.princeton.edu). I am currently working with Prof. [Maria Garlock](https://garlock.princeton.edu). My current research focuses on exploring new structural solutions (such as thin-shell structures) to coastal defense using numerical simulations. I am also interested in leveraging the high-performance computing (HPC) Python library [JAX](https://github.com/google/jax) to boost structural shape optimization.
 
 Before coming to Princeton, I spent 4 years in Shanghai at Tongji University, where I did my undergraduate studies in civil engineering with a focus in bridge engineering.
 
@@ -17,7 +17,8 @@ I am from [Chengdu](https://en.wikipedia.org/wiki/Chengdu) (成都), a city in s
 
 What's New
 =====
-- Preprint *"A framework for structural shape optimization based on automatic differentiation, the adjoint method and accelerated linear algebra"* is available online. Link [here](https://arxiv.org/abs/2211.15409). Code for this project is available in its [repo](https://github.com/GaoyuanWu/JaxSSO) with a few examples, check them out. **November, 2022**
+- Our new work *"A framework for structural shape optimization based on automatic differentiation, the adjoint method and accelerated linear algebra"* was accepted by *Structural and Multidisciplinary Optimization* and is available online. DOI: [10.1007/s00158-023-03601-0](http://dx.doi.org/10.1007/s00158-023-03601-0). PDF is available [here](https://rdcu.be/deZ2W). Code for this project is available in its [repo](https://github.com/GaoyuanWu/JaxSSO) with a few examples, check them out. **June, 2023**
+- Preprint *"Investigating the Effects of Box Girder Bridge Geometry on Solitary Wave Force Using SPH Modeling"* is available online. DOI: [10.2139/ssrn.4478203](http://dx.doi.org/10.2139/ssrn.4478203).  **June, 2023**
 - Our new work *"A decoupled SPH-FEM analysis of hydrodynamic wave pressure on hyperbolic-paraboloid thin-shell coastal armor and corresponding structural response"* was accepted by *Engineering Structures* and is available online. Link [here](https://doi.org/10.1016/j.engstruct.2022.114738). **August, 2022**
 
 
