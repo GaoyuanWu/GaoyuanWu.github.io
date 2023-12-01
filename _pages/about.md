@@ -17,6 +17,7 @@ I am from [Chengdu](https://en.wikipedia.org/wiki/Chengdu) (成都), a city in s
 
 What's New
 =====
+- Our new work *"Investigating the Effects of Box Girder Bridge Geometry on Solitary Wave Force Using SPH Modeling"* was accepted by *Coastal Engineering* and is available online. DOI: [10.1007/s00158-023-03601-0](https://doi.org/10.1016/j.coastaleng.2023.104430). PDF is available [here](https://authors.elsevier.com/a/1i8-h1M2DVKRZ4). **November, 2023**
 - Our new work *"A framework for structural shape optimization based on automatic differentiation, the adjoint method and accelerated linear algebra"* was accepted by *Structural and Multidisciplinary Optimization* and is available online. DOI: [10.1007/s00158-023-03601-0](http://dx.doi.org/10.1007/s00158-023-03601-0). PDF is available [here](https://rdcu.be/deZ2W). Code for this project is available in its [repo](https://github.com/GaoyuanWu/JaxSSO) with a few examples, check them out. **June, 2023**
 - Preprint *"Investigating the Effects of Box Girder Bridge Geometry on Solitary Wave Force Using SPH Modeling"* is available online. DOI: [10.2139/ssrn.4478203](http://dx.doi.org/10.2139/ssrn.4478203).  **June, 2023**
 - Our new work *"A decoupled SPH-FEM analysis of hydrodynamic wave pressure on hyperbolic-paraboloid thin-shell coastal armor and corresponding structural response"* was accepted by *Engineering Structures* and is available online. Link [here](https://doi.org/10.1016/j.engstruct.2022.114738). **August, 2022**
