@@ -9,34 +9,37 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* B.S. in Civil Engineering, [Tongji University](https://en.tongji.edu.cn/), 2020
-* Ph.D in Civil Engineering, [Princeton University](https://www.princeton.edu), 2025 (expected)
+I am from Chengdu (成都), a city in southwest China. I love our dialects, our amazing food and of course, pandas! 
+
+In my free time, I enjoy a variety of sports - soccer, badminton, tennis, and indoor rock clmbing. I love listening to music - I spend way too much time on spotify (61349 minutes in 2024, RIP my ears). I am a proud top 1% listener of Wu Bai and Faye Wong, according to Spotify. 
+
+### Education
+* Ph.D, Civil and Environmental Engineering, Princeton University, 2025 (expected)
+* Master of Arts, Civil and Environmental Engineering, Princeton University, 2022 (expected)
+* Bachelor of Engineering, Civil Engineering, Tongji University, 2020
 
 
-Professional experience
-======
+
+### Work experience
 * **Arup**, *Summer 2020*, *Shanghai, China*
   * Summer intern, structural engineering group 
-  * Conceptual design and structural analysis of a footbridge using SAP2000
 
-Teaching
-======
-* **CEE 262: Structures and the Urban Environment**, *Spring 2022*
-  * Teaching assistant: mini-lecture, lab instructor, oﬀice hours and grading 
+### Teaching
+* **CEE 262: Structures and the Urban Environment**, *Spring 2022, 2025*
+
+* **CEE 478: Senior Thesis**, *Fall 2024*
+
+* **CEE 102: Engineering in the Modern World**, *Spring 2023,2025*
 
 * **CEE 467: Design and Behavior of Steel Structures**, *Fall 2021*
-  * Teaching assistant: oﬀice hours and grading
-  
-Skills
-======
-* Software/Programming: Python, JAX, AutoCAD, DualSPHysics, LaTeX, OpenSees, Rhino, SAP2000
 
-Selected Awards
-======
-* Princeton University Gordon Y.S. Wu Fellowship, *2020-2025*
-* Graduated with honor: Excellent Graduates Award of Shanghai, *2020*
-* The 3rd place in GeoWall Competition, ASCE MidPac, *2019*
-* Outstanding Student Award at Tongji University, *2018*
-* Tongji Scholarship of Excellence, *2017-2019*
+### Services
+* **Reviewer for Journals**
+  * Computers & Structures
+* **Residential Graduate Student at Forbes College, Princeton University**, *Fall 2023 to Spring 2025*
+
+* **Co-organizer and Barista of CEE Coffee Hour**, *Fall 2023 to Fall 2024*
+
+* **Co-organizer of CEE Lunch Seminar**, *Fall 2022 to Fall 2023*
+
+

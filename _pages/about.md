@@ -8,12 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-Hi all! I am Gaoyuan Wu (吴高远), a Ph.D. student at [Princeton University](https://www.princeton.edu). I am currently working with Prof. [Maria Garlock](https://garlock.princeton.edu). My current research focuses on exploring new structural solutions (such as thin-shell structures) to coastal defense using numerical simulations. I am also interested in leveraging the high-performance computing (HPC) Python library [JAX](https://github.com/google/jax) to boost structural shape optimization. Outside of the research world, I am an [Residential Graduate Student](https://forbescollege.princeton.edu/people/residential-graduate-students-rgs) (RGS) at Forbes College, Princeton University.
-
+Hi all! I am Gaoyuan Wu (吴高远), a Ph.D. student at Princeton University. I am currently working with Prof. [Maria Garlock](https://garlock.princeton.edu). My current research focuses on exploring new structural solutions (such as thin-shell structures) to coastal defense using numerical simulations. I am also interested in leveraging the high-performance computing (HPC) Python library [JAX](https://github.com/google/jax) to boost structural shape optimization. Outside of the research world, I served as an [Residential Graduate Student](https://forbescollege.princeton.edu/people/residential-graduate-students-rgs) (RGS) at Forbes College for two years, from 2023 to 2025.
 
 Before coming to Princeton, I spent 4 years in Shanghai at Tongji University, where I did my undergraduate studies in civil engineering with a focus in bridge engineering.
-
-I am from [Chengdu](https://en.wikipedia.org/wiki/Chengdu) (成都), a city in southwest China. I love our dialects, our amazing food and of course, the PANDAS! 
 
 
 What's New
