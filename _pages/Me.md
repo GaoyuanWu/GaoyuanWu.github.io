@@ -11,12 +11,12 @@ redirect_from:
 
 I am from Chengdu (成都), a city in southwest China. I love our dialects, our amazing food and of course, pandas! 
 
-In my free time, I enjoy a variety of sports - soccer, badminton, tennis, and indoor rock clmbing. I love listening to music - I spend way too much time on spotify (61349 minutes in 2024, RIP my ears). I am a proud top 1% listener of Wu Bai and Faye Wong, according to Spotify. 
+In my free time, I enjoy a variety of sports - soccer, badminton, tennis, and indoor rock clmbing. I love listening to music - I spend way too much time on Spotify (61349 minutes in 2024, RIP my ears). I am a proud top 1% listener of Wu Bai and Faye Wong, according to Spotify. 
 
 ### Education
-* Ph.D, Civil and Environmental Engineering, Princeton University, 2025 (expected)
-* Master of Arts, Civil and Environmental Engineering, Princeton University, 2022 (expected)
-* Bachelor of Engineering, Civil Engineering, Tongji University, 2020
+* Ph.D, Civil and Environmental Engineering, **Princeton University**, 2025 (expected)
+* Master of Arts, Civil and Environmental Engineering, **Princeton University**, 2022
+* Bachelor of Engineering, Civil Engineering, **Tongji University**, 2020
 
 
 
@@ -29,7 +29,7 @@ In my free time, I enjoy a variety of sports - soccer, badminton, tennis, and in
 
 * **CEE 478: Senior Thesis**, *Fall 2024*
 
-* **CEE 102: Engineering in the Modern World**, *Spring 2023,2025*
+* **CEE 102: Engineering in the Modern World**, *Spring 2023, 2025*
 
 * **CEE 467: Design and Behavior of Steel Structures**, *Fall 2021*
 
