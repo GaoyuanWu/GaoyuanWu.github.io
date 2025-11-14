@@ -10,11 +10,12 @@ redirect_from:
 
 Hi all! I am Gaoyuan Wu (吴高远), a Ph.D. student at Princeton University. I am currently working with Prof. [Maria Garlock](https://garlock.princeton.edu). My current research focuses on exploring new structural solutions (such as thin-shell structures) to coastal defense using numerical simulations. I am also interested in leveraging the high-performance computing (HPC) Python library [JAX](https://github.com/google/jax) to boost structural shape optimization. Outside of the research world, I served as an [Residential Graduate Student](https://forbescollege.princeton.edu/people/residential-graduate-students-rgs) (RGS) at Forbes College for two years, from 2023 to 2025.
 
-Before coming to Princeton, I spent 4 years in Shanghai at Tongji University, where I did my undergraduate studies in civil engineering with a focus in bridge engineering.
+Prior to Princeton, I did my undergraduate studies in civil engineering at Tongji University with a focus in bridge engineering.
 
 
 What's New
 =====
+- Our new work *"An SPH study of cross-sectional shape effects on coastal structures subject to regular wave forces* and is available online. DOI: [10.1016/j.oceaneng.2025.122929](https://doi.org/10.1016/j.oceaneng.2025.122929). **September, 2025**
 - Preprint *"JAX-SSO: Differentiable Finite Element Analysis Solver for Structural Optimization and Seamless Integration with Neural Networks"* is available online. arXiv link: [arXiv:2407.20026](
 https://doi.org/10.48550/arXiv.2407.20026).  **July 2024**
 - Our new work *"Investigating the Effects of Box Girder Bridge Geometry on Solitary Wave Force Using SPH Modeling"* was accepted by *Coastal Engineering* and is available online. DOI: [10.1007/s00158-023-03601-0](https://doi.org/10.1016/j.coastaleng.2023.104430). PDF is available [here](https://authors.elsevier.com/a/1i8-h1M2DVKRZ4). **November, 2023**
