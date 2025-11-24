@@ -8,7 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-Hi all! I am Gaoyuan Wu (吴高远), a Ph.D. student at Princeton University. I am currently working with Prof. [Maria Garlock](https://garlock.princeton.edu). My current research focuses on exploring new structural solutions (such as thin-shell structures) to coastal defense using numerical simulations. I am also interested in leveraging the high-performance computing (HPC) Python library [JAX](https://github.com/google/jax) to boost structural shape optimization. Outside of the research world, I served as an [Residential Graduate Student](https://forbescollege.princeton.edu/people/residential-graduate-students-rgs) (RGS) at Forbes College for two years, from 2023 to 2025.
+I obtained my Ph.D. in civil engineering from Princeton University, advised by Prof. [Maria Garlock](https://garlock.princeton.edu).
+
+My research aims to promote coastal resilience of infrastructure from an interdisciplinary perspective that integrates structural engineering, architectural design, coastal engineering, optimization, and machine learning (ML). Specifically, my research uses numerical simulations, experiments, and Bayesian Optimization to investigate how shape optimization and modification of structures can lead to infrastructure that is more resilient and robust against extreme wave loads induced by climate-influenced hazards.
+
+Besides, my research also involves developing *differentiable* finite element analysis (FEA) solver, [JaxSSO](https://github.com/GaoyuanWu/JaxSSO), to enhance structural design via efficient gradient-based structural optimization - mitigating embodied carbon of the built environment while delivering structural elegance. I am also interested in training neural networks (NN) with FEA in the loop to benefit broad strutural design and optimization problems. For more, please see the Github repo: [JaxSSO](https://github.com/GaoyuanWu/JaxSSO).
+
+
+Outside research, I served as an [Residential Graduate Student](https://forbescollege.princeton.edu/people/residential-graduate-students-rgs) (RGS) at Forbes College for two years, from 2023 to 2025.
 
 Prior to Princeton, I did my undergraduate studies in civil engineering at Tongji University with a focus in bridge engineering.
 
