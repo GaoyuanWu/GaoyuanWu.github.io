@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hi all! My name is Gaoyuan Wu (吴高远). I obtained my Ph.D. in civil engineering from Princeton University, advised by Prof. [Maria Garlock](https://garlock.princeton.edu). Prior to Princeton, I did my undergraduate studies in civil engineering at Tongji University with a focus in bridge engineering.
+Hi all! My name is Gaoyuan Wu (吴高远). I obtained my PhD in civil engineering from Princeton University, advised by Prof. [Maria Garlock](https://garlock.princeton.edu). Prior to Princeton, I did my undergraduate studies in civil engineering at Tongji University with a focus in bridge engineering.
 
 My research aims to promote coastal resilience of infrastructure from an interdisciplinary perspective that integrates structural engineering, architectural design, coastal engineering, optimization, and machine learning (ML). Specifically, my research uses numerical simulations, experiments, and Bayesian Optimization to investigate how shape optimization and modification of structures can lead to infrastructure that is more resilient and robust against extreme wave loads induced by climate-influenced hazards.
 
