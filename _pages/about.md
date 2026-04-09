@@ -7,14 +7,12 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hi all! My name is Gaoyuan Wu (吴高远). I obtained my PhD in civil engineering from Princeton University, advised by Prof. [Maria Garlock](https://garlock.princeton.edu). Prior to Princeton, I did my undergraduate studies in civil engineering at Tongji University with a focus in bridge engineering.
+Hi all! My name is Gaoyuan Wu (吴高远), a Postdoctoral Research Associate at Princeton University. I obtained my PhD in civil engineering from Princeton University in 2025, advised by Prof. [Maria Garlock](https://garlock.princeton.edu). Prior to Princeton, I did my undergraduate studies in civil engineering at Tongji University with a focus in bridge engineering.
 
 My research aims to promote coastal resilience of infrastructure from an interdisciplinary perspective that integrates structural engineering, architectural design, coastal engineering, optimization, and machine learning (ML). Specifically, my research uses numerical simulations, experiments, and Bayesian Optimization to investigate how shape optimization and modification of structures can lead to infrastructure that is more resilient and robust against extreme wave loads induced by climate-influenced hazards.
 
-Besides, my research also involves developing *differentiable* finite element analysis (FEA) solver, [JaxSSO](https://github.com/GaoyuanWu/JaxSSO), to enhance structural design via efficient gradient-based structural optimization - mitigating embodied carbon of the built environment while delivering structural elegance. I am also interested in training neural networks (NN) with FEA in the loop to benefit broad strutural design and optimization problems. For more, please see the Github repo: [JaxSSO](https://github.com/GaoyuanWu/JaxSSO).
+I also develop open-source computational tools for structural design. [JaxSSO](https://github.com/GaoyuanWu/JaxSSO) is a *differentiable* finite element analysis (FEA) solver built on JAX, enabling gradient-based structural optimization that reduces embodied carbon while achieving structural elegance. I am also interested in training neural networks (NN) with FEA in the loop to benefit broad structural design and optimization problems. For more, please see the Github repo: [JaxSSO](https://github.com/GaoyuanWu/JaxSSO).
 
-
-Outside research, I served as an [Residential Graduate Student](https://forbescollege.princeton.edu/people/residential-graduate-students-rgs) (RGS) at Forbes College for two years, from 2023 to 2025.
 
 
 
@@ -24,7 +22,7 @@ What's New
 - Our new work *"An SPH study of cross-sectional shape effects on coastal structures subject to regular wave forces*" and is available online. DOI: [10.1016/j.oceaneng.2025.122929](https://doi.org/10.1016/j.oceaneng.2025.122929). **September, 2025**
 - Preprint *"JAX-SSO: Differentiable Finite Element Analysis Solver for Structural Optimization and Seamless Integration with Neural Networks"* is available online. arXiv link: [arXiv:2407.20026](
 https://doi.org/10.48550/arXiv.2407.20026).  **July 2024**
-- Our new work *"Investigating the Effects of Box Girder Bridge Geometry on Solitary Wave Force Using SPH Modeling"* was accepted by *Coastal Engineering* and is available online. DOI: [10.1007/s00158-023-03601-0](https://doi.org/10.1016/j.coastaleng.2023.104430). PDF is available [here](https://authors.elsevier.com/a/1i8-h1M2DVKRZ4). **November, 2023**
+- Our new work *"Investigating the Effects of Box Girder Bridge Geometry on Solitary Wave Force Using SPH Modeling"* was accepted by *Coastal Engineering* and is available online. DOI: [10.1016/j.coastaleng.2023.104430](https://doi.org/10.1016/j.coastaleng.2023.104430). PDF is available [here](https://authors.elsevier.com/a/1i8-h1M2DVKRZ4). **November, 2023**
 - Our new work *"A framework for structural shape optimization based on automatic differentiation, the adjoint method and accelerated linear algebra"* was accepted by *Structural and Multidisciplinary Optimization* and is available online. DOI: [10.1007/s00158-023-03601-0](http://dx.doi.org/10.1007/s00158-023-03601-0). PDF is available [here](https://rdcu.be/deZ2W). Code for this project is available in its [repo](https://github.com/GaoyuanWu/JaxSSO) with a few examples, check them out. **June, 2023**
 
 
