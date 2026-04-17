@@ -19,11 +19,8 @@ I also develop open-source computational tools for structural design. [JaxSSO](h
 
 What's New
 =====
+- Our new work *"Shape optimization of box-type structures under waves using multi-objective Bayesian Optimization: Reducing wave loads and improving wave attenuation"* is available online in *Engineering Structures*. DOI: [10.1016/j.engstruct.2026.122780](https://doi.org/10.1016/j.engstruct.2026.122780). **April, 2026**
 - Our new work *"An SPH study of cross-sectional shape effects on coastal structures subject to regular wave forces*" and is available online. DOI: [10.1016/j.oceaneng.2025.122929](https://doi.org/10.1016/j.oceaneng.2025.122929). **September, 2025**
-- Preprint *"JAX-SSO: Differentiable Finite Element Analysis Solver for Structural Optimization and Seamless Integration with Neural Networks"* is available online. arXiv link: [arXiv:2407.20026](
-https://doi.org/10.48550/arXiv.2407.20026).  **July 2024**
-- Our new work *"Investigating the Effects of Box Girder Bridge Geometry on Solitary Wave Force Using SPH Modeling"* was accepted by *Coastal Engineering* and is available online. DOI: [10.1016/j.coastaleng.2023.104430](https://doi.org/10.1016/j.coastaleng.2023.104430). PDF is available [here](https://authors.elsevier.com/a/1i8-h1M2DVKRZ4). **November, 2023**
-- Our new work *"A framework for structural shape optimization based on automatic differentiation, the adjoint method and accelerated linear algebra"* was accepted by *Structural and Multidisciplinary Optimization* and is available online. DOI: [10.1007/s00158-023-03601-0](http://dx.doi.org/10.1007/s00158-023-03601-0). PDF is available [here](https://rdcu.be/deZ2W). Code for this project is available in its [repo](https://github.com/GaoyuanWu/JaxSSO) with a few examples, check them out. **June, 2023**
 
 
 
