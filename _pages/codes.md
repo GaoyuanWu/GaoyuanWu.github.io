@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Codes
-permalink: /projects/
+permalink: /codes/
 description: Open-source computational tools and software.
 nav: true
 nav_order: 3

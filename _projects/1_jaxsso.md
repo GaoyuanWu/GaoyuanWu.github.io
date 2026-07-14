@@ -23,11 +23,13 @@ See {% cite wu2023framework %} and {% cite wu2024jaxsso %} for the underlying me
 
 Here is an implementation of JaxSSO to form-find a structure inspired by [Mannheim Multihalle](https://mannheim-multihalle.de/en/architecture/) using simple gradient descent. (First photo credit to Daniel Lukac.)
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row justify-content-sm-center">
+    <div class="col-sm-11 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/mannheim_multihalle.jpg" title="Mannheim Multihalle" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
+</div>
+<div class="row justify-content-sm-center">
+    <div class="col-sm-11 mt-3">
         {% include figure.liquid loading="eager" path="assets/img/mm_opt.jpg" title="JaxSSO form-finding result" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
