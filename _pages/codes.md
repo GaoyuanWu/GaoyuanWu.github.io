@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Codes
+title: codes
 permalink: /codes/
 description: Open-source computational tools and software.
 nav: true
