@@ -1,0 +1,50 @@
+{% comment %}
+  Local template for the "Teaching" section. No date column at all (course
+  terms are conveyed via entry.summary instead). Institution name is bold,
+  location shown next to it, right-aligned, comma-prefixed, italic, no icon.
+  Course title/position is not bold.
+{% endcomment %}
+
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% for entry in entries %}
+    <li class="list-group-item">
+      {% capture position_title %}
+        {% if entry.position %}{{ entry.position }}{% endif %}
+      {% endcapture %}
+      {% if position_title != '' %}
+        <h6 class="title ml-1 ml-md-4">{{ position_title }}</h6>
+      {% endif %}
+
+      {% capture company_name %}
+        {% if entry.company %}{{ entry.company }}{% endif %}
+      {% endcapture %}
+      {% capture location %}
+        {% if entry.location %}{{ entry.location }}{% endif %}
+      {% endcapture %}
+      {% if company_name != '' or location != '' %}
+        <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem">
+          <h6 class="font-weight-bold mb-0">{{ company_name }}</h6>
+          {% if location != '' %}
+            <h6 class="font-italic mb-0 text-right">, {{ location }}</h6>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if entry.summary %}
+        <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
+          {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+        </h6>
+      {% endif %}
+
+      {% if entry.highlights %}
+        <ul class="items">
+          {% for item in entry.highlights %}
+            <li>
+              <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

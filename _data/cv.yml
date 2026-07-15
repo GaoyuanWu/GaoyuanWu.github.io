@@ -4,7 +4,6 @@ cv:
   email: gaoyuanw@princeton.edu
   location: Princeton, NJ
   image: ""
-  summary: PhD in Civil and Environmental Engineering, Princeton University. Research on coastal resilience of structures, structural optimization, and differentiable simulations.
 
   social_networks:
     - network: GitHub
@@ -29,11 +28,10 @@ cv:
     Education:
       - institution: Princeton University
         location: Princeton, NJ
-        url: https://cee.princeton.edu/
         area: Civil and Environmental Engineering
         studyType: PhD
         start_date: 2020-09-01
-        end_date: 2025-06-01
+        end_date: 2025-12-01
         highlights:
           - "Dissertation: Enhancing Coastal Resilience of Infrastructure via Structural Shape Modification and Optimization"
           - "Advisor: Prof. Maria Garlock"
@@ -83,11 +81,11 @@ cv:
         end_date: 2021-12-31
         summary: "Terms: Fall 2021"
 
-    Service:
-      - company: Peer Review
-        position: Referee
-        summary: "Journals: Computers & Structures; Engineering Structures"
+    Academic Service:
+      - company: Computers & Structures; Engineering Structures
+        position: Referee for Journals
 
+    Other Service:
       - company: Forbes College, Princeton University
         position: Residential Graduate Student
         location: Princeton, NJ

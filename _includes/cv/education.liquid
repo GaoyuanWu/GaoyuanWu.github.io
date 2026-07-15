@@ -1,7 +1,9 @@
 {% comment %}
-  Local override of al_folio_cv's templates/cv/education.liquid — copied verbatim
-  from the gem as a starting point for manual editing. Controls how each
-  Education entry is laid out (date badge, location, degree, institution, courses).
+  Local override of al_folio_cv's templates/cv/education.liquid.
+  Changes from upstream:
+  - Date badge shows month + year, hidden when no date is present.
+  - Location moved next to institution name, right-aligned, comma-prefixed, italic. No icon.
+  - Institution name is bold; degree/study type is not.
 {% endcomment %}
 
 <ul class="card-text font-weight-light list-group list-group-flush">
@@ -12,43 +14,39 @@
           {% capture start_date %}
             {% if entry.start_date %}{{ entry.start_date }}{% elsif entry.startDate %}{{ entry.startDate }}{% endif %}
           {% endcapture %}
+          {% assign start_date = start_date | strip %}
           {% capture end_date %}
             {% if entry.end_date %}{{ entry.end_date }}{% elsif entry.endDate %}{{ entry.endDate }}{% endif %}
           {% endcapture %}
+          {% assign end_date = end_date | strip %}
 
           {% if start_date != '' %}
-            {% comment %} Extract year only from dates like "1933-01-01" or just use "1933" as is {% endcomment %}
-            {% assign startDate = start_date | split: '-' | first %}
-            {% assign endDate = end_date | split: '-' | first | default: 'Present' %}
+            {% if start_date == 'present' or start_date == 'Present' %}
+              {% assign startDate = 'Present' %}
+            {% else %}
+              {% assign startDate = start_date | date: "%b %Y" %}
+            {% endif %}
+            {% if end_date == '' or end_date == 'present' or end_date == 'Present' %}
+              {% assign endDate = 'Present' %}
+            {% else %}
+              {% assign endDate = end_date | date: "%b %Y" %}
+            {% endif %}
             {% assign date = startDate | append: ' - ' | append: endDate %}
           {% else %}
-            {% assign date = null %}
+            {% assign date = '' %}
           {% endif %}
 
-          <table class="table-cv">
-            <tbody>
-              <tr>
-                <td>
-                  {% if date %}
-                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ date }}</span>
-                  {% endif %}
-                </td>
-              </tr>
-              {% capture location %}
-                {% if entry.location %}{{ entry.location }}{% endif %}
-              {% endcapture %}
-              {% if location != '' %}
+          {% if date != '' %}
+            <table class="table-cv">
+              <tbody>
                 <tr>
                   <td>
-                    <p class="location">
-                      <i class="fa-solid fa-location-dot iconlocation"></i>
-                      {{ location }}
-                    </p>
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ date }}</span>
                   </td>
                 </tr>
-              {% endif %}
-            </tbody>
-          </table>
+              </tbody>
+            </table>
+          {% endif %}
         </div>
         <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
           {% capture study_type %}
@@ -56,15 +54,23 @@
           {% endcapture %}
 
           {% if entry.url %}
-            <h6 class="title font-weight-bold ml-1 ml-md-4">
+            <h6 class="title ml-1 ml-md-4">
               <a href="{{ entry.url }}">{{ study_type }}</a>
             </h6>
           {% elsif study_type != '' %}
-            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ study_type }}</h6>
+            <h6 class="title ml-1 ml-md-4">{{ study_type }}</h6>
           {% endif %}
 
-          {% if entry.institution %}
-            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.institution }}</h6>
+          {% capture location %}
+            {% if entry.location %}{{ entry.location }}{% endif %}
+          {% endcapture %}
+          {% if entry.institution or location != '' %}
+            <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem">
+              <h6 class="font-weight-bold mb-0">{{ entry.institution }}</h6>
+              {% if location != '' %}
+                <h6 class="font-italic mb-0 text-right">, {{ location }}</h6>
+              {% endif %}
+            </div>
           {% endif %}
 
           {% if entry.area %}

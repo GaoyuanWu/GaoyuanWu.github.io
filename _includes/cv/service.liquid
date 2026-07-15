@@ -1,0 +1,88 @@
+{% comment %}
+  Local template for "Academic Service" / "Other Service" sections.
+  Year-only dates (no month); hidden entirely when an entry has no dates
+  (e.g. ad hoc referee work). Location moved next to company name,
+  right-aligned, comma-prefixed, italic. No icon. Company name is bold.
+{% endcomment %}
+
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% for entry in entries %}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+          {% capture start_date %}
+            {% if entry.start_date %}{{ entry.start_date }}{% endif %}
+          {% endcapture %}
+          {% assign start_date = start_date | strip %}
+          {% capture end_date %}
+            {% if entry.end_date %}{{ entry.end_date }}{% endif %}
+          {% endcapture %}
+          {% assign end_date = end_date | strip %}
+
+          {% if start_date != '' %}
+            {% assign startDate = start_date | split: '-' | first %}
+            {% if end_date == '' or end_date == 'present' or end_date == 'Present' %}
+              {% assign endDate = 'Present' %}
+            {% else %}
+              {% assign endDate = end_date | split: '-' | first %}
+            {% endif %}
+            {% assign date = startDate | append: ' - ' | append: endDate %}
+          {% else %}
+            {% assign date = '' %}
+          {% endif %}
+
+          {% if date != '' %}
+            <table class="table-cv">
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ date }}</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          {% endif %}
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+          {% capture position_title %}
+            {% if entry.position %}{{ entry.position }}{% endif %}
+          {% endcapture %}
+          {% if position_title != '' %}
+            <h6 class="title ml-1 ml-md-4">{{ position_title }}</h6>
+          {% endif %}
+
+          {% capture company_name %}
+            {% if entry.company %}{{ entry.company }}{% endif %}
+          {% endcapture %}
+          {% capture location %}
+            {% if entry.location %}{{ entry.location }}{% endif %}
+          {% endcapture %}
+          {% if company_name != '' or location != '' %}
+            <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem">
+              <h6 class="font-weight-bold mb-0">{{ company_name }}</h6>
+              {% if location != '' %}
+                <h6 class="font-italic mb-0 text-right">, {{ location }}</h6>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          {% if entry.summary %}
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
+              {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+            </h6>
+          {% endif %}
+
+          {% if entry.highlights %}
+            <ul class="items">
+              {% for item in entry.highlights %}
+                <li>
+                  <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
