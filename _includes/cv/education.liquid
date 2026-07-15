@@ -52,6 +52,7 @@
           {% capture study_type %}
             {% if entry.studyType %}{{ entry.studyType }}{% elsif entry.degree %}{{ entry.degree }}{% endif %}
           {% endcapture %}
+          {% assign study_type = study_type | strip %}
 
           {% if entry.url %}
             <h6 class="title ml-1 ml-md-4">
@@ -64,6 +65,7 @@
           {% capture location %}
             {% if entry.location %}{{ entry.location }}{% endif %}
           {% endcapture %}
+          {% assign location = location | strip %}
           {% if entry.institution or location != '' %}
             <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem">
               <h6 class="font-weight-bold mb-0">{{ entry.institution }}</h6>

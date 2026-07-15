@@ -55,6 +55,7 @@
           {% capture position_title %}
             {% if entry.position %}{{ entry.position }}{% endif %}
           {% endcapture %}
+          {% assign position_title = position_title | strip %}
 
           {% if entry.url %}
             <h6 class="title ml-1 ml-md-4">
@@ -67,9 +68,11 @@
           {% capture company_name %}
             {% if entry.name %}{{ entry.name }}{% elsif entry.company %}{{ entry.company }}{% elsif entry.organization %}{{ entry.organization }}{% endif %}
           {% endcapture %}
+          {% assign company_name = company_name | strip %}
           {% capture location %}
             {% if entry.location %}{{ entry.location }}{% endif %}
           {% endcapture %}
+          {% assign location = location | strip %}
           {% if company_name != '' or location != '' %}
             <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem">
               <h6 class="font-weight-bold mb-0">{{ company_name }}</h6>
