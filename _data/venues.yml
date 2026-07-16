@@ -1,0 +1,4 @@
+# maps bibtex "abbr" fields to venue display info (url, color)
+# example:
+# "CoastEng":
+#   url: https://www.sciencedirect.com/journal/coastal-engineering

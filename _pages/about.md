@@ -1,56 +1,70 @@
 ---
+layout: about
+title: Home
 permalink: /
-title: "About"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+subtitle: Postdoctoral Research Associate, Princeton University
+
+profile:
+  align: right
+  image: avatar.jpg
+  image_circular: false # crops the image to make it circular
+  more_info: >
+    <p><a href="mailto:gaoyuanw@princeton.edu">gaoyuanw@princeton.edu</a></p>
+
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
+
+announcements:
+  enabled: true # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 2 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: false
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
 ---
-Hi all! My name is Gaoyuan Wu (吴高远), a Postdoctoral Research Associate at Princeton University. I obtained my PhD in civil engineering from Princeton University in 2025, advised by Prof. [Maria Garlock](https://garlock.princeton.edu). Prior to Princeton, I did my undergraduate studies in civil engineering at Tongji University with a focus in bridge engineering.
 
-My research aims to promote coastal resilience of infrastructure from an interdisciplinary perspective that integrates structural engineering, architectural design, coastal engineering, optimization, and machine learning (ML). Specifically, my research uses numerical simulations, experiments, and Bayesian Optimization to investigate how shape optimization and modification of structures can lead to infrastructure that is more resilient and robust against extreme wave loads induced by climate-influenced hazards.
+<style>
+  .profile {
+    width: 220px !important;
+  }
+</style>
 
-I also develop open-source computational tools for structural design. [JaxSSO](https://github.com/GaoyuanWu/JaxSSO) is a *differentiable* finite element analysis (FEA) solver built on JAX, enabling gradient-based structural optimization that reduces embodied carbon while achieving structural elegance. I am also interested in training neural networks (NN) with FEA in the loop to benefit broad structural design and optimization problems. For more, please see the Github repo: [JaxSSO](https://github.com/GaoyuanWu/JaxSSO).
+Hi! My name is Gaoyuan Wu, a Postdoctoral Research Associate at Princeton University. I recently obtained my PhD in civil engineering from Princeton University, advised by Prof. [Maria Garlock](https://garlock.princeton.edu). Prior to Princeton, I did my undergraduate studies in civil engineering at Tongji University with a focus in bridge engineering.
 
+I am from Chengdu (成都), a city in southwest China. I love our dialects, our amazing food and, of course, pandas! In my free time, I enjoy a variety of sports — tennis, soccer, badminton, and indoor rock climbing. I love listening to music — I am a proud top 1% listener of Wu Bai and Faye Wong, according to Spotify.
 
+<div style="clear: both;"></div>
 
+## Research
 
+For a full list of publications, please see my [publications page](/publications/) or my [Google Scholar profile](https://scholar.google.com/citations?user=2aTANLwAAAAJ). A few selected projects are highlighted below.
 
-What's New
-=====
-- Our new work *"Shape optimization of box-type structures under waves using multi-objective Bayesian Optimization: Reducing wave loads and improving wave attenuation"* is available online in *Engineering Structures*. DOI: [10.1016/j.engstruct.2026.122780](https://doi.org/10.1016/j.engstruct.2026.122780). **April, 2026**
-- Our new work *"An SPH study of cross-sectional shape effects on coastal structures subject to regular wave forces*" and is available online. DOI: [10.1016/j.oceaneng.2025.122929](https://doi.org/10.1016/j.oceaneng.2025.122929). **September, 2025**
+### Enhancing coastal resilience of infrastructure
 
+My research integrates structural engineering, coastal engineering, and optimization technique (e.g., Bayesian Optimization) to make infrastructure more resilient against extreme wave loads induced by climate-influenced hazards.
 
+<div class="row justify-content-sm-center">
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/Side_Hypar.gif" title="Deployable thin-shell coastal armor under wave loading" class="img-fluid rounded z-depth-1" avoid_scaling=true caption="Deployable thin-shell coastal armor under wave loading (<a href='/publications/#wu2022decoupled'>Wu et al., 2022</a>)." %}
+  </div>
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/BO_flow.png" title="Multi-objective Bayesian Optimization framework" class="img-fluid rounded z-depth-1" caption="Multi-objective Bayesian Optimization framework for wave-load shape optimization of structures (<a href='/publications/#wu2026bayes'>Wu et al., 2026</a>)." %}
+  </div>
+</div>
 
-# Projects
-## [JaxSSO](https://github.com/GaoyuanWu/JaxSSO): A differentiable finite element analysis (FEA) solver for structural optimization, enabled by [JAX](https://github.com/google/jax).
+### Differentiable finite element analysis for structural optimization and integration with machine learning
 
-### Features
-* Automatic differentiation (AD): an easy and accurate way for gradient evaluation. The implementation of AD avoids deriving derivatives manually or trauncation errors from numerical differentiation.
-* Acclerated linear algebra (XLA) and just-in-time compilation: these features in JAX boost the gradient evaluation
-* Hardware acceleration: run on GPUs and TPUs for **faster** experience
-* Support beam-column elements and MITC-4 quadrilateral shell elements
-* Shape optimization, size optimization and topology optimization
-* Seamless integration with machine learning (ML) libraries
+[JaxSSO](https://github.com/GaoyuanWu/JaxSSO) is a *differentiable* finite element analysis (FEA) solver built on JAX, enabling gradient-based structural optimization that reduces embodied carbon while achieving structural elegance ([Wu, 2023](/publications/#wu2023framework); [Wu, 2024](/publications/#wu2024jaxsso)). It also enables training of neural networks (NN) with physics enforced in the loop.
 
-Here is an implementation of JaxSSO to form-find a structure inspired by [Mannheim Multihalle](https://mannheim-multihalle.de/en/architecture/) using simple gradient descent. (First photo credit to Daniel Lukac)
+<div class="row justify-content-sm-center">
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/jaxsso.png" title="JaxSSO" class="img-fluid rounded z-depth-1" caption="Training of NN with physics (enforced via FEA) in the loop" %}
+  </div>
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/mm_opt.jpg" title="JaxSSO form-finding result" class="img-fluid rounded z-depth-1" caption="JaxSSO form-finding a gridshell inspired by the Mannheim Multihalle." %}
+  </div>
+</div>
 
-<img src="/images/MannheimMultihalle.jpg" alt="drawing" width="800"/>
-<img src="/images/MM_opt.jpg" alt="drawing" width="800"/>
-
-## FEM solver of structural dynamics problem for 2D frame system
-
-This is my final project for APC523 (Numerical Algorithms for Scientific Computing). It can be used for the following problems:
-1. 2D-frame system under static loads.
-1. 2D-frame system under dynamic loads (such as earthquake motions)
-
-A comparison between the solver and commercial software SAP2000 is shown below, in which the nodal displacement from the solver matches well with SAP2000:
-<img src="/images/SolverSAP.png" alt="drawing" width="600"/>
-
-For more, please visit the [GitHub repo](https://github.com/GaoyuanWu/NumericalAlgorithms4StructuralDynamics).
-
-
-
-
+For more on this work, see the [JaxSSO project page](/projects/1_jaxsso/) and [codes page](/codes/).

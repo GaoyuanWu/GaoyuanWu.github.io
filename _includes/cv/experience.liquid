@@ -1,0 +1,104 @@
+{% comment %}
+  Local override of al_folio_cv's templates/cv/experience.liquid.
+  Used for the "Experience" section (Experience + Volunteer merge).
+  Changes from upstream:
+  - Date badge shows month + year (e.g. "Sep 2020 - Jun 2025"), and is hidden
+    entirely when no date is present.
+  - Location moved out of the left date column: now shown inline next to the
+    company name, right-aligned, comma-prefixed, italic. No location icon.
+  - Company name is bold; position/title is not.
+{% endcomment %}
+
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% for entry in entries %}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+          {% capture start_date %}
+            {% if entry.start_date %}{{ entry.start_date }}{% elsif entry.startDate %}{{ entry.startDate }}{% endif %}
+          {% endcapture %}
+          {% assign start_date = start_date | strip %}
+          {% capture end_date %}
+            {% if entry.end_date %}{{ entry.end_date }}{% elsif entry.endDate %}{{ entry.endDate }}{% endif %}
+          {% endcapture %}
+          {% assign end_date = end_date | strip %}
+
+          {% if start_date != '' %}
+            {% if start_date == 'present' or start_date == 'Present' %}
+              {% assign startDate = 'Present' %}
+            {% else %}
+              {% assign startDate = start_date | date: "%b %Y" %}
+            {% endif %}
+            {% if end_date == '' or end_date == 'present' or end_date == 'Present' %}
+              {% assign endDate = 'Present' %}
+            {% else %}
+              {% assign endDate = end_date | date: "%b %Y" %}
+            {% endif %}
+            {% assign date = startDate | append: ' - ' | append: endDate %}
+          {% else %}
+            {% assign date = '' %}
+          {% endif %}
+
+          {% if date != '' %}
+            <table class="table-cv">
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="badge danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ date }}</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          {% endif %}
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+          {% capture position_title %}
+            {% if entry.position %}{{ entry.position }}{% endif %}
+          {% endcapture %}
+          {% assign position_title = position_title | strip %}
+
+          {% if entry.url %}
+            <h6 class="title ml-1 ml-md-4">
+              <a href="{{ entry.url }}">{{ position_title }}</a>
+            </h6>
+          {% elsif position_title != '' %}
+            <h6 class="title ml-1 ml-md-4">{{ position_title }}</h6>
+          {% endif %}
+
+          {% capture company_name %}
+            {% if entry.name %}{{ entry.name }}{% elsif entry.company %}{{ entry.company }}{% elsif entry.organization %}{{ entry.organization }}{% endif %}
+          {% endcapture %}
+          {% assign company_name = company_name | strip %}
+          {% capture location %}
+            {% if entry.location %}{{ entry.location }}{% endif %}
+          {% endcapture %}
+          {% assign location = location | strip %}
+          {% if company_name != '' or location != '' %}
+            <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem">
+              <h6 class="font-weight-bold mb-0">{{ company_name }}</h6>
+              {% if location != '' %}
+                <h6 class="font-italic mb-0 text-right">{{ location }}</h6>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          {% if entry.summary %}
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
+              {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+            </h6>
+          {% endif %}
+
+          {% if entry.highlights %}
+            <ul class="items">
+              {% for item in entry.highlights %}
+                <li>
+                  <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

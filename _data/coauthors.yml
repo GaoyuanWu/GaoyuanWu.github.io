@@ -1,0 +1,5 @@
+# maps bibtex author last names (lowercase) to profile info for co-author cross-linking
+# example:
+# "garlock":
+#   - firstname: ["Maria", "M."]
+#     url: https://garlock.princeton.edu

@@ -1,0 +1,105 @@
+cv:
+  name: Gaoyuan Wu
+  label: Postdoctoral Research Associate, Civil and Environmental Engineering
+  email: gaoyuanw@princeton.edu
+  location: Princeton, NJ
+  image: ""
+
+  social_networks:
+    - network: GitHub
+      username: GaoyuanWu
+    - network: LinkedIn
+      username: gaoyuan-wu-6a4983194
+
+  sections:
+    Experience:
+      - company: Princeton University
+        position: Postdoctoral Researcher, Dept. of Civil & Environmental Engineering
+        location: Princeton, NJ
+        start_date: 2026-02-01
+        end_date: present
+
+      - company: Arup
+        position: Summer Intern, Structural Engineering Group
+        location: Shanghai, China
+        start_date: 2020-06-01
+        end_date: 2020-08-31
+
+    Education:
+      - institution: Princeton University
+        location: Princeton, NJ
+        area: Civil and Environmental Engineering
+        studyType: PhD
+        start_date: 2020-09-01
+        end_date: 2025-11-01
+        highlights:
+          - "Dissertation: Enhancing Coastal Resilience of Infrastructure via Structural Shape Modification and Optimization"
+          - "Advisor: Prof. Maria Garlock"
+
+      - institution: Princeton University
+        location: Princeton, NJ
+        area: Civil and Environmental Engineering
+        studyType: MA
+        start_date: 2020-09-01
+        end_date: 2022-06-01
+
+      - institution: Tongji University
+        location: Shanghai, China
+        area: Civil Engineering
+        studyType: BEng
+        start_date: 2016-09-01
+        end_date: 2020-06-01
+        highlights:
+          - "Graduated with honor: Outstanding Graduate Award of Shanghai Municipality (上海市优秀毕业生)"
+
+    Teaching:
+      - company: Princeton University
+        position: "CEE 262: Structures and the Urban Environment"
+        location: Princeton, NJ
+        start_date: 2022-01-01
+        end_date: 2025-05-01
+        summary: "Spring 2022, Spring 2025"
+
+      - company: Princeton University
+        position: "CEE 478: Senior Thesis"
+        location: Princeton, NJ
+        start_date: 2024-09-01
+        end_date: 2024-12-31
+        summary: "Fall 2024"
+
+      - company: Princeton University
+        position: "CEE 102: Engineering in the Modern World"
+        location: Princeton, NJ
+        start_date: 2023-01-01
+        end_date: 2025-05-01
+        summary: "Spring 2023, Spring 2025"
+
+      - company: Princeton University
+        position: "CEE 467: Design and Behavior of Steel Structures"
+        location: Princeton, NJ
+        start_date: 2021-09-01
+        end_date: 2021-12-31
+        summary: "Fall 2021"
+
+    Academic Service:
+      - company: Computers & Structures; Engineering Structures
+        position: Referee for Journals
+
+    Other Service:
+      - company: Forbes College, Princeton University
+        position: Residential Graduate Student
+        location: Princeton, NJ
+        start_date: 2023-09-01
+        end_date: 2025-05-01
+
+      - company: CEE Coffee Hour
+        position: Co-organizer and Barista
+        location: Princeton, NJ
+        start_date: 2023-09-01
+        end_date: 2024-12-31
+
+      - company: CEE Lunch Seminar
+        position: Co-organizer
+        location: Princeton, NJ
+        start_date: 2022-09-01
+        end_date: 2023-12-31
