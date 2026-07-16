@@ -16,7 +16,7 @@ cv:
       - company: Princeton University
         position: Postdoctoral Researcher, Dept. of Civil & Environmental Engineering
         location: Princeton, NJ
-        start_date: 2026-01-01
+        start_date: 2026-02-01
         end_date: present
 
       - company: Arup
@@ -31,7 +31,7 @@ cv:
         area: Civil and Environmental Engineering
         studyType: PhD
         start_date: 2020-09-01
-        end_date: 2025-12-01
+        end_date: 2025-11-01
         highlights:
           - "Dissertation: Enhancing Coastal Resilience of Infrastructure via Structural Shape Modification and Optimization"
           - "Advisor: Prof. Maria Garlock"
@@ -40,7 +40,7 @@ cv:
         location: Princeton, NJ
         area: Civil and Environmental Engineering
         studyType: MA
-        start_date: 2022-01-01
+        start_date: 2020-09-01
         end_date: 2022-06-01
 
       - institution: Tongji University
@@ -58,28 +58,28 @@ cv:
         location: Princeton, NJ
         start_date: 2022-01-01
         end_date: 2025-05-01
-        summary: "Terms: Spring 2022, Spring 2025"
+        summary: "Spring 2022, Spring 2025"
 
       - company: Princeton University
         position: "CEE 478: Senior Thesis"
         location: Princeton, NJ
         start_date: 2024-09-01
         end_date: 2024-12-31
-        summary: "Terms: Fall 2024"
+        summary: "Fall 2024"
 
       - company: Princeton University
         position: "CEE 102: Engineering in the Modern World"
         location: Princeton, NJ
         start_date: 2023-01-01
         end_date: 2025-05-01
-        summary: "Terms: Spring 2023, Spring 2025"
+        summary: "Spring 2023, Spring 2025"
 
       - company: Princeton University
         position: "CEE 467: Design and Behavior of Steel Structures"
         location: Princeton, NJ
         start_date: 2021-09-01
         end_date: 2021-12-31
-        summary: "Terms: Fall 2021"
+        summary: "Fall 2021"
 
     Academic Service:
       - company: Computers & Structures; Engineering Structures

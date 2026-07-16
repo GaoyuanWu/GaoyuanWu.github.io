@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-09-01 09:00:00-0400
+date: 2026-05-25 09:00:00-0400
 inline: true
 related_posts: false
 ---
 
-Our new work {% cite wu2025sph %} is now available online.
+Officially hooded!
