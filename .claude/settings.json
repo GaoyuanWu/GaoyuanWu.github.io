@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(MSYS_NO_PATHCONV=1 docker compose exec jekyll cat /usr/local/bundle/gems/al_folio_cv-1.0.0/templates/cv/experience.liquid)",
+      "Bash(MSYS_NO_PATHCONV=1 docker compose exec jekyll cat /usr/local/bundle/gems/al_folio_cv-1.0.0/lib/al_folio_cv.rb)",
+      "Bash(MSYS_NO_PATHCONV=1 docker compose exec jekyll cat /usr/local/bundle/gems/al_folio_cv-1.0.0/assets/css/al-folio-cv.css)"
+    ]
+  }
+}
