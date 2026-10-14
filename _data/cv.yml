@@ -1,8 +1,8 @@
 cv:
   name: Gaoyuan Wu
-  label: Postdoctoral Research Associate, Civil and Environmental Engineering
-  email: gaoyuanw@princeton.edu
-  location: Princeton, NJ
+  label: Postdoctoral Fellow, Civil and Systems Engineering
+  email: gwu37@jh.edu
+  location: Baltimore, MD
   image: ""
 
   social_networks:
@@ -13,11 +13,17 @@ cv:
 
   sections:
     Experience:
+      - company: Johns Hopkins University
+        position: Postdoctoral Fellow, Dept. of Civil & Systems Engineering
+        location: Baltimore, MD
+        start_date: 2026-10
+        end_date: Present
+
       - company: Princeton University
         position: Postdoctoral Researcher, Dept. of Civil & Environmental Engineering
         location: Princeton, NJ
         start_date: 2026-02-01
-        end_date: present
+        end_date: 2026-10
 
       - company: Arup
         position: Summer Intern, Structural Engineering Group

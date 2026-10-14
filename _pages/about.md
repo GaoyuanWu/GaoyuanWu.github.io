@@ -2,14 +2,14 @@
 layout: about
 title: Home
 permalink: /
-subtitle: Postdoctoral Research Associate, Princeton University
+subtitle: Postdoctoral Fellow, Johns Hopkins University
 
 profile:
   align: right
   image: avatar.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p><a href="mailto:gaoyuanw@princeton.edu">gaoyuanw@princeton.edu</a></p>
+    <p><a href="mailto:gwu37@jh.edu">gwu37@jh.edu</a></p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -31,7 +31,7 @@ latest_posts:
   }
 </style>
 
-Hi! My name is Gaoyuan Wu, a Postdoctoral Research Associate at Princeton University. I recently obtained my PhD in civil engineering from Princeton University, advised by Prof. [Maria Garlock](https://garlock.princeton.edu). Prior to Princeton, I did my undergraduate studies in civil engineering at Tongji University with a focus in bridge engineering.
+Hi! My name is Gaoyuan Wu, a Postdoctoral Fellow  at Johhns Hopkins University, working with Prof. [Jan Drgona](https://drgona.github.io/) on differentiable programming and scientific machine learning for optimization and control of systems. I recently obtained my PhD in civil engineering from Princeton University, advised by Prof. [Maria Garlock](https://garlock.princeton.edu). Prior to Princeton, I did my undergraduate studies in civil engineering at Tongji University with a focus in bridge engineering.
 
 I am from Chengdu (成都), a city in southwest China. I love our dialects, our amazing food and, of course, pandas! In my free time, I enjoy a variety of sports — tennis, soccer, badminton, and indoor rock climbing. I love listening to music — I am a proud top 1% listener of Wu Bai and Faye Wong, according to Spotify.
 
