@@ -23,7 +23,7 @@ cv:
         position: Postdoctoral Researcher, Dept. of Civil & Environmental Engineering
         location: Princeton, NJ
         start_date: 2026-02-01
-        end_date: 2026-10
+        end_date: 2026-09-30
 
       - company: Arup
         position: Summer Intern, Structural Engineering Group
@@ -41,13 +41,6 @@ cv:
         highlights:
           - "Dissertation: Enhancing Coastal Resilience of Infrastructure via Structural Shape Modification and Optimization"
           - "Advisor: Prof. Maria Garlock"
-
-      - institution: Princeton University
-        location: Princeton, NJ
-        area: Civil and Environmental Engineering
-        studyType: MA
-        start_date: 2020-09-01
-        end_date: 2022-06-01
 
       - institution: Tongji University
         location: Shanghai, China
