@@ -89,7 +89,6 @@ themes:
     tools:
       - Differentiable physics / simulations
       - JAX & automatic differentiation
-      - Adjoint method
       - GPU / XLA acceleration
       - Finite Element Analysis
       - Force density method
