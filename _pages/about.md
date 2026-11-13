@@ -91,7 +91,7 @@ I am from Chengdu (成都), a city in southwest China. I love our dialects, our 
   <div>
     <span class="pub-cta-kicker">Research</span>
     <p class="pub-cta-text">
-      My research focuses on <strong>enhancing coastal resilience</strong> and
+      My research focuses on <strong>enhancing coastal resilience of infrastructure</strong> and
       <strong>differentiable physics &amp; machine learning for optimization</strong>. Please explore my papers here.
     </p>
   </div>
