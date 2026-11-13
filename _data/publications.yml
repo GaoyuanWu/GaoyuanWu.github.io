@@ -11,7 +11,7 @@ themes:
   - id: coastal-resilience
     title: Enhancing Coastal Resilience
     vision: >-
-      Climate change is intensifying hurricanes, storm surge, and tsunamis, putting coastal bridges,
+      Climate change is intensifying hurricanes, storm surge, floods, and tsunamis, putting coastal bridges,
       breakwaters, and waterfront infrastructure at growing risk. My vision is to design infrastructure
       whose <em>shape itself</em> mitigates hazards — reducing wave loads on structures while attenuating
       waves for the communities behind them — by coupling high-fidelity fluid–structure simulation,
