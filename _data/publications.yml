@@ -3,7 +3,8 @@
 # Each theme gets a sidebar tab, a vision statement, and a list of tools.
 # Papers are shown two per row as cards. Per paper:
 #   id      – bib key; used as the card's anchor (/research/#<id>)
-#   image   – path under assets/img/ (swap for the graphical abstract later)
+#   image   – path under assets/img/ (animated .webp/.gif or a still image)
+#   image_static – optional still shown when the visitor prefers reduced motion
 #   authors – plain text; "Gaoyuan Wu" is bolded automatically
 #   links   – label/url pairs (e.g. Paper, arXiv, Code)
 
@@ -28,7 +29,8 @@ themes:
         authors: Gaoyuan Wu, Sam Smith, Maria Garlock
         venue: Engineering Structures
         year: 2026
-        image: publication_preview/Multi_press_visualization.png
+        image: graphical_abstracts/wu2026bayes.webp
+        image_static: graphical_abstracts/wu2026bayes.png
         links:
           - { label: Paper, url: "https://doi.org/10.1016/j.engstruct.2026.122780" }
       - id: pawitan2026experimental
@@ -43,7 +45,8 @@ themes:
         authors: Gaoyuan Wu, Sam Smith, Krisna Pawitan, Maria Garlock
         venue: Ocean Engineering
         year: 2025
-        image: publication_preview/shapes.png
+        image: graphical_abstracts/wu2025sph.webp
+        image_static: graphical_abstracts/wu2025sph.png
         links:
           - { label: Paper, url: "https://doi.org/10.1016/j.oceaneng.2025.122929" }
       - id: jmse13020245
@@ -59,7 +62,8 @@ themes:
         authors: Sam Smith, Gaoyuan Wu, Maria Garlock
         venue: Journal of Marine Science and Engineering
         year: 2025
-        image: publication_preview/hypar.jpg
+        image: graphical_abstracts/smith2025neural.webp
+        image_static: graphical_abstracts/smith2025neural.png
         links: []
       - id: wu2024coastal
         title: Investigating the Effects of Box Girder Bridge Geometry on Solitary Wave Force Using SPH Modeling
@@ -99,7 +103,8 @@ themes:
         authors: Gaoyuan Wu
         venue: arXiv preprint
         year: 2024
-        image: publication_preview/jaxsso.png
+        image: graphical_abstracts/wu2024jaxsso.webp
+        image_static: graphical_abstracts/wu2024jaxsso.png
         links:
           - { label: arXiv, url: "https://arxiv.org/abs/2407.20026" }
           - { label: Code, url: "https://github.com/GaoyuanWu/JaxSSO" }
@@ -108,7 +113,8 @@ themes:
         authors: Gaoyuan Wu
         venue: Structural and Multidisciplinary Optimization
         year: 2023
-        image: publication_preview/mm_opt.jpg
+        image: graphical_abstracts/wu2023framework.webp
+        image_static: graphical_abstracts/wu2023framework.png
         links:
           - { label: Paper, url: "https://doi.org/10.1007/s00158-023-03601-0" }
           - { label: Code, url: "https://github.com/GaoyuanWu/JaxSSO" }
@@ -117,7 +123,8 @@ themes:
         authors: Gaoyuan Wu, Rafael Pastrana, Sigrid Adriaenssens, Maria Garlock
         venue: Proceedings of the IASS 2023 Symposium
         year: 2023
-        image: publication_preview/dome_final.jpg
+        image: graphical_abstracts/wu2023gridshells.webp
+        image_static: graphical_abstracts/wu2023gridshells.png
         links:
           - {
               label: Paper,
