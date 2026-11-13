@@ -38,8 +38,10 @@ themes:
         authors: Krisna A. Pawitan, Gaoyuan Wu, Sam Smith, Tao Xiang, Zhaoyang Song, Ali Farhadzadeh, Maria M. Garlock
         venue: Applied Ocean Research
         year: 2026
-        image: publication_preview/wave.jpg
-        links: []
+        image: graphical_abstracts/pawitan2026experimental.webp
+        image_static: graphical_abstracts/pawitan2026experimental.png
+        links:
+          - { label: Paper, url: "https://doi.org/10.1016/j.apor.2026.105247" }
       - id: wu2025sph
         title: An SPH study of cross-sectional shape effects on coastal structures subject to regular wave forces
         authors: Gaoyuan Wu, Sam Smith, Krisna Pawitan, Maria Garlock
@@ -54,7 +56,8 @@ themes:
         authors: Sam Smith, Gaoyuan Wu, Krisna A. Pawitan, Maria Garlock
         venue: Journal of Marine Science and Engineering
         year: 2025
-        image: publication_preview/Wave_overtopping.gif
+        image: graphical_abstracts/jmse13020245.webp
+        image_static: graphical_abstracts/jmse13020245.png
         links:
           - { label: Paper, url: "https://doi.org/10.3390/jmse13020245" }
       - id: smith2025neural

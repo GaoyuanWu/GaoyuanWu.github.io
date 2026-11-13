@@ -12,13 +12,13 @@ def deck():
     return [(-1.5, 1.5), (1.5, 1.5), (1.5, 1.5 - fl)]
 shapes = {
     "Base": np.array(deck() + [(1.0, 1.5 - fl), (0.7, 0.0), (-0.7, 0.0), (-1.0, 1.5 - fl), (-1.5, 1.5 - fl)]),
-    "Straight web": np.array(deck() + [(0.7, 1.5 - fl), (0.7, 0.0), (-0.7, 0.0), (-0.7, 1.5 - fl), (-1.5, 1.5 - fl)]),
-    "Concave": np.vstack([[(-1.5, 1.5), (1.5, 1.5)], arc((1.5, 1.5 - fl), (0.7, 0.0), -0.45), arc((-0.7, 0.0), (-1.5, 1.5 - fl), -0.45)]),
-    "Convex": np.vstack([[(-1.5, 1.5), (1.5, 1.5)], arc((1.5, 1.5), (-1.5, 1.5), -1.25)[1:-1][::-1][::-1]]),
+    "Straight web  (ST)": np.array(deck() + [(0.7, 1.5 - fl), (0.7, 0.0), (-0.7, 0.0), (-0.7, 1.5 - fl), (-1.5, 1.5 - fl)]),
+    "Concave  (CC-60)": np.vstack([[(-1.5, 1.5), (1.5, 1.5)], arc((1.5, 1.5 - fl), (0.7, 0.0), -0.45), arc((-0.7, 0.0), (-1.5, 1.5 - fl), -0.45)]),
+    "Convex  (CX-60)": np.vstack([[(-1.5, 1.5), (1.5, 1.5)], arc((1.5, 1.5), (-1.5, 1.5), -1.25)[1:-1][::-1][::-1]]),
 }
 # convex: bowl under the deck
-t = np.linspace(0, np.pi, 40); shapes["Convex"] = np.vstack([[(-1.5, 1.5), (1.5, 1.5)], np.c_[1.5 * np.cos(t), 1.5 - 1.5 * np.sin(t)][::-1][::-1]])
-shapes["Convex"] = np.vstack([np.c_[1.5 * np.cos(t), 1.5 - 1.5 * np.sin(t) * 0.95]])
+t = np.linspace(0, np.pi, 40); shapes["Convex  (CX-60)"] = np.vstack([[(-1.5, 1.5), (1.5, 1.5)], np.c_[1.5 * np.cos(t), 1.5 - 1.5 * np.sin(t)][::-1][::-1]])
+shapes["Convex  (CX-60)"] = np.vstack([np.c_[1.5 * np.cos(t), 1.5 - 1.5 * np.sin(t) * 0.95]])
 X = np.linspace(-9, 9, 400); swl = 0.35; Hw = 0.9; Lw = 7.5
 nF = 36; frames = []
 for f in range(nF):
