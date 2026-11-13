@@ -1,8 +1,8 @@
-# Themed publication gallery rendered by _pages/publications.md.
+# Themed publication gallery rendered by _pages/research.html.
 #
 # Each theme gets a sidebar tab, a vision statement, and a list of tools.
 # Papers are shown two per row as cards. Per paper:
-#   id      – bib key; used as the card's anchor (/publications/#<id>)
+#   id      – bib key; used as the card's anchor (/research/#<id>)
 #   image   – path under assets/img/ (swap for the graphical abstract later)
 #   authors – plain text; "Gaoyuan Wu" is bolded automatically
 #   links   – label/url pairs (e.g. Paper, arXiv, Code)
