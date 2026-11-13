@@ -83,7 +83,7 @@ themes:
     vision: >-
       Gradient-based design has transformed many fields, yet most engineering simulators remain black boxes.
       My vision is to make physics solvers <em>differentiable</em> so that exact gradients flow through
-      the simulation — enabling fast, scalable shape optimization and form-finding of efficient, low-carbon
+      the simulation — enabling fast, scalable optimization of efficient, low-carbon
       structures, and letting neural networks be trained with physics enforced in the loop for
       optimization and control of engineered systems.
     tools:
