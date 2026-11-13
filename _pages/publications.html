@@ -1,0 +1,444 @@
+---
+layout: page
+permalink: /publications/
+title: Publications
+description: Research papers grouped by theme.
+nav: true
+nav_order: 2
+redirect_from:
+  - /research/
+---
+
+<!-- _pages/publications.html
+     Themed paper gallery. Content lives in _data/publications.yml; this file only renders it.
+     Layout and card styling follow the SOLARIS lab "Papers" page, adapted to this site's theme tokens. -->
+
+<style>
+  .pub-gallery {
+    --pub-accent: var(--global-theme-color);
+    --pub-accent-soft: color-mix(in srgb, var(--global-theme-color) 9%, transparent);
+    --pub-accent-line: color-mix(in srgb, var(--global-theme-color) 45%, transparent);
+    --pub-text: var(--global-text-color);
+    --pub-muted: var(--global-text-color-light);
+    --pub-border: var(--global-divider-color);
+    --pub-card-bg: var(--global-bg-color);
+    /* Break out of the 930px page container so two cards + sidebar have room. */
+    width: min(1180px, calc(100vw - 2rem));
+    margin-left: calc(50% - min(590px, 50vw - 1rem));
+    margin-top: 1.5rem;
+    color: var(--pub-text);
+  }
+  .pub-gallery *,
+  .pub-gallery *::before,
+  .pub-gallery *::after {
+    box-sizing: border-box;
+  }
+  .pub-gallery a {
+    text-decoration: none;
+  }
+
+  /* ---------- layout: sidebar + content ---------- */
+  .pub-layout {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: start;
+  }
+  .pub-sidebar {
+    position: sticky;
+    top: 5rem;
+    padding: 0.25rem 1.25rem 0.5rem 0;
+    border-right: 1px solid var(--pub-border);
+  }
+  .pub-sidebar-label {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--pub-muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .pub-nav-list {
+    display: grid;
+    gap: 0.45rem;
+  }
+  .pub-gallery .pub-nav-link {
+    display: block;
+    padding: 0.65rem 0.75rem;
+    border-left: 2px solid transparent;
+    color: var(--pub-muted);
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+  .pub-nav-count {
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    opacity: 0.8;
+  }
+  .pub-gallery .pub-nav-link:hover,
+  .pub-gallery .pub-nav-link.active {
+    border-left-color: var(--pub-accent);
+    background: var(--pub-accent-soft);
+    color: var(--pub-text);
+  }
+  .pub-mobile-nav {
+    display: none;
+  }
+
+  /* ---------- theme sections ---------- */
+  .pub-area {
+    scroll-margin-top: 5rem;
+    margin-bottom: 4.5rem;
+  }
+  .pub-area:last-child {
+    margin-bottom: 0;
+  }
+  .pub-area-header {
+    margin-bottom: 1.8rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid var(--pub-border);
+  }
+  .pub-area-kicker {
+    display: block;
+    margin-bottom: 0.55rem;
+    color: var(--pub-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .pub-gallery .pub-area-title {
+    margin: 0;
+    color: var(--pub-text);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    line-height: 1.15;
+  }
+  .pub-area-vision {
+    max-width: 800px;
+    margin: 0.9rem 0 0;
+    color: var(--pub-text);
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+  .pub-tools {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .pub-tools-label {
+    margin-right: 0.25rem;
+    color: var(--pub-muted);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .pub-tool {
+    padding: 0.2rem 0.6rem;
+    border: 1px solid var(--pub-border);
+    border-radius: 999px;
+    background: var(--pub-accent-soft);
+    color: var(--pub-text);
+    font-size: 0.78rem;
+    line-height: 1.4;
+  }
+
+  /* ---------- paper cards: two per row ---------- */
+  .pub-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+  .pub-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+    scroll-margin-top: 5rem;
+    border: 1px solid var(--pub-accent-line);
+    border-radius: 12px;
+    background: var(--pub-card-bg);
+    box-shadow: 0 0 18px color-mix(in srgb, var(--global-theme-color) 12%, transparent);
+    transition:
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+  .pub-card:hover,
+  .pub-card:focus-within,
+  .pub-card:target {
+    border-color: var(--pub-accent);
+    box-shadow: 0 0 28px color-mix(in srgb, var(--global-theme-color) 26%, transparent);
+  }
+  .pub-art {
+    display: block;
+    width: 100%;
+    aspect-ratio: 60 / 31;
+    overflow: hidden;
+    border-bottom: 1px solid var(--pub-border);
+    background: #fff; /* scientific figures stay on white in dark mode too */
+  }
+  .pub-gallery .pub-art img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+    object-fit: contain;
+    object-position: center;
+  }
+  .pub-card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 0.95rem 1.2rem 1.05rem;
+  }
+  .pub-gallery .pub-paper-title {
+    margin: 0;
+    color: var(--pub-text);
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+  .pub-gallery .pub-paper-title a {
+    color: inherit;
+  }
+  .pub-gallery .pub-paper-title a:hover {
+    color: var(--pub-accent);
+  }
+  .pub-authors {
+    margin: 0.6rem 0 0.25rem;
+    color: var(--pub-text);
+    font-size: 0.8rem;
+    line-height: 1.45;
+  }
+  .pub-authors strong {
+    font-weight: 700;
+  }
+  .pub-venue {
+    margin: 0 0 1rem;
+    color: var(--pub-muted);
+    font-size: 0.78rem;
+    font-style: italic;
+    line-height: 1.4;
+  }
+  .pub-card-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: auto;
+  }
+  .pub-links {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    min-width: 0;
+  }
+  .pub-gallery .pub-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 0.3rem 0.65rem;
+    border: 1px solid var(--pub-accent-line);
+    border-radius: 999px;
+    background: var(--pub-card-bg);
+    color: var(--pub-accent);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+  .pub-gallery .pub-links a:hover {
+    border-color: var(--pub-accent);
+    background: var(--pub-accent-soft);
+    color: var(--pub-text);
+  }
+  .pub-year {
+    flex: none;
+    color: var(--pub-muted);
+    font-size: 0.78rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 1000px) {
+    .pub-layout {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    .pub-sidebar {
+      display: none;
+    }
+    .pub-mobile-nav {
+      position: sticky;
+      top: 3.5rem;
+      z-index: 2;
+      display: flex;
+      gap: 0.5rem;
+      margin: 0 0 1.5rem;
+      padding: 0.6rem 0;
+      overflow-x: auto;
+      background: var(--global-bg-color);
+    }
+    .pub-gallery .pub-mobile-nav a {
+      flex: 0 0 auto;
+      padding: 0.45rem 0.8rem;
+      border: 1px solid var(--pub-border);
+      border-radius: 999px;
+      color: var(--pub-muted);
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+    .pub-gallery .pub-mobile-nav a.active {
+      border-color: var(--pub-accent);
+      background: var(--pub-accent-soft);
+      color: var(--pub-text);
+    }
+  }
+  @media (max-width: 640px) {
+    .pub-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .pub-area {
+      margin-bottom: 3.5rem;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .pub-card {
+      transition: none;
+    }
+  }
+</style>
+
+{% assign pub_themes = site.data.publications.themes %}
+
+<p>For a complete and up-to-date list, see my <a href="https://scholar.google.com/citations?user=2aTANLwAAAAJ">Google Scholar profile</a>.</p>
+
+<section class="pub-gallery" aria-label="Publications by theme">
+  <nav class="pub-mobile-nav" aria-label="Research themes">
+    {% for theme in pub_themes %}
+    <a href="#{{ theme.id }}" class="pub-tracker" data-target="{{ theme.id }}">{{ theme.title }}</a>
+    {% endfor %}
+  </nav>
+
+  <div class="pub-layout">
+    <aside class="pub-sidebar">
+      <span class="pub-sidebar-label">Explore by theme</span>
+      <nav class="pub-nav-list" aria-label="Research themes">
+        {% for theme in pub_themes %}
+        <a href="#{{ theme.id }}" class="pub-nav-link pub-tracker" data-target="{{ theme.id }}">
+          {{- theme.title -}}
+          <span class="pub-nav-count">{{ theme.papers.size }} paper{% if theme.papers.size != 1 %}s{% endif %}</span>
+        </a>
+        {% endfor %}
+      </nav>
+    </aside>
+
+    <div class="pub-content">
+      {% for theme in pub_themes %}
+      <section id="{{ theme.id }}" class="pub-area" aria-labelledby="{{ theme.id }}-title">
+        <header class="pub-area-header">
+          <span class="pub-area-kicker">Theme {% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+          <h2 class="pub-area-title" id="{{ theme.id }}-title">{{ theme.title }}</h2>
+          <p class="pub-area-vision">{{ theme.vision }}</p>
+          <ul class="pub-tools" aria-label="Tools">
+            <li class="pub-tools-label">Tools</li>
+            {% for tool in theme.tools %}
+            <li class="pub-tool">{{ tool }}</li>
+            {% endfor %}
+          </ul>
+        </header>
+
+        <div class="pub-grid">
+          {% for paper in theme.papers %} {% assign primary_url = paper.links.first.url %}
+          <article class="pub-card" id="{{ paper.id }}">
+            <a
+              class="pub-art"
+              {%
+              if
+              primary_url
+              %}
+              href="{{ primary_url }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              {%
+              endif
+              %}
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <img
+                src="{{ '/assets/img/' | append: paper.image | relative_url }}"
+                alt="Figure for {{ paper.title | escape }}"
+                width="600"
+                height="310"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+
+            <div class="pub-card-body">
+              <h3 class="pub-paper-title">
+                {% if primary_url %}
+                <a href="{{ primary_url }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>
+                {% else %} {{ paper.title }} {% endif %}
+              </h3>
+              <p class="pub-authors">{{ paper.authors | replace: 'Gaoyuan Wu', '<strong>Gaoyuan Wu</strong>' }}</p>
+              <p class="pub-venue">{{ paper.venue }}</p>
+              <div class="pub-card-footer">
+                <nav class="pub-links" aria-label="Links for {{ paper.title | escape }}">
+                  {% for link in paper.links %}
+                  <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }}<span aria-hidden="true">&nbsp;↗</span></a>
+                  {% endfor %}
+                </nav>
+                <span class="pub-year">{{ paper.year }}</span>
+              </div>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var links = document.querySelectorAll(".pub-tracker");
+    var sections = document.querySelectorAll(".pub-area");
+    if (!("IntersectionObserver" in window) || !sections.length) return;
+    function setActive(id) {
+      links.forEach(function (link) {
+        link.classList.toggle("active", link.dataset.target === id);
+      });
+    }
+    var observer = new IntersectionObserver(
+      function (entries) {
+        var visible = entries
+          .filter(function (e) {
+            return e.isIntersecting;
+          })
+          .sort(function (a, b) {
+            return b.intersectionRatio - a.intersectionRatio;
+          });
+        if (visible.length) setActive(visible[0].target.id);
+      },
+      { rootMargin: "-20% 0px -55% 0px", threshold: [0, 0.25, 0.5, 1] }
+    );
+    sections.forEach(function (s) {
+      observer.observe(s);
+    });
+    setActive(sections[0].id);
+  })();
+</script>
