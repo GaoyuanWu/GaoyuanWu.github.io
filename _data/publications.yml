@@ -87,6 +87,7 @@ themes:
       structures, and letting neural networks be trained with physics enforced in the loop for
       optimization and control of engineered systems.
     tools:
+      - Differentiable physics / simulations
       - JAX & automatic differentiation
       - Adjoint method
       - GPU / XLA acceleration
