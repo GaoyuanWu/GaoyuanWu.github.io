@@ -14,6 +14,13 @@ redirect_from:
      Layout and card styling follow the SOLARIS lab "Papers" page, adapted to this site's theme tokens. -->
 
 <style>
+  .pub-intro {
+    margin-top: -1.6rem;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    color: var(--global-text-color);
+    font-weight: 300;
+  }
   .pub-gallery {
     --pub-accent: var(--global-theme-color);
     --pub-accent-soft: color-mix(in srgb, var(--global-theme-color) 9%, transparent);
@@ -25,7 +32,7 @@ redirect_from:
     /* Break out of the 930px page container so two cards + sidebar have room. */
     width: min(1180px, calc(100vw - 2rem));
     margin-left: calc(50% - min(590px, 50vw - 1rem));
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
     color: var(--pub-text);
   }
   .pub-gallery *,
@@ -384,7 +391,9 @@ redirect_from:
 
 {% assign pub_themes = site.data.publications.themes %}
 
-<p>For a complete and up-to-date list, please see my <a href="https://scholar.google.com/citations?user=2aTANLwAAAAJ">Google Scholar profile</a>.</p>
+<p class="pub-intro">
+  For a complete and up-to-date list, please see my <a href="https://scholar.google.com/citations?user=2aTANLwAAAAJ">Google Scholar profile</a>.
+</p>
 
 <section class="pub-gallery" aria-label="Publications by theme">
   <nav class="pub-mobile-nav" aria-label="Research themes">
