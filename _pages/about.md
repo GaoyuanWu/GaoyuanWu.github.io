@@ -27,44 +27,75 @@ latest_posts:
 
 <style>
   .profile {
-    width: 220px !important;
+    width: 135px !important;
   }
 </style>
 
-Hi! My name is Gaoyuan Wu, a Postdoctoral Fellow  at Johhns Hopkins University, working with Prof. [Jan Drgona](https://solaris-jhu.github.io/solaris-website/) on differentiable programming and scientific machine learning for optimization and control of systems. I recently obtained my PhD in civil engineering from Princeton University, advised by Prof. [Maria Garlock](https://garlock.princeton.edu). Prior to Princeton, I did my undergraduate studies in civil engineering at Tongji University with a focus in bridge engineering.
+Hi! My name is Gaoyuan Wu, a Postdoctoral Fellow at Johns Hopkins University, working with Prof. [Jan Drgona](https://solaris-jhu.github.io/solaris-website/) on differentiable programming and scientific machine learning for optimization and control of systems.
 
-I am from Chengdu (成都), a city in southwest China. I love our dialects, our amazing food and, of course, pandas! In my free time, I enjoy a variety of sports — tennis, soccer, badminton, and indoor rock climbing. I love listening to music — I am a proud top 1% listener of Wu Bai and Faye Wong, according to Spotify.
+I recently obtained my PhD in civil engineering from Princeton University, advised by Prof. [Maria Garlock](https://garlock.princeton.edu). Prior to Princeton, I did my undergraduate studies in civil engineering at Tongji University with a focus in bridge engineering.
 
 <div style="clear: both;"></div>
 
-## Research
+<style>
+  .pub-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+    margin: 1.25rem 0 2.5rem;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid color-mix(in srgb, var(--global-theme-color) 50%, transparent);
+    border-left: 5px solid var(--global-theme-color);
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--global-theme-color) 7%, transparent);
+    box-shadow: 0 0 18px color-mix(in srgb, var(--global-theme-color) 12%, transparent);
+  }
+  .pub-cta-kicker {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: var(--global-theme-color);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .pub-cta-text {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+  a.pub-cta-button {
+    flex: none;
+    padding: 0.65rem 1.2rem;
+    border-radius: 999px;
+    background: var(--global-theme-color);
+    color: #fff !important;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: filter 0.2s ease;
+  }
+  a.pub-cta-button:hover {
+    filter: brightness(1.12);
+  }
+  @media (max-width: 640px) {
+    .pub-cta {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
 
-For a full list of publications, please see my [publications page](/publications/) or my [Google Scholar profile](https://scholar.google.com/citations?user=2aTANLwAAAAJ). A few selected projects are highlighted below.
-
-### Enhancing coastal resilience of infrastructure
-
-My research integrates structural engineering, coastal engineering, and optimization technique (e.g., Bayesian Optimization) to make infrastructure more resilient against extreme wave loads induced by climate-influenced hazards.
-
-<div class="row justify-content-sm-center">
-  <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/Side_Hypar.gif" title="Deployable thin-shell coastal armor under wave loading" class="img-fluid rounded z-depth-1" avoid_scaling=true caption="Deployable thin-shell coastal armor under wave loading (<a href='/publications/#wu2022decoupled'>Wu et al., 2022</a>)." %}
+<div class="pub-cta">
+  <div>
+    <span class="pub-cta-kicker">Research</span>
+    <p class="pub-cta-text">
+      My research focuses on <strong>enhancing coastal resilience of infrastructure</strong> and
+      <strong>differentiable physics &amp; machine learning for optimization</strong>. Please explore my papers here.
+    </p>
   </div>
-  <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/BO_flow.png" title="Multi-objective Bayesian Optimization framework" class="img-fluid rounded z-depth-1" caption="Multi-objective Bayesian Optimization framework for wave-load shape optimization of structures (<a href='/publications/#wu2026bayes'>Wu et al., 2026</a>)." %}
-  </div>
+  <a class="pub-cta-button" href="{{ '/research/' | relative_url }}">Explore my research &rarr;</a>
 </div>
 
-### Differentiable finite element analysis for structural optimization and integration with machine learning
-
-[JaxSSO](https://github.com/GaoyuanWu/JaxSSO) is a *differentiable* finite element analysis (FEA) solver built on JAX, enabling gradient-based structural optimization that reduces embodied carbon while achieving structural elegance ([Wu, 2023](/publications/#wu2023framework); [Wu, 2024](/publications/#wu2024jaxsso)). It also enables training of neural networks (NN) with physics enforced in the loop.
-
-<div class="row justify-content-sm-center">
-  <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/jaxsso.png" title="JaxSSO" class="img-fluid rounded z-depth-1" caption="Training of NN with physics (enforced via FEA) in the loop" %}
-  </div>
-  <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/mm_opt.jpg" title="JaxSSO form-finding result" class="img-fluid rounded z-depth-1" caption="JaxSSO form-finding a gridshell inspired by the Mannheim Multihalle." %}
-  </div>
-</div>
-
-For more on this work, see the [JaxSSO project page](/projects/1_jaxsso/) and [codes page](/codes/).
+I am from Chengdu (成都), a city in southwest China. I love our dialects, our amazing food and, of course, pandas! In my free time, I enjoy a variety of sports — tennis, soccer, badminton, and indoor rock climbing. I love listening to music — I am a proud top 1% listener of Wu Bai and Faye Wong, according to Spotify.

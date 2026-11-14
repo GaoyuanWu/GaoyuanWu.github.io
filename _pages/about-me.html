@@ -1,0 +1,429 @@
+---
+layout: page
+permalink: /cv/
+title: About Me
+nav: true
+nav_order: 1
+description:
+redirect_from:
+  - /aboutme/
+  - /resume
+---
+
+<!-- _pages/about-me.html
+     Education, experience, teaching and service, rendered from _data/cv.yml.
+     Styling mirrors the Research page (_pages/research.html). -->
+
+<style>
+  .cv-page {
+    --cv-accent: var(--global-theme-color);
+    --cv-accent-soft: color-mix(in srgb, var(--global-theme-color) 9%, transparent);
+    --cv-accent-line: color-mix(in srgb, var(--global-theme-color) 45%, transparent);
+    --cv-text: var(--global-text-color);
+    --cv-muted: var(--global-text-color-light);
+    --cv-border: var(--global-divider-color);
+    --cv-card-bg: var(--global-bg-color);
+    width: min(1180px, calc(100vw - 2rem));
+    margin-left: calc(50% - min(590px, 50vw - 1rem));
+    margin-top: 0.5rem;
+    color: var(--cv-text);
+  }
+  .cv-page *,
+  .cv-page *::before,
+  .cv-page *::after {
+    box-sizing: border-box;
+  }
+  .cv-page a {
+    text-decoration: none;
+  }
+
+  /* ---------- layout ---------- */
+  .cv-layout {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: start;
+  }
+  .cv-sidebar {
+    position: sticky;
+    top: 5rem;
+    padding: 0.25rem 1.25rem 0.5rem 0;
+    border-right: 1px solid var(--cv-border);
+  }
+  .cv-sidebar-label {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--cv-muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .cv-nav {
+    display: grid;
+    gap: 0.45rem;
+  }
+  .cv-page .cv-nav-link {
+    display: block;
+    padding: 0.65rem 0.75rem;
+    border-left: 2px solid transparent;
+    color: var(--cv-muted);
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+  .cv-page .cv-nav-link:hover,
+  .cv-page .cv-nav-link.active {
+    border-left-color: var(--cv-accent);
+    background: var(--cv-accent-soft);
+    color: var(--cv-text);
+  }
+  .cv-mobile-nav {
+    display: none;
+  }
+
+  /* ---------- sections ---------- */
+  .cv-section {
+    scroll-margin-top: 5rem;
+    margin-bottom: 4rem;
+  }
+  .cv-section:last-child {
+    margin-bottom: 0;
+  }
+  .cv-section-header {
+    margin-bottom: 1.6rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--cv-border);
+  }
+  .cv-kicker {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--cv-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .cv-page .cv-section-title {
+    margin: 0;
+    color: var(--cv-text);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    line-height: 1.15;
+  }
+
+  .cv-section-sub {
+    margin: 0.5rem 0 0;
+    color: var(--cv-muted);
+    font-size: 0.95rem;
+  }
+
+  /* ---------- cards (education, teaching) ---------- */
+  .cv-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+  .cv-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1.2rem 1.3rem;
+    border: 1px solid var(--cv-accent-line);
+    border-radius: 12px;
+    background: var(--cv-card-bg);
+    box-shadow: 0 0 18px color-mix(in srgb, var(--global-theme-color) 12%, transparent);
+    transition:
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+  .cv-card:hover {
+    border-color: var(--cv-accent);
+    box-shadow: 0 0 28px color-mix(in srgb, var(--global-theme-color) 24%, transparent);
+  }
+  .cv-degree {
+    display: inline-block;
+    margin-right: 0.35rem;
+    padding: 0.1rem 0.55rem;
+    border-radius: 999px;
+    background: var(--cv-accent-soft);
+    color: var(--cv-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+  }
+  .cv-page .cv-card-title {
+    margin: 0;
+    color: var(--cv-text);
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  .cv-meta {
+    margin: 0;
+    color: var(--cv-muted);
+    font-size: 0.82rem;
+  }
+  .cv-highlights {
+    margin: 0.2rem 0 0;
+    padding-left: 1.1rem;
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+  .cv-highlights li {
+    margin-bottom: 0.25rem;
+  }
+
+  /* ---------- lists (education, experience, service) ---------- */
+  .cv-timeline {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .cv-item {
+    display: grid;
+    grid-template-columns: 9.5rem minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--cv-border);
+  }
+  .cv-item:first-child {
+    padding-top: 0;
+  }
+  .cv-item:last-child {
+    border-bottom: 0;
+  }
+  .cv-when {
+    color: var(--cv-accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.5;
+  }
+  .cv-page .cv-item-title {
+    margin: 0;
+    color: var(--cv-text);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+  .cv-item .cv-meta {
+    margin-top: 0.15rem;
+  }
+
+  /* ---------- teaching ---------- */
+  .cv-course {
+    display: inline-block;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    background: var(--cv-accent);
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    align-self: flex-start;
+  }
+  .cv-terms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: auto;
+  }
+  .cv-term {
+    padding: 0.15rem 0.55rem;
+    border: 1px solid var(--cv-border);
+    border-radius: 999px;
+    background: var(--cv-accent-soft);
+    font-size: 0.75rem;
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 1000px) {
+    .cv-layout {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    .cv-sidebar {
+      display: none;
+    }
+    .cv-mobile-nav {
+      position: sticky;
+      top: 3.5rem;
+      z-index: 2;
+      display: flex;
+      gap: 0.5rem;
+      margin: 0 0 1.5rem;
+      padding: 0.6rem 0;
+      overflow-x: auto;
+      background: var(--global-bg-color);
+    }
+    .cv-page .cv-mobile-nav a {
+      flex: 0 0 auto;
+      padding: 0.45rem 0.8rem;
+      border: 1px solid var(--cv-border);
+      border-radius: 999px;
+      color: var(--cv-muted);
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+    .cv-page .cv-mobile-nav a.active {
+      border-color: var(--cv-accent);
+      background: var(--cv-accent-soft);
+      color: var(--cv-text);
+    }
+  }
+  @media (max-width: 640px) {
+    .cv-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .cv-item {
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
+    }
+  }
+</style>
+
+{% assign S = site.data.cv.cv.sections %} {% capture sections %}education|Education,experience|Experience,teaching|Teaching,service|Service{%
+endcapture %} {% assign sections = sections | split: ',' %}
+
+<section class="cv-page" aria-label="About me">
+  <nav class="cv-mobile-nav" aria-label="Sections">
+    {% for sec in sections %}{% assign p = sec | split: '|' %}
+    <a href="#{{ p[0] }}" class="cv-tracker" data-target="{{ p[0] }}">{{ p[1] }}</a>
+    {% endfor %}
+  </nav>
+
+  <div class="cv-layout">
+    <aside class="cv-sidebar">
+      <nav class="cv-nav" aria-label="Sections">
+        {% for sec in sections %}{% assign p = sec | split: '|' %}
+        <a href="#{{ p[0] }}" class="cv-nav-link cv-tracker" data-target="{{ p[0] }}">{{ p[1] }}</a>
+        {% endfor %}
+      </nav>
+    </aside>
+
+    <div class="cv-content">
+      <!-- Education -->
+      <section id="education" class="cv-section">
+        <header class="cv-section-header">
+          <h2 class="cv-section-title">Education</h2>
+        </header>
+        <ol class="cv-timeline">
+          {% for e in S.Education %}
+          <li class="cv-item">
+            <span class="cv-when">{{ e.start_date | date: '%Y' }} – {{ e.end_date | date: '%Y' }}</span>
+            <div>
+              <h3 class="cv-item-title">{{ e.institution }}</h3>
+              <p class="cv-meta"><span class="cv-degree">{{ e.studyType }}</span> {{ e.area }} · {{ e.location }}</p>
+              {% if e.highlights %}
+              <ul class="cv-highlights">
+                {% for h in e.highlights %}
+                <li>{{ h }}</li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </div>
+          </li>
+          {% endfor %}
+        </ol>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="cv-section">
+        <header class="cv-section-header">
+          <h2 class="cv-section-title">Experience</h2>
+        </header>
+        <ol class="cv-timeline">
+          {% for x in S.Experience %}
+          <li class="cv-item">
+            <span class="cv-when"
+              >{{ x.start_date | date: '%b %Y' }} –<br />{% if x.end_date == 'Present' %}Present{% else %}{{ x.end_date | date: '%b %Y' }}{% endif
+              %}</span
+            >
+            <div>
+              <h3 class="cv-item-title">{{ x.company }}</h3>
+              <p class="cv-meta">{{ x.position }} · {{ x.location }}</p>
+            </div>
+          </li>
+          {% endfor %}
+        </ol>
+      </section>
+
+      <!-- Teaching -->
+      <section id="teaching" class="cv-section">
+        <header class="cv-section-header">
+          <h2 class="cv-section-title">Teaching</h2>
+          <p class="cv-section-sub">Teaching assistant, Princeton University</p>
+        </header>
+        <div class="cv-grid">
+          {% for t in S.Teaching %} {% assign parts = t.position | split: ': ' %}
+          <article class="cv-card">
+            <span class="cv-course">{{ parts[0] }}</span>
+            <h3 class="cv-card-title">{{ parts[1] }}</h3>
+            <div class="cv-terms">
+              {% assign terms = t.summary | split: ', ' %} {% for term in terms %}
+              <span class="cv-term">{{ term }}</span>
+              {% endfor %}
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      <!-- Service -->
+      <section id="service" class="cv-section">
+        <header class="cv-section-header">
+          <h2 class="cv-section-title">Service</h2>
+        </header>
+        <ol class="cv-timeline">
+          {% for x in S['Academic Service'] %}
+          <li class="cv-item">
+            <span class="cv-when"></span>
+            <div>
+              <h3 class="cv-item-title">{{ x.position }}</h3>
+              <p class="cv-meta">{{ x.company }}</p>
+            </div>
+          </li>
+          {% endfor %} {% for x in S['Other Service'] %}
+          <li class="cv-item">
+            <span class="cv-when">{{ x.start_date | date: '%Y' }}–{{ x.end_date | date: '%Y' }}</span>
+            <div>
+              <h3 class="cv-item-title">{{ x.position }}</h3>
+              <p class="cv-meta">{{ x.company }}</p>
+            </div>
+          </li>
+          {% endfor %}
+        </ol>
+      </section>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var links = document.querySelectorAll(".cv-tracker");
+    var sections = document.querySelectorAll(".cv-section");
+    if (!("IntersectionObserver" in window) || !sections.length) return;
+    function setActive(id) {
+      links.forEach(function (l) {
+        l.classList.toggle("active", l.dataset.target === id);
+      });
+    }
+    var obs = new IntersectionObserver(
+      function (entries) {
+        var v = entries
+          .filter(function (e) {
+            return e.isIntersecting;
+          })
+          .sort(function (a, b) {
+            return b.intersectionRatio - a.intersectionRatio;
+          });
+        if (v.length) setActive(v[0].target.id);
+      },
+      { rootMargin: "-20% 0px -55% 0px", threshold: [0, 0.25, 0.5, 1] }
+    );
+    sections.forEach(function (s) {
+      obs.observe(s);
+    });
+    setActive(sections[0].id);
+  })();
+</script>

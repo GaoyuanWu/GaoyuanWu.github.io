@@ -1,0 +1,166 @@
+# Themed publication gallery rendered by _pages/research.html.
+#
+# Each theme gets a sidebar tab, a vision statement, and a list of tools.
+# Papers are shown two per row as cards. Per paper:
+#   id      – bib key; used as the card's anchor (/research/#<id>)
+#   image   – path under assets/img/ (animated .webp/.gif or a still image)
+#   image_static – optional still shown when the visitor prefers reduced motion
+#   authors – plain text; "Gaoyuan Wu" is bolded automatically
+#   links   – label/url pairs (e.g. Paper, arXiv, Code)
+
+themes:
+  - id: coastal-resilience
+    title: Enhancing Coastal Resilience of Infrastructure
+    vision: >-
+      Climate change is intensifying hurricanes, storm surge, floods, and tsunamis, putting coastal bridges,
+      breakwaters, and waterfront infrastructure at growing risk. My vision is to design infrastructure
+      whose <em>structural shape itself</em> mitigates hazards — reducing wave loads on structures while attenuating
+      waves for the communities behind them — by coupling high-fidelity fluid–structure simulation,
+      physical experiments, and data-driven optimization.
+    tools:
+      - Smoothed Particle Hydrodynamics (SPH)
+      - Finite Element Analysis
+      - Multi-objective Bayesian Optimization
+      - Wave-flume experiments
+      - Neural-network surrogates
+    papers:
+      - id: wu2026bayes
+        title: "Shape Optimization of Box-Type Structures under Waves using Multi-objective Bayesian Optimization: Reducing Wave Loads and Improving Wave Attenuation"
+        authors: Gaoyuan Wu, Sam Smith, Maria Garlock
+        venue: Engineering Structures
+        year: 2026
+        image: graphical_abstracts/wu2026bayes.webp
+        image_static: graphical_abstracts/wu2026bayes.png
+        links:
+          - { label: Paper, url: "https://doi.org/10.1016/j.engstruct.2026.122780" }
+      - id: pawitan2026experimental
+        title: Experimental evaluation of shape effects on elevated structures subject to waves
+        authors: Krisna A. Pawitan, Gaoyuan Wu, Sam Smith, Tao Xiang, Zhaoyang Song, Ali Farhadzadeh, Maria M. Garlock
+        venue: Applied Ocean Research
+        year: 2026
+        image: graphical_abstracts/pawitan2026experimental.webp
+        image_static: graphical_abstracts/pawitan2026experimental.png
+        links:
+          - { label: Paper, url: "https://doi.org/10.1016/j.apor.2026.105247" }
+      - id: wu2025sph
+        title: An SPH study of cross-sectional shape effects on coastal structures subject to regular wave forces
+        authors: Gaoyuan Wu, Sam Smith, Krisna Pawitan, Maria Garlock
+        venue: Ocean Engineering
+        year: 2025
+        image: graphical_abstracts/wu2025sph.webp
+        image_static: graphical_abstracts/wu2025sph.png
+        links:
+          - { label: Paper, url: "https://doi.org/10.1016/j.oceaneng.2025.122929" }
+      - id: jmse13020245
+        title: "Hyperbolic Paraboloid Free-Surface Breakwaters: Hydrodynamic Study and Structural Evaluation"
+        authors: Sam Smith, Gaoyuan Wu, Krisna A. Pawitan, Maria Garlock
+        venue: Journal of Marine Science and Engineering
+        year: 2025
+        image: graphical_abstracts/jmse13020245.webp
+        image_static: graphical_abstracts/jmse13020245.png
+        links:
+          - { label: Paper, url: "https://doi.org/10.3390/jmse13020245" }
+      - id: smith2025neural
+        title: Neural Network-Based Prediction of Wave Pressure Distribution on Hyperbolic Paraboloid Surfaces
+        authors: Sam Smith, Gaoyuan Wu, Maria Garlock
+        venue: Journal of Marine Science and Engineering
+        year: 2025
+        image: graphical_abstracts/smith2025neural.webp
+        image_static: graphical_abstracts/smith2025neural.png
+        links:
+          - { label: Paper, url: "https://doi.org/10.3390/jmse13122277" }
+      - id: wu2024coastal
+        title: Investigating the Effects of Box Girder Bridge Geometry on Solitary Wave Force Using SPH Modeling
+        authors: Gaoyuan Wu, Maria Garlock
+        venue: Coastal Engineering
+        year: 2024
+        image: graphical_abstracts/wu2024coastal.webp
+        image_static: graphical_abstracts/wu2024coastal.png
+        links:
+          - { label: Paper, url: "https://doi.org/10.1016/j.coastaleng.2023.104430" }
+      - id: wu2022decoupled
+        title: A decoupled SPH-FEM analysis of hydrodynamic wave pressure on hyperbolic-paraboloid thin-shell coastal armor and corresponding structural response
+        authors: Gaoyuan Wu, Maria Garlock, Shengzhe Wang
+        venue: Engineering Structures
+        year: 2022
+        image: graphical_abstracts/wu2022decoupled.webp
+        image_static: graphical_abstracts/wu2022decoupled.png
+        links:
+          - { label: Paper, url: "https://doi.org/10.1016/j.engstruct.2022.114738" }
+
+  - id: differentiable-physics
+    title: Differentiable Physics and Machine Learning for Optimization
+    vision: >-
+      Gradient-based design has transformed many fields, yet most engineering simulators remain black boxes.
+      My vision is to make physics solvers <em>differentiable</em> so that exact gradients flow through
+      the simulation — enabling fast, scalable optimization of efficient, low-carbon
+      structures, and letting neural networks be trained with physics enforced in the loop for
+      optimization and control of engineered systems.
+    tools:
+      - Differentiable physics / simulations
+      - JAX & automatic differentiation
+      - GPU / XLA acceleration
+      - Finite Element Analysis
+      - Force density method
+      - Neural networks
+    papers:
+      - id: wu2024jaxsso
+        title: "JAX-SSO: Differentiable Finite Element Analysis Solver for Structural Optimization and Seamless Integration with Neural Networks"
+        authors: Gaoyuan Wu
+        venue: arXiv preprint
+        year: 2024
+        image: graphical_abstracts/wu2024jaxsso.webp
+        image_static: graphical_abstracts/wu2024jaxsso.png
+        links:
+          - { label: arXiv, url: "https://arxiv.org/abs/2407.20026" }
+          - { label: Code, url: "https://github.com/GaoyuanWu/JaxSSO" }
+      - id: wu2023framework
+        title: A framework for structural shape optimization based on automatic differentiation, the adjoint method and accelerated linear algebra
+        authors: Gaoyuan Wu
+        venue: Structural and Multidisciplinary Optimization
+        year: 2023
+        image: graphical_abstracts/wu2023framework.webp
+        image_static: graphical_abstracts/wu2023framework.png
+        links:
+          - { label: Paper, url: "https://doi.org/10.1007/s00158-023-03601-0" }
+          - { label: Code, url: "https://github.com/GaoyuanWu/JaxSSO" }
+      - id: wu2023gridshells
+        title: A numerical comparison between geometric stiffness- and elastic stiffness-based structural shape optimization for gridshells
+        authors: Gaoyuan Wu, Rafael Pastrana, Sigrid Adriaenssens, Maria Garlock
+        venue: Proceedings of the IASS 2023 Symposium
+        year: 2023
+        image: graphical_abstracts/wu2023gridshells.webp
+        image_static: graphical_abstracts/wu2023gridshells.png
+        links:
+          - {
+              label: Paper,
+              url: "https://www.researchgate.net/profile/Gaoyuan_Wu/publication/372888982_A_numerical_comparison_between_geometric_stiffness-and_elastic_stiffness-based_structural_shape_optimization_for_gridshells/links/64cc6c33806a9e4e5ce6bb33/A-numerical-comparison-between-geometric-stiffness-and-elastic-stiffness-based-structural-shape-optimization-for-gridshells.pdf",
+            }
+
+# Conference talks, newest first ("G. Wu" is bolded automatically).
+talks:
+  - authors: G. Wu, H. ElDarwich, K. Pawitan, M. Garlock
+    title: Optimizing Coastal Structures with Smoothed Particle Hydrodynamics and Bayesian Optimization
+    venue: Engineering Mechanics Institute (EMI) Conference
+    year: 2025
+    place: Anaheim, CA
+  - authors: G. Wu, H. ElDarwich, K. Pawitan, M. Garlock
+    title: "Coastal hazard mitigation via structural shape modification: investigating the influence of curved structural cross-sections on wave forces using SPH modeling"
+    venue: 38th International Conference on Coastal Engineering (ICCE)
+    year: 2024
+    place: Rome, Italy
+  - authors: G. Wu, M. Garlock
+    title: "Enhancing the resilience of coastal bridges: The influence of box girder geometry on wave forces via SPH simulations"
+    venue: Engineering Mechanics Institute (EMI) Conference
+    year: 2024
+    place: Chicago, IL
+  - authors: G. Wu, R. Pastrana, S. Adriaenssens, M. Garlock
+    title: A numerical comparison between geometric stiffness- and elastic stiffness-based structural shape optimization for gridshells
+    venue: International Association for Shell and Spatial Structures (IASS) Annual Symposium
+    year: 2023
+    place: Melbourne, Australia
+  - authors: G. Wu, M. Garlock, S. Wang
+    title: A Study on the Hydrodynamic Response of Hypar Thin Shell Against Waves via a Decoupled SPH-FEM Analysis and Goda's Formula
+    venue: Engineering Mechanics Institute (EMI) Conference
+    year: 2022
+    place: Baltimore, MD
