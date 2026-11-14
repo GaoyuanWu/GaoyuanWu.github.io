@@ -140,27 +140,9 @@ redirect_from:
     border-color: var(--cv-accent);
     box-shadow: 0 0 28px color-mix(in srgb, var(--global-theme-color) 24%, transparent);
   }
-  .cv-card-top {
-    display: flex;
-    align-items: center;
-    gap: 0.9rem;
-  }
-  .cv-badge {
-    flex: none;
-    display: grid;
-    place-items: center;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background: var(--cv-accent);
-    color: #fff;
-    font-size: 1.05rem;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-  }
   .cv-degree {
     display: inline-block;
-    margin-bottom: 0.15rem;
+    margin-right: 0.35rem;
     padding: 0.1rem 0.55rem;
     border-radius: 999px;
     background: var(--cv-accent-soft);
@@ -191,45 +173,24 @@ redirect_from:
     margin-bottom: 0.25rem;
   }
 
-  /* ---------- timeline (experience, service) ---------- */
+  /* ---------- lists (education, experience, service) ---------- */
   .cv-timeline {
-    position: relative;
     margin: 0;
-    padding: 0 0 0 1.6rem;
+    padding: 0;
     list-style: none;
   }
-  .cv-timeline::before {
-    content: "";
-    position: absolute;
-    top: 0.4rem;
-    bottom: 0.4rem;
-    left: 0.35rem;
-    width: 2px;
-    background: var(--cv-accent-line);
-  }
   .cv-item {
-    position: relative;
     display: grid;
     grid-template-columns: 9.5rem minmax(0, 1fr);
     gap: 1rem;
-    padding: 0 0 1.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--cv-border);
+  }
+  .cv-item:first-child {
+    padding-top: 0;
   }
   .cv-item:last-child {
-    padding-bottom: 0;
-  }
-  .cv-item::before {
-    content: "";
-    position: absolute;
-    top: 0.3rem;
-    left: calc(-1.6rem + 0.35rem - 5px);
-    width: 12px;
-    height: 12px;
-    border: 2px solid var(--cv-accent);
-    border-radius: 50%;
-    background: var(--cv-card-bg);
-  }
-  .cv-item:first-child::before {
-    background: var(--cv-accent);
+    border-bottom: 0;
   }
   .cv-when {
     color: var(--cv-accent);
@@ -346,27 +307,24 @@ endcapture %} {% assign sections = sections | split: ',' %}
         <header class="cv-section-header">
           <h2 class="cv-section-title">Education</h2>
         </header>
-        <div class="cv-grid">
-          {% for e in S.Education %} {% assign words = e.institution | split: ' ' %}
-          <article class="cv-card">
-            <div class="cv-card-top">
-              <span class="cv-badge" aria-hidden="true">{{ words[0] | slice: 0 }}{% if words.size > 1 %}{{ words[1] | slice: 0 }}{% endif %}</span>
-              <div>
-                <span class="cv-degree">{{ e.studyType }}</span>
-                <h3 class="cv-card-title">{{ e.institution }}</h3>
-              </div>
+        <ol class="cv-timeline">
+          {% for e in S.Education %}
+          <li class="cv-item">
+            <span class="cv-when">{{ e.start_date | date: '%Y' }} – {{ e.end_date | date: '%Y' }}</span>
+            <div>
+              <h3 class="cv-item-title">{{ e.institution }}</h3>
+              <p class="cv-meta"><span class="cv-degree">{{ e.studyType }}</span> {{ e.area }} · {{ e.location }}</p>
+              {% if e.highlights %}
+              <ul class="cv-highlights">
+                {% for h in e.highlights %}
+                <li>{{ h }}</li>
+                {% endfor %}
+              </ul>
+              {% endif %}
             </div>
-            <p class="cv-meta">{{ e.area }} · {{ e.start_date | date: '%Y' }}–{{ e.end_date | date: '%Y' }} · {{ e.location }}</p>
-            {% if e.highlights %}
-            <ul class="cv-highlights">
-              {% for h in e.highlights %}
-              <li>{{ h }}</li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-          </article>
+          </li>
           {% endfor %}
-        </div>
+        </ol>
       </section>
 
       <!-- Experience -->
