@@ -67,7 +67,8 @@ themes:
         year: 2025
         image: graphical_abstracts/smith2025neural.webp
         image_static: graphical_abstracts/smith2025neural.png
-        links: []
+        links:
+          - { label: Paper, url: "https://doi.org/10.3390/jmse13122277" }
       - id: wu2024coastal
         title: Investigating the Effects of Box Girder Bridge Geometry on Solitary Wave Force Using SPH Modeling
         authors: Gaoyuan Wu, Maria Garlock
