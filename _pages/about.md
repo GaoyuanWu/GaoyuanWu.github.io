@@ -27,11 +27,11 @@ latest_posts:
 
 <style>
   .profile {
-    width: 220px !important;
+    width: 135px !important;
   }
 </style>
 
-Hi! My name is Gaoyuan Wu, a Postdoctoral Fellow at Johhns Hopkins University, working with Prof. [Jan Drgona](https://solaris-jhu.github.io/solaris-website/) on differentiable programming and scientific machine learning for optimization and control of systems.
+Hi! My name is Gaoyuan Wu, a Postdoctoral Fellow at Johns Hopkins University, working with Prof. [Jan Drgona](https://solaris-jhu.github.io/solaris-website/) on differentiable programming and scientific machine learning for optimization and control of systems.
 
 I recently obtained my PhD in civil engineering from Princeton University, advised by Prof. [Maria Garlock](https://garlock.princeton.edu). Prior to Princeton, I did my undergraduate studies in civil engineering at Tongji University with a focus in bridge engineering.
 
@@ -43,7 +43,7 @@ I recently obtained my PhD in civil engineering from Princeton University, advis
     align-items: center;
     justify-content: space-between;
     gap: 1.25rem;
-    margin: 2rem 0 2.5rem;
+    margin: 1.25rem 0 2.5rem;
     padding: 1.25rem 1.5rem;
     border: 1px solid color-mix(in srgb, var(--global-theme-color) 50%, transparent);
     border-left: 5px solid var(--global-theme-color);
