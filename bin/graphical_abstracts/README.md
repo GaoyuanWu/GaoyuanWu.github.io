@@ -13,6 +13,8 @@ served to visitors who prefer reduced motion). All figures are 1200×620 px.
 | `smith2025neural`         | —                    | `r_nn_hypar.py`  | SPH snapshots (Fig. 6b) + ground truth / prediction / error maps (Fig. 10)              |
 | `pawitan2026experimental` | —                    | `r_pawitan.py`   | Uplift-force traces + flume photos digitized from the paper's Fig. 13                   |
 | `jmse13020245`            | —                    | `r_jmse.py`      | Hypar faces built from the paper's Rn definition; coefficients from Table 4             |
+| `wu2022decoupled`         | —                    | `r_es2022.py`    | Loops `Side_Hypar.gif` + pressure maps (Fig. 10)                                        |
+| `wu2024coastal`           | —                    | `r_ce2024.py`    | Loops `cait.gif` + geometries (Fig. 2c) and pressure-field steps (Fig. 18)              |
 
 Setup (run from a scratch directory, not inside the site):
 

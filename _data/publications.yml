@@ -74,7 +74,8 @@ themes:
         authors: Gaoyuan Wu, Maria Garlock
         venue: Coastal Engineering
         year: 2024
-        image: publication_preview/cait.gif
+        image: graphical_abstracts/wu2024coastal.webp
+        image_static: graphical_abstracts/wu2024coastal.png
         links:
           - { label: Paper, url: "https://doi.org/10.1016/j.coastaleng.2023.104430" }
       - id: wu2022decoupled
@@ -82,7 +83,8 @@ themes:
         authors: Gaoyuan Wu, Maria Garlock, Shengzhe Wang
         venue: Engineering Structures
         year: 2022
-        image: publication_preview/Side_Hypar.gif
+        image: graphical_abstracts/wu2022decoupled.webp
+        image_static: graphical_abstracts/wu2022decoupled.png
         links:
           - { label: Paper, url: "https://doi.org/10.1016/j.engstruct.2022.114738" }
 
