@@ -27,7 +27,7 @@ for f in range(n):
     fig.text(0.17, 0.13, "SPH pressure  →  mapped to shells  →  FEM demands", fontsize=10.5, color=ACCENT, fontweight="semibold")
     fig.text(0.53, 0.79, "Normalized wave pressure on the shell (SPH)", fontsize=12, fontweight="semibold", color=INK)
     fig.text(0.53, 0.755, f"{labs[k]} · flat → increasingly warped hypar", fontsize=10.5, color=ACCENT if k == 2 else MUTED)
-    am = fig.add_axes([0.52, 0.42, 0.45, 0.32]); am.imshow(maps[k]); am.axis("off")
+    am = fig.add_axes([0.52, 0.4, 0.46, 0.34]); am.imshow(maps[k]); am.axis("off")
     for i, t in enumerate(finds):
         fig.text(0.53, 0.36 - i * 0.095, "•  " + t.replace("\n", "\n    "), fontsize=10.5, color=INK, va="top", linespacing=1.3)
     footer(fig, "SPH animation and pressure maps from Wu, Garlock & Wang (2022), Engineering Structures")
