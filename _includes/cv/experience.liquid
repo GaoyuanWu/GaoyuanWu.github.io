@@ -27,12 +27,12 @@
             {% if start_date == 'present' or start_date == 'Present' %}
               {% assign startDate = 'Present' %}
             {% else %}
-              {% assign startDate = start_date | date: "%b %Y" %}
+              {% assign startDate = start_date | date: '%b %Y' %}
             {% endif %}
             {% if end_date == '' or end_date == 'present' or end_date == 'Present' %}
               {% assign endDate = 'Present' %}
             {% else %}
-              {% assign endDate = end_date | date: "%b %Y" %}
+              {% assign endDate = end_date | date: '%b %Y' %}
             {% endif %}
             {% assign date = startDate | append: ' - ' | append: endDate %}
           {% else %}

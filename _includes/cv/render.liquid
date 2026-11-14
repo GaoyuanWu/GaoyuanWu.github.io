@@ -142,7 +142,11 @@
               {% elsif section_title == 'Teaching' %}
                 {% assign entries = section_entries %}
                 {% include cv/teaching.liquid %}
-              {% elsif section_title == 'Academic Service' or section_title == 'Other Service' or section_title == 'Service' or section_title == 'Services' %}
+              {% elsif section_title == 'Academic Service'
+                or section_title == 'Other Service'
+                or section_title == 'Service'
+                or section_title == 'Services'
+              %}
                 {% assign entries = section_entries %}
                 {% include cv/service.liquid %}
               {% else %}
