@@ -66,6 +66,11 @@ redirect_from:
     letter-spacing: 0.12em;
     text-transform: uppercase;
   }
+  .pub-sidebar-label-gap {
+    margin-top: 2rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--pub-border);
+  }
   .pub-nav-list {
     display: grid;
     gap: 0.45rem;
@@ -405,18 +410,15 @@ redirect_from:
 
   <div class="pub-layout">
     <aside class="pub-sidebar">
-      <span class="pub-sidebar-label">Explore by theme</span>
+      <span class="pub-sidebar-label">Explore papers by theme</span>
       <nav class="pub-nav-list" aria-label="Research themes">
         {% for theme in pub_themes %}
-        <a href="#{{ theme.id }}" class="pub-nav-link pub-tracker" data-target="{{ theme.id }}">
-          {{- theme.title -}}
-          <span class="pub-nav-count">{{ theme.papers.size }} paper{% if theme.papers.size != 1 %}s{% endif %}</span>
-        </a>
+        <a href="#{{ theme.id }}" class="pub-nav-link pub-tracker" data-target="{{ theme.id }}">{{ theme.title }}</a>
         {% endfor %}
-        <a href="#talks" class="pub-nav-link pub-tracker" data-target="talks">
-          Conference Talks
-          <span class="pub-nav-count">{{ site.data.publications.talks.size }} talks</span>
-        </a>
+      </nav>
+      <span class="pub-sidebar-label pub-sidebar-label-gap">Talks</span>
+      <nav class="pub-nav-list" aria-label="Talks">
+        <a href="#talks" class="pub-nav-link pub-tracker" data-target="talks">Conference Talks</a>
       </nav>
     </aside>
 
