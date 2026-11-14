@@ -31,9 +31,9 @@ latest_posts:
   }
 </style>
 
-Hi! My name is Gaoyuan Wu, a Postdoctoral Fellow at Johhns Hopkins University, working with Prof. [Jan Drgona](https://solaris-jhu.github.io/solaris-website/) on differentiable programming and scientific machine learning for optimization and control of systems. I recently obtained my PhD in civil engineering from Princeton University, advised by Prof. [Maria Garlock](https://garlock.princeton.edu). Prior to Princeton, I did my undergraduate studies in civil engineering at Tongji University with a focus in bridge engineering.
+Hi! My name is Gaoyuan Wu, a Postdoctoral Fellow at Johhns Hopkins University, working with Prof. [Jan Drgona](https://solaris-jhu.github.io/solaris-website/) on differentiable programming and scientific machine learning for optimization and control of systems.
 
-I am from Chengdu (成都), a city in southwest China. I love our dialects, our amazing food and, of course, pandas! In my free time, I enjoy a variety of sports — tennis, soccer, badminton, and indoor rock climbing. I love listening to music — I am a proud top 1% listener of Wu Bai and Faye Wong, according to Spotify.
+I recently obtained my PhD in civil engineering from Princeton University, advised by Prof. [Maria Garlock](https://garlock.princeton.edu). Prior to Princeton, I did my undergraduate studies in civil engineering at Tongji University with a focus in bridge engineering.
 
 <div style="clear: both;"></div>
 
@@ -97,3 +97,5 @@ I am from Chengdu (成都), a city in southwest China. I love our dialects, our 
   </div>
   <a class="pub-cta-button" href="{{ '/research/' | relative_url }}">Explore my research &rarr;</a>
 </div>
+
+I am from Chengdu (成都), a city in southwest China. I love our dialects, our amazing food and, of course, pandas! In my free time, I enjoy a variety of sports — tennis, soccer, badminton, and indoor rock climbing. I love listening to music — I am a proud top 1% listener of Wu Bai and Faye Wong, according to Spotify.

@@ -300,6 +300,38 @@ redirect_from:
     font-variant-numeric: tabular-nums;
   }
 
+  /* ---------- conference talks ---------- */
+  .pub-talks {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .pub-talk {
+    display: grid;
+    grid-template-columns: 4rem minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--pub-border);
+  }
+  .pub-talk:last-child {
+    border-bottom: 0;
+  }
+  .pub-talk-year {
+    color: var(--pub-accent);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  .pub-gallery .pub-talk-title {
+    margin: 0;
+    color: var(--pub-text);
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+  .pub-talk .pub-venue {
+    margin-bottom: 0;
+  }
+
   /* ---------- responsive ---------- */
   @media (max-width: 1000px) {
     .pub-layout {
@@ -359,6 +391,7 @@ redirect_from:
     {% for theme in pub_themes %}
     <a href="#{{ theme.id }}" class="pub-tracker" data-target="{{ theme.id }}">{{ theme.title }}</a>
     {% endfor %}
+    <a href="#talks" class="pub-tracker" data-target="talks">Conference Talks</a>
   </nav>
 
   <div class="pub-layout">
@@ -371,6 +404,10 @@ redirect_from:
           <span class="pub-nav-count">{{ theme.papers.size }} paper{% if theme.papers.size != 1 %}s{% endif %}</span>
         </a>
         {% endfor %}
+        <a href="#talks" class="pub-nav-link pub-tracker" data-target="talks">
+          Conference Talks
+          <span class="pub-nav-count">{{ site.data.publications.talks.size }} talks</span>
+        </a>
       </nav>
     </aside>
 
@@ -441,6 +478,24 @@ redirect_from:
         </div>
       </section>
       {% endfor %}
+
+      <section id="talks" class="pub-area" aria-labelledby="talks-title">
+        <header class="pub-area-header">
+          <h2 class="pub-area-title" id="talks-title">Conference Talks</h2>
+        </header>
+        <ol class="pub-talks">
+          {% for talk in site.data.publications.talks %}
+          <li class="pub-talk">
+            <span class="pub-talk-year">{{ talk.year }}</span>
+            <div>
+              <p class="pub-talk-title">{{ talk.title }}</p>
+              <p class="pub-authors">{{ talk.authors | replace: 'G. Wu', '<strong>G. Wu</strong>' }}</p>
+              <p class="pub-venue">{{ talk.venue }} · {{ talk.place }}</p>
+            </div>
+          </li>
+          {% endfor %}
+        </ol>
+      </section>
     </div>
   </div>
 </section>

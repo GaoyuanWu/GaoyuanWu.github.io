@@ -136,3 +136,31 @@ themes:
               label: Paper,
               url: "https://www.researchgate.net/profile/Gaoyuan_Wu/publication/372888982_A_numerical_comparison_between_geometric_stiffness-and_elastic_stiffness-based_structural_shape_optimization_for_gridshells/links/64cc6c33806a9e4e5ce6bb33/A-numerical-comparison-between-geometric-stiffness-and-elastic-stiffness-based-structural-shape-optimization-for-gridshells.pdf",
             }
+
+# Conference talks, newest first ("G. Wu" is bolded automatically).
+talks:
+  - authors: G. Wu, H. ElDarwich, K. Pawitan, M. Garlock
+    title: Optimizing Coastal Structures with Smoothed Particle Hydrodynamics and Bayesian Optimization
+    venue: Engineering Mechanics Institute (EMI) Conference
+    year: 2025
+    place: Anaheim, CA
+  - authors: G. Wu, H. ElDarwich, K. Pawitan, M. Garlock
+    title: "Coastal hazard mitigation via structural shape modification: investigating the influence of curved structural cross-sections on wave forces using SPH modeling"
+    venue: 38th International Conference on Coastal Engineering (ICCE)
+    year: 2024
+    place: Rome, Italy
+  - authors: G. Wu, M. Garlock
+    title: "Enhancing the resilience of coastal bridges: The influence of box girder geometry on wave forces via SPH simulations"
+    venue: Engineering Mechanics Institute (EMI) Conference
+    year: 2024
+    place: Chicago, IL
+  - authors: G. Wu, R. Pastrana, S. Adriaenssens, M. Garlock
+    title: A numerical comparison between geometric stiffness- and elastic stiffness-based structural shape optimization for gridshells
+    venue: International Association for Shell and Spatial Structures (IASS) Annual Symposium
+    year: 2023
+    place: Melbourne, Australia
+  - authors: G. Wu, M. Garlock, S. Wang
+    title: A Study on the Hydrodynamic Response of Hypar Thin Shell Against Waves via a Decoupled SPH-FEM Analysis and Goda's Formula
+    venue: Engineering Mechanics Institute (EMI) Conference
+    year: 2022
+    place: Baltimore, MD
