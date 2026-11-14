@@ -1,1 +1,420 @@
-<!DOCTYPE html> <html lang="en-US"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <title>Redirecting…</title> <link rel="canonical" href="https://gaoyuanwu.github.io/publications/"> <script>location="https://gaoyuanwu.github.io/publications/"</script> <meta http-equiv="refresh" content="0; url=https://gaoyuanwu.github.io/publications/"> <meta name="robots" content="noindex"> </head> <body> <h1>Redirecting…</h1> <a href="https://gaoyuanwu.github.io/publications/">Click here if you are not redirected.</a> </body> </html>
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Research | Gaoyuan Wu </title> <meta name="author" content="Gaoyuan Wu"> <meta name="description" content="Gaoyuan Wu's homepage "> <meta name="keywords" content="coastal resilience, structural optimization, civil engineering, Princeton, JAX-SSO"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8C%8A&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://gaoyuanwu.github.io/research/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Gaoyuan Wu </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">Home </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">About Me </a> </li> <li class="nav-item active"> <a class="nav-link" href="/research/">Research <span class="sr-only">(current)</span> </a> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Research</h1> <p class="post-description"></p> </header> <article> <style>
+  .pub-intro {
+    margin-top: -1.6rem;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    color: var(--global-text-color);
+    font-weight: 300;
+  }
+  .pub-gallery {
+    --pub-accent: var(--global-theme-color);
+    --pub-accent-soft: color-mix(in srgb, var(--global-theme-color) 9%, transparent);
+    --pub-accent-line: color-mix(in srgb, var(--global-theme-color) 45%, transparent);
+    --pub-text: var(--global-text-color);
+    --pub-muted: var(--global-text-color-light);
+    --pub-border: var(--global-divider-color);
+    --pub-card-bg: var(--global-bg-color);
+    /* Break out of the 930px page container so two cards + sidebar have room. */
+    width: min(1180px, calc(100vw - 2rem));
+    margin-left: calc(50% - min(590px, 50vw - 1rem));
+    margin-top: 0.5rem;
+    color: var(--pub-text);
+  }
+  .pub-gallery *,
+  .pub-gallery *::before,
+  .pub-gallery *::after {
+    box-sizing: border-box;
+  }
+  .pub-gallery a {
+    text-decoration: none;
+  }
+
+  /* ---------- layout: sidebar + content ---------- */
+  .pub-layout {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: start;
+  }
+  .pub-sidebar {
+    position: sticky;
+    top: 5rem;
+    padding: 0.25rem 1.25rem 0.5rem 0;
+    border-right: 1px solid var(--pub-border);
+  }
+  .pub-sidebar-label {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--pub-muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .pub-sidebar-label-gap {
+    margin-top: 2rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--pub-border);
+  }
+  .pub-nav-list {
+    display: grid;
+    gap: 0.45rem;
+  }
+  .pub-gallery .pub-nav-link {
+    display: block;
+    padding: 0.65rem 0.75rem;
+    border-left: 2px solid transparent;
+    color: var(--pub-muted);
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+  .pub-nav-count {
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    opacity: 0.8;
+  }
+  .pub-gallery .pub-nav-link:hover,
+  .pub-gallery .pub-nav-link.active {
+    border-left-color: var(--pub-accent);
+    background: var(--pub-accent-soft);
+    color: var(--pub-text);
+  }
+  .pub-mobile-nav {
+    display: none;
+  }
+
+  /* ---------- theme sections ---------- */
+  .pub-area {
+    scroll-margin-top: 5rem;
+    margin-bottom: 4.5rem;
+  }
+  .pub-area:last-child {
+    margin-bottom: 0;
+  }
+  .pub-area-header {
+    margin-bottom: 1.8rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid var(--pub-border);
+  }
+  .pub-area-kicker {
+    display: block;
+    margin-bottom: 0.55rem;
+    color: var(--pub-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .pub-gallery .pub-area-title {
+    margin: 0;
+    color: var(--pub-text);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    line-height: 1.15;
+  }
+  .pub-area-vision {
+    max-width: 800px;
+    margin: 0.9rem 0 0;
+    color: var(--pub-text);
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+  .pub-tools {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .pub-tools-label {
+    margin-right: 0.25rem;
+    color: var(--pub-muted);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .pub-tool {
+    padding: 0.2rem 0.6rem;
+    border: 1px solid var(--pub-border);
+    border-radius: 999px;
+    background: var(--pub-accent-soft);
+    color: var(--pub-text);
+    font-size: 0.78rem;
+    line-height: 1.4;
+  }
+
+  /* ---------- paper cards: two per row ---------- */
+  .pub-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+  .pub-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+    scroll-margin-top: 5rem;
+    border: 1px solid var(--pub-accent-line);
+    border-radius: 12px;
+    background: var(--pub-card-bg);
+    box-shadow: 0 0 18px color-mix(in srgb, var(--global-theme-color) 12%, transparent);
+    transition:
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+  .pub-card:hover,
+  .pub-card:focus-within,
+  .pub-card:target {
+    border-color: var(--pub-accent);
+    box-shadow: 0 0 28px color-mix(in srgb, var(--global-theme-color) 26%, transparent);
+  }
+  .pub-art {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 60 / 31;
+    overflow: hidden;
+    border-bottom: 1px solid var(--pub-border);
+    background: #fff; /* scientific figures stay on white in dark mode too */
+  }
+  .pub-expand {
+    position: absolute;
+    right: 9px;
+    bottom: 9px;
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #d8e1e8;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #1f2d3d;
+    opacity: 0;
+    transition: opacity 0.18s ease;
+  }
+  .pub-art:hover .pub-expand,
+  .pub-art:focus-visible .pub-expand {
+    opacity: 1;
+  }
+  @media (hover: none) {
+    .pub-expand {
+      opacity: 1;
+    }
+  }
+  .pub-art picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .pub-gallery .pub-art img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+    object-fit: contain;
+    object-position: center;
+  }
+  .pub-card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 0.95rem 1.2rem 1.05rem;
+  }
+  .pub-gallery .pub-paper-title {
+    margin: 0;
+    color: var(--pub-text);
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+  .pub-gallery .pub-paper-title a {
+    color: inherit;
+  }
+  .pub-gallery .pub-paper-title a:hover {
+    color: var(--pub-accent);
+  }
+  .pub-authors {
+    margin: 0.6rem 0 0.25rem;
+    color: var(--pub-text);
+    font-size: 0.8rem;
+    line-height: 1.45;
+  }
+  .pub-authors strong {
+    font-weight: 700;
+  }
+  .pub-venue {
+    margin: 0 0 1rem;
+    color: var(--pub-muted);
+    font-size: 0.78rem;
+    font-style: italic;
+    line-height: 1.4;
+  }
+  .pub-card-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: auto;
+  }
+  .pub-links {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    min-width: 0;
+  }
+  .pub-gallery .pub-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 0.3rem 0.65rem;
+    border: 1px solid var(--pub-accent-line);
+    border-radius: 999px;
+    background: var(--pub-card-bg);
+    color: var(--pub-accent);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+  .pub-gallery .pub-links a:hover {
+    border-color: var(--pub-accent);
+    background: var(--pub-accent-soft);
+    color: var(--pub-text);
+  }
+  .pub-year {
+    flex: none;
+    color: var(--pub-muted);
+    font-size: 0.78rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---------- conference talks ---------- */
+  .pub-talks {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .pub-talk {
+    display: grid;
+    grid-template-columns: 4rem minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--pub-border);
+  }
+  .pub-talk:last-child {
+    border-bottom: 0;
+  }
+  .pub-talk-year {
+    color: var(--pub-accent);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  .pub-gallery .pub-talk-title {
+    margin: 0;
+    color: var(--pub-text);
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+  .pub-talk .pub-venue {
+    margin-bottom: 0;
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 1000px) {
+    .pub-layout {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    .pub-sidebar {
+      display: none;
+    }
+    .pub-mobile-nav {
+      position: sticky;
+      top: 3.5rem;
+      z-index: 2;
+      display: flex;
+      gap: 0.5rem;
+      margin: 0 0 1.5rem;
+      padding: 0.6rem 0;
+      overflow-x: auto;
+      background: var(--global-bg-color);
+    }
+    .pub-gallery .pub-mobile-nav a {
+      flex: 0 0 auto;
+      padding: 0.45rem 0.8rem;
+      border: 1px solid var(--pub-border);
+      border-radius: 999px;
+      color: var(--pub-muted);
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+    .pub-gallery .pub-mobile-nav a.active {
+      border-color: var(--pub-accent);
+      background: var(--pub-accent-soft);
+      color: var(--pub-text);
+    }
+  }
+  @media (max-width: 640px) {
+    .pub-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .pub-area {
+      margin-bottom: 3.5rem;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .pub-card {
+      transition: none;
+    }
+  }
+</style> <p class="pub-intro"> For a complete and up-to-date list, please see my <a href="https://scholar.google.com/citations?user=2aTANLwAAAAJ" rel="external nofollow noopener" target="_blank">Google Scholar profile</a>. </p> <section class="pub-gallery" aria-label="Publications by theme"> <nav class="pub-mobile-nav" aria-label="Research themes"> <a href="#coastal-resilience" class="pub-tracker" data-target="coastal-resilience">Enhancing Coastal Resilience of Infrastructure</a> <a href="#differentiable-physics" class="pub-tracker" data-target="differentiable-physics">Differentiable Physics and Machine Learning for Optimization</a> <a href="#talks" class="pub-tracker" data-target="talks">Conference Talks</a> </nav> <div class="pub-layout"> <aside class="pub-sidebar"> <span class="pub-sidebar-label">Explore papers by theme</span> <nav class="pub-nav-list" aria-label="Research themes"> <a href="#coastal-resilience" class="pub-nav-link pub-tracker" data-target="coastal-resilience">Enhancing Coastal Resilience of Infrastructure</a> <a href="#differentiable-physics" class="pub-nav-link pub-tracker" data-target="differentiable-physics">Differentiable Physics and Machine Learning for Optimization</a> </nav> <span class="pub-sidebar-label pub-sidebar-label-gap">Talks</span> <nav class="pub-nav-list" aria-label="Talks"> <a href="#talks" class="pub-nav-link pub-tracker" data-target="talks">Conference Talks</a> </nav> </aside> <div class="pub-content"> <section id="coastal-resilience" class="pub-area" aria-labelledby="coastal-resilience-title"> <header class="pub-area-header"> <span class="pub-area-kicker">Research theme</span> <h2 class="pub-area-title" id="coastal-resilience-title">Enhancing Coastal Resilience of Infrastructure</h2> <p class="pub-area-vision">Climate change is intensifying hurricanes, storm surge, floods, and tsunamis, putting coastal bridges, breakwaters, and waterfront infrastructure at growing risk. My vision is to design infrastructure whose <em>structural shape itself</em> mitigates hazards — reducing wave loads on structures while attenuating waves for the communities behind them — by coupling high-fidelity fluid–structure simulation, physical experiments, and data-driven optimization.</p> <ul class="pub-tools" aria-label="Tools"> <li class="pub-tools-label">Tools</li> <li class="pub-tool">Smoothed Particle Hydrodynamics (SPH)</li> <li class="pub-tool">Finite Element Analysis</li> <li class="pub-tool">Multi-objective Bayesian Optimization</li> <li class="pub-tool">Wave-flume experiments</li> <li class="pub-tool">Neural-network surrogates</li> </ul> </header> <div class="pub-grid"> <article class="pub-card" id="wu2026bayes"> <a class="pub-art" href="/assets/img/graphical_abstracts/wu2026bayes.webp" target="_blank" rel="noopener" aria-label="Open graphical abstract for Shape Optimization of Box-Type Structures under Waves using Multi-objective Bayesian Optimization: Reducing Wave Loads and Improving Wave Attenuation at full size"> <picture> <source media="(prefers-reduced-motion: reduce)" srcset="/assets/img/graphical_abstracts/wu2026bayes.png"></source> <img src="/assets/img/graphical_abstracts/wu2026bayes.webp" alt="Graphical abstract for Shape Optimization of Box-Type Structures under Waves using Multi-objective Bayesian Optimization: Reducing Wave Loads and Improving Wave Attenuation" width="600" height="310" loading="lazy" decoding="async"> </picture> <span class="pub-expand" aria-hidden="true"> <svg viewbox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"> <path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"></path> </svg> </span> </a> <div class="pub-card-body"> <h3 class="pub-paper-title"> <a href="https://doi.org/10.1016/j.engstruct.2026.122780" target="_blank" rel="noopener noreferrer">Shape Optimization of Box-Type Structures under Waves using Multi-objective Bayesian Optimization: Reducing Wave Loads and Improving Wave Attenuation</a> </h3> <p class="pub-authors"><strong>Gaoyuan Wu</strong>, Sam Smith, Maria Garlock</p> <p class="pub-venue">Engineering Structures</p> <div class="pub-card-footer"> <nav class="pub-links" aria-label="Links for Shape Optimization of Box-Type Structures under Waves using Multi-objective Bayesian Optimization: Reducing Wave Loads and Improving Wave Attenuation"> <a href="https://doi.org/10.1016/j.engstruct.2026.122780" target="_blank" rel="noopener noreferrer">Paper<span aria-hidden="true"> ↗</span></a> </nav> <span class="pub-year">2026</span> </div> </div> </article> <article class="pub-card" id="pawitan2026experimental"> <a class="pub-art" href="/assets/img/graphical_abstracts/pawitan2026experimental.webp" target="_blank" rel="noopener" aria-label="Open graphical abstract for Experimental evaluation of shape effects on elevated structures subject to waves at full size"> <picture> <source media="(prefers-reduced-motion: reduce)" srcset="/assets/img/graphical_abstracts/pawitan2026experimental.png"></source> <img src="/assets/img/graphical_abstracts/pawitan2026experimental.webp" alt="Graphical abstract for Experimental evaluation of shape effects on elevated structures subject to waves" width="600" height="310" loading="lazy" decoding="async"> </picture> <span class="pub-expand" aria-hidden="true"> <svg viewbox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"> <path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"></path> </svg> </span> </a> <div class="pub-card-body"> <h3 class="pub-paper-title"> <a href="https://doi.org/10.1016/j.apor.2026.105247" target="_blank" rel="noopener noreferrer">Experimental evaluation of shape effects on elevated structures subject to waves</a> </h3> <p class="pub-authors">Krisna A. Pawitan, <strong>Gaoyuan Wu</strong>, Sam Smith, Tao Xiang, Zhaoyang Song, Ali Farhadzadeh, Maria M. Garlock</p> <p class="pub-venue">Applied Ocean Research</p> <div class="pub-card-footer"> <nav class="pub-links" aria-label="Links for Experimental evaluation of shape effects on elevated structures subject to waves"> <a href="https://doi.org/10.1016/j.apor.2026.105247" target="_blank" rel="noopener noreferrer">Paper<span aria-hidden="true"> ↗</span></a> </nav> <span class="pub-year">2026</span> </div> </div> </article> <article class="pub-card" id="wu2025sph"> <a class="pub-art" href="/assets/img/graphical_abstracts/wu2025sph.webp" target="_blank" rel="noopener" aria-label="Open graphical abstract for An SPH study of cross-sectional shape effects on coastal structures subject to regular wave forces at full size"> <picture> <source media="(prefers-reduced-motion: reduce)" srcset="/assets/img/graphical_abstracts/wu2025sph.png"></source> <img src="/assets/img/graphical_abstracts/wu2025sph.webp" alt="Graphical abstract for An SPH study of cross-sectional shape effects on coastal structures subject to regular wave forces" width="600" height="310" loading="lazy" decoding="async"> </picture> <span class="pub-expand" aria-hidden="true"> <svg viewbox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"> <path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"></path> </svg> </span> </a> <div class="pub-card-body"> <h3 class="pub-paper-title"> <a href="https://doi.org/10.1016/j.oceaneng.2025.122929" target="_blank" rel="noopener noreferrer">An SPH study of cross-sectional shape effects on coastal structures subject to regular wave forces</a> </h3> <p class="pub-authors"><strong>Gaoyuan Wu</strong>, Sam Smith, Krisna Pawitan, Maria Garlock</p> <p class="pub-venue">Ocean Engineering</p> <div class="pub-card-footer"> <nav class="pub-links" aria-label="Links for An SPH study of cross-sectional shape effects on coastal structures subject to regular wave forces"> <a href="https://doi.org/10.1016/j.oceaneng.2025.122929" target="_blank" rel="noopener noreferrer">Paper<span aria-hidden="true"> ↗</span></a> </nav> <span class="pub-year">2025</span> </div> </div> </article> <article class="pub-card" id="jmse13020245"> <a class="pub-art" href="/assets/img/graphical_abstracts/jmse13020245.webp" target="_blank" rel="noopener" aria-label="Open graphical abstract for Hyperbolic Paraboloid Free-Surface Breakwaters: Hydrodynamic Study and Structural Evaluation at full size"> <picture> <source media="(prefers-reduced-motion: reduce)" srcset="/assets/img/graphical_abstracts/jmse13020245.png"></source> <img src="/assets/img/graphical_abstracts/jmse13020245.webp" alt="Graphical abstract for Hyperbolic Paraboloid Free-Surface Breakwaters: Hydrodynamic Study and Structural Evaluation" width="600" height="310" loading="lazy" decoding="async"> </picture> <span class="pub-expand" aria-hidden="true"> <svg viewbox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"> <path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"></path> </svg> </span> </a> <div class="pub-card-body"> <h3 class="pub-paper-title"> <a href="https://doi.org/10.3390/jmse13020245" target="_blank" rel="noopener noreferrer">Hyperbolic Paraboloid Free-Surface Breakwaters: Hydrodynamic Study and Structural Evaluation</a> </h3> <p class="pub-authors">Sam Smith, <strong>Gaoyuan Wu</strong>, Krisna A. Pawitan, Maria Garlock</p> <p class="pub-venue">Journal of Marine Science and Engineering</p> <div class="pub-card-footer"> <nav class="pub-links" aria-label="Links for Hyperbolic Paraboloid Free-Surface Breakwaters: Hydrodynamic Study and Structural Evaluation"> <a href="https://doi.org/10.3390/jmse13020245" target="_blank" rel="noopener noreferrer">Paper<span aria-hidden="true"> ↗</span></a> </nav> <span class="pub-year">2025</span> </div> </div> </article> <article class="pub-card" id="smith2025neural"> <a class="pub-art" href="/assets/img/graphical_abstracts/smith2025neural.webp" target="_blank" rel="noopener" aria-label="Open graphical abstract for Neural Network-Based Prediction of Wave Pressure Distribution on Hyperbolic Paraboloid Surfaces at full size"> <picture> <source media="(prefers-reduced-motion: reduce)" srcset="/assets/img/graphical_abstracts/smith2025neural.png"></source> <img src="/assets/img/graphical_abstracts/smith2025neural.webp" alt="Graphical abstract for Neural Network-Based Prediction of Wave Pressure Distribution on Hyperbolic Paraboloid Surfaces" width="600" height="310" loading="lazy" decoding="async"> </picture> <span class="pub-expand" aria-hidden="true"> <svg viewbox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"> <path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"></path> </svg> </span> </a> <div class="pub-card-body"> <h3 class="pub-paper-title"> <a href="https://doi.org/10.3390/jmse13122277" target="_blank" rel="noopener noreferrer">Neural Network-Based Prediction of Wave Pressure Distribution on Hyperbolic Paraboloid Surfaces</a> </h3> <p class="pub-authors">Sam Smith, <strong>Gaoyuan Wu</strong>, Maria Garlock</p> <p class="pub-venue">Journal of Marine Science and Engineering</p> <div class="pub-card-footer"> <nav class="pub-links" aria-label="Links for Neural Network-Based Prediction of Wave Pressure Distribution on Hyperbolic Paraboloid Surfaces"> <a href="https://doi.org/10.3390/jmse13122277" target="_blank" rel="noopener noreferrer">Paper<span aria-hidden="true"> ↗</span></a> </nav> <span class="pub-year">2025</span> </div> </div> </article> <article class="pub-card" id="wu2024coastal"> <a class="pub-art" href="/assets/img/graphical_abstracts/wu2024coastal.webp" target="_blank" rel="noopener" aria-label="Open graphical abstract for Investigating the Effects of Box Girder Bridge Geometry on Solitary Wave Force Using SPH Modeling at full size"> <picture> <source media="(prefers-reduced-motion: reduce)" srcset="/assets/img/graphical_abstracts/wu2024coastal.png"></source> <img src="/assets/img/graphical_abstracts/wu2024coastal.webp" alt="Graphical abstract for Investigating the Effects of Box Girder Bridge Geometry on Solitary Wave Force Using SPH Modeling" width="600" height="310" loading="lazy" decoding="async"> </picture> <span class="pub-expand" aria-hidden="true"> <svg viewbox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"> <path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"></path> </svg> </span> </a> <div class="pub-card-body"> <h3 class="pub-paper-title"> <a href="https://doi.org/10.1016/j.coastaleng.2023.104430" target="_blank" rel="noopener noreferrer">Investigating the Effects of Box Girder Bridge Geometry on Solitary Wave Force Using SPH Modeling</a> </h3> <p class="pub-authors"><strong>Gaoyuan Wu</strong>, Maria Garlock</p> <p class="pub-venue">Coastal Engineering</p> <div class="pub-card-footer"> <nav class="pub-links" aria-label="Links for Investigating the Effects of Box Girder Bridge Geometry on Solitary Wave Force Using SPH Modeling"> <a href="https://doi.org/10.1016/j.coastaleng.2023.104430" target="_blank" rel="noopener noreferrer">Paper<span aria-hidden="true"> ↗</span></a> </nav> <span class="pub-year">2024</span> </div> </div> </article> <article class="pub-card" id="wu2022decoupled"> <a class="pub-art" href="/assets/img/graphical_abstracts/wu2022decoupled.webp" target="_blank" rel="noopener" aria-label="Open graphical abstract for A decoupled SPH-FEM analysis of hydrodynamic wave pressure on hyperbolic-paraboloid thin-shell coastal armor and corresponding structural response at full size"> <picture> <source media="(prefers-reduced-motion: reduce)" srcset="/assets/img/graphical_abstracts/wu2022decoupled.png"></source> <img src="/assets/img/graphical_abstracts/wu2022decoupled.webp" alt="Graphical abstract for A decoupled SPH-FEM analysis of hydrodynamic wave pressure on hyperbolic-paraboloid thin-shell coastal armor and corresponding structural response" width="600" height="310" loading="lazy" decoding="async"> </picture> <span class="pub-expand" aria-hidden="true"> <svg viewbox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"> <path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"></path> </svg> </span> </a> <div class="pub-card-body"> <h3 class="pub-paper-title"> <a href="https://doi.org/10.1016/j.engstruct.2022.114738" target="_blank" rel="noopener noreferrer">A decoupled SPH-FEM analysis of hydrodynamic wave pressure on hyperbolic-paraboloid thin-shell coastal armor and corresponding structural response</a> </h3> <p class="pub-authors"><strong>Gaoyuan Wu</strong>, Maria Garlock, Shengzhe Wang</p> <p class="pub-venue">Engineering Structures</p> <div class="pub-card-footer"> <nav class="pub-links" aria-label="Links for A decoupled SPH-FEM analysis of hydrodynamic wave pressure on hyperbolic-paraboloid thin-shell coastal armor and corresponding structural response"> <a href="https://doi.org/10.1016/j.engstruct.2022.114738" target="_blank" rel="noopener noreferrer">Paper<span aria-hidden="true"> ↗</span></a> </nav> <span class="pub-year">2022</span> </div> </div> </article> </div> </section> <section id="differentiable-physics" class="pub-area" aria-labelledby="differentiable-physics-title"> <header class="pub-area-header"> <span class="pub-area-kicker">Research theme</span> <h2 class="pub-area-title" id="differentiable-physics-title">Differentiable Physics and Machine Learning for Optimization</h2> <p class="pub-area-vision">Gradient-based design has transformed many fields, yet most engineering simulators remain black boxes. My vision is to make physics solvers <em>differentiable</em> so that exact gradients flow through the simulation — enabling fast, scalable optimization of efficient, low-carbon structures, and letting neural networks be trained with physics enforced in the loop for optimization and control of engineered systems.</p> <ul class="pub-tools" aria-label="Tools"> <li class="pub-tools-label">Tools</li> <li class="pub-tool">Differentiable physics / simulations</li> <li class="pub-tool">JAX &amp; automatic differentiation</li> <li class="pub-tool">GPU / XLA acceleration</li> <li class="pub-tool">Finite Element Analysis</li> <li class="pub-tool">Force density method</li> <li class="pub-tool">Neural networks</li> </ul> </header> <div class="pub-grid"> <article class="pub-card" id="wu2024jaxsso"> <a class="pub-art" href="/assets/img/graphical_abstracts/wu2024jaxsso.webp" target="_blank" rel="noopener" aria-label="Open graphical abstract for JAX-SSO: Differentiable Finite Element Analysis Solver for Structural Optimization and Seamless Integration with Neural Networks at full size"> <picture> <source media="(prefers-reduced-motion: reduce)" srcset="/assets/img/graphical_abstracts/wu2024jaxsso.png"></source> <img src="/assets/img/graphical_abstracts/wu2024jaxsso.webp" alt="Graphical abstract for JAX-SSO: Differentiable Finite Element Analysis Solver for Structural Optimization and Seamless Integration with Neural Networks" width="600" height="310" loading="lazy" decoding="async"> </picture> <span class="pub-expand" aria-hidden="true"> <svg viewbox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"> <path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"></path> </svg> </span> </a> <div class="pub-card-body"> <h3 class="pub-paper-title"> <a href="https://arxiv.org/abs/2407.20026" target="_blank" rel="noopener noreferrer">JAX-SSO: Differentiable Finite Element Analysis Solver for Structural Optimization and Seamless Integration with Neural Networks</a> </h3> <p class="pub-authors"><strong>Gaoyuan Wu</strong></p> <p class="pub-venue">arXiv preprint</p> <div class="pub-card-footer"> <nav class="pub-links" aria-label="Links for JAX-SSO: Differentiable Finite Element Analysis Solver for Structural Optimization and Seamless Integration with Neural Networks"> <a href="https://arxiv.org/abs/2407.20026" target="_blank" rel="noopener noreferrer">arXiv<span aria-hidden="true"> ↗</span></a> <a href="https://github.com/GaoyuanWu/JaxSSO" target="_blank" rel="noopener noreferrer">Code<span aria-hidden="true"> ↗</span></a> </nav> <span class="pub-year">2024</span> </div> </div> </article> <article class="pub-card" id="wu2023framework"> <a class="pub-art" href="/assets/img/graphical_abstracts/wu2023framework.webp" target="_blank" rel="noopener" aria-label="Open graphical abstract for A framework for structural shape optimization based on automatic differentiation, the adjoint method and accelerated linear algebra at full size"> <picture> <source media="(prefers-reduced-motion: reduce)" srcset="/assets/img/graphical_abstracts/wu2023framework.png"></source> <img src="/assets/img/graphical_abstracts/wu2023framework.webp" alt="Graphical abstract for A framework for structural shape optimization based on automatic differentiation, the adjoint method and accelerated linear algebra" width="600" height="310" loading="lazy" decoding="async"> </picture> <span class="pub-expand" aria-hidden="true"> <svg viewbox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"> <path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"></path> </svg> </span> </a> <div class="pub-card-body"> <h3 class="pub-paper-title"> <a href="https://doi.org/10.1007/s00158-023-03601-0" target="_blank" rel="noopener noreferrer">A framework for structural shape optimization based on automatic differentiation, the adjoint method and accelerated linear algebra</a> </h3> <p class="pub-authors"><strong>Gaoyuan Wu</strong></p> <p class="pub-venue">Structural and Multidisciplinary Optimization</p> <div class="pub-card-footer"> <nav class="pub-links" aria-label="Links for A framework for structural shape optimization based on automatic differentiation, the adjoint method and accelerated linear algebra"> <a href="https://doi.org/10.1007/s00158-023-03601-0" target="_blank" rel="noopener noreferrer">Paper<span aria-hidden="true"> ↗</span></a> <a href="https://github.com/GaoyuanWu/JaxSSO" target="_blank" rel="noopener noreferrer">Code<span aria-hidden="true"> ↗</span></a> </nav> <span class="pub-year">2023</span> </div> </div> </article> <article class="pub-card" id="wu2023gridshells"> <a class="pub-art" href="/assets/img/graphical_abstracts/wu2023gridshells.webp" target="_blank" rel="noopener" aria-label="Open graphical abstract for A numerical comparison between geometric stiffness- and elastic stiffness-based structural shape optimization for gridshells at full size"> <picture> <source media="(prefers-reduced-motion: reduce)" srcset="/assets/img/graphical_abstracts/wu2023gridshells.png"></source> <img src="/assets/img/graphical_abstracts/wu2023gridshells.webp" alt="Graphical abstract for A numerical comparison between geometric stiffness- and elastic stiffness-based structural shape optimization for gridshells" width="600" height="310" loading="lazy" decoding="async"> </picture> <span class="pub-expand" aria-hidden="true"> <svg viewbox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"> <path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"></path> </svg> </span> </a> <div class="pub-card-body"> <h3 class="pub-paper-title"> <a href="https://www.researchgate.net/profile/Gaoyuan_Wu/publication/372888982_A_numerical_comparison_between_geometric_stiffness-and_elastic_stiffness-based_structural_shape_optimization_for_gridshells/links/64cc6c33806a9e4e5ce6bb33/A-numerical-comparison-between-geometric-stiffness-and-elastic-stiffness-based-structural-shape-optimization-for-gridshells.pdf" target="_blank" rel="noopener noreferrer">A numerical comparison between geometric stiffness- and elastic stiffness-based structural shape optimization for gridshells</a> </h3> <p class="pub-authors"><strong>Gaoyuan Wu</strong>, Rafael Pastrana, Sigrid Adriaenssens, Maria Garlock</p> <p class="pub-venue">Proceedings of the IASS 2023 Symposium</p> <div class="pub-card-footer"> <nav class="pub-links" aria-label="Links for A numerical comparison between geometric stiffness- and elastic stiffness-based structural shape optimization for gridshells"> <a href="https://www.researchgate.net/profile/Gaoyuan_Wu/publication/372888982_A_numerical_comparison_between_geometric_stiffness-and_elastic_stiffness-based_structural_shape_optimization_for_gridshells/links/64cc6c33806a9e4e5ce6bb33/A-numerical-comparison-between-geometric-stiffness-and-elastic-stiffness-based-structural-shape-optimization-for-gridshells.pdf" target="_blank" rel="noopener noreferrer">Paper<span aria-hidden="true"> ↗</span></a> </nav> <span class="pub-year">2023</span> </div> </div> </article> </div> </section> <section id="talks" class="pub-area" aria-labelledby="talks-title"> <header class="pub-area-header"> <h2 class="pub-area-title" id="talks-title">Conference Talks</h2> </header> <ol class="pub-talks"> <li class="pub-talk"> <span class="pub-talk-year">2025</span> <div> <p class="pub-talk-title">Optimizing Coastal Structures with Smoothed Particle Hydrodynamics and Bayesian Optimization</p> <p class="pub-authors"><strong>G. Wu</strong>, H. ElDarwich, K. Pawitan, M. Garlock</p> <p class="pub-venue">Engineering Mechanics Institute (EMI) Conference · Anaheim, CA</p> </div> </li> <li class="pub-talk"> <span class="pub-talk-year">2024</span> <div> <p class="pub-talk-title">Coastal hazard mitigation via structural shape modification: investigating the influence of curved structural cross-sections on wave forces using SPH modeling</p> <p class="pub-authors"><strong>G. Wu</strong>, H. ElDarwich, K. Pawitan, M. Garlock</p> <p class="pub-venue">38th International Conference on Coastal Engineering (ICCE) · Rome, Italy</p> </div> </li> <li class="pub-talk"> <span class="pub-talk-year">2024</span> <div> <p class="pub-talk-title">Enhancing the resilience of coastal bridges: The influence of box girder geometry on wave forces via SPH simulations</p> <p class="pub-authors"><strong>G. Wu</strong>, M. Garlock</p> <p class="pub-venue">Engineering Mechanics Institute (EMI) Conference · Chicago, IL</p> </div> </li> <li class="pub-talk"> <span class="pub-talk-year">2023</span> <div> <p class="pub-talk-title">A numerical comparison between geometric stiffness- and elastic stiffness-based structural shape optimization for gridshells</p> <p class="pub-authors"><strong>G. Wu</strong>, R. Pastrana, S. Adriaenssens, M. Garlock</p> <p class="pub-venue">International Association for Shell and Spatial Structures (IASS) Annual Symposium · Melbourne, Australia</p> </div> </li> <li class="pub-talk"> <span class="pub-talk-year">2022</span> <div> <p class="pub-talk-title">A Study on the Hydrodynamic Response of Hypar Thin Shell Against Waves via a Decoupled SPH-FEM Analysis and Goda's Formula</p> <p class="pub-authors"><strong>G. Wu</strong>, M. Garlock, S. Wang</p> <p class="pub-venue">Engineering Mechanics Institute (EMI) Conference · Baltimore, MD</p> </div> </li> </ol> </section> </div> </div> </section> <script>
+  (function () {
+    var links = document.querySelectorAll(".pub-tracker");
+    var sections = document.querySelectorAll(".pub-area");
+    if (!("IntersectionObserver" in window) || !sections.length) return;
+    function setActive(id) {
+      links.forEach(function (link) {
+        link.classList.toggle("active", link.dataset.target === id);
+      });
+    }
+    var observer = new IntersectionObserver(
+      function (entries) {
+        var visible = entries
+          .filter(function (e) {
+            return e.isIntersecting;
+          })
+          .sort(function (a, b) {
+            return b.intersectionRatio - a.intersectionRatio;
+          });
+        if (visible.length) setActive(visible[0].target.id);
+      },
+      { rootMargin: "-20% 0px -55% 0px", threshold: [0, 0.25, 0.5, 1] }
+    );
+    sections.forEach(function (s) {
+      observer.observe(s);
+    });
+    setActive(sections[0].id);
+  })();
+</script> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Gaoyuan Wu. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> </body> </html>

@@ -2,145 +2,306 @@
   :root {
     --max-content-width: 930px;
   }
-</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.css" integrity="sha256-zTN0r+0OKaIv2xqeNNIYxNk0pWJ6+IqPGc1iDgVzWF0=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8C%8A&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="stylesheet" href="/assets/css/al-folio-cv.css?v=734ded6bdb6d549b12085aded7cf1c5e"> <link rel="canonical" href="https://gaoyuanwu.github.io/cv/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8C%8A&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://gaoyuanwu.github.io/cv/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
-  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Gaoyuan Wu </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">Home </a> </li> <li class="nav-item active"> <a class="nav-link" href="/cv/">About Me <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/codes/">Codes </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="row"> <div class="col-sm-3"> <nav id="toc-sidebar" class="sticky-top toc toc-sidebar" aria-label="Table of contents" data-toc-collapse="expanded" data-toc-collapse-depth=""></nav> </div> <div class="col-sm-9"> <style>
-  .cv .cv-section {
-    border-top: 1px solid var(--global-divider-color);
-    margin-top: 2.5rem;
-    padding-top: 1.5rem;
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Gaoyuan Wu </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">Home </a> </li> <li class="nav-item active"> <a class="nav-link" href="/cv/">About Me <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">Research </a> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">About Me</h1> <p class="post-description"></p> </header> <article> <style>
+  .cv-page {
+    --cv-accent: var(--global-theme-color);
+    --cv-accent-soft: color-mix(in srgb, var(--global-theme-color) 9%, transparent);
+    --cv-accent-line: color-mix(in srgb, var(--global-theme-color) 45%, transparent);
+    --cv-text: var(--global-text-color);
+    --cv-muted: var(--global-text-color-light);
+    --cv-border: var(--global-divider-color);
+    --cv-card-bg: var(--global-bg-color);
+    width: min(1180px, calc(100vw - 2rem));
+    margin-left: calc(50% - min(590px, 50vw - 1rem));
+    margin-top: 0.5rem;
+    color: var(--cv-text);
   }
-  .cv .cv-section:first-child {
-    border-top: none;
-    margin-top: 0;
+  .cv-page *,
+  .cv-page *::before,
+  .cv-page *::after {
+    box-sizing: border-box;
+  }
+  .cv-page a {
+    text-decoration: none;
+  }
+
+  /* ---------- layout ---------- */
+  .cv-layout {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: start;
+  }
+  .cv-sidebar {
+    position: sticky;
+    top: 5rem;
+    padding: 0.25rem 1.25rem 0.5rem 0;
+    border-right: 1px solid var(--cv-border);
+  }
+  .cv-sidebar-label {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--cv-muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .cv-nav {
+    display: grid;
+    gap: 0.45rem;
+  }
+  .cv-page .cv-nav-link {
+    display: block;
+    padding: 0.65rem 0.75rem;
+    border-left: 2px solid transparent;
+    color: var(--cv-muted);
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+  .cv-page .cv-nav-link:hover,
+  .cv-page .cv-nav-link.active {
+    border-left-color: var(--cv-accent);
+    background: var(--cv-accent-soft);
+    color: var(--cv-text);
+  }
+  .cv-mobile-nav {
+    display: none;
+  }
+
+  /* ---------- sections ---------- */
+  .cv-section {
+    scroll-margin-top: 5rem;
+    margin-bottom: 4rem;
+  }
+  .cv-section:last-child {
+    margin-bottom: 0;
+  }
+  .cv-section-header {
+    margin-bottom: 1.6rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--cv-border);
+  }
+  .cv-kicker {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--cv-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .cv-page .cv-section-title {
+    margin: 0;
+    color: var(--cv-text);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    line-height: 1.15;
+  }
+
+  .cv-section-sub {
+    margin: 0.5rem 0 0;
+    color: var(--cv-muted);
+    font-size: 0.95rem;
+  }
+
+  /* ---------- cards (education, teaching) ---------- */
+  .cv-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+  .cv-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1.2rem 1.3rem;
+    border: 1px solid var(--cv-accent-line);
+    border-radius: 12px;
+    background: var(--cv-card-bg);
+    box-shadow: 0 0 18px color-mix(in srgb, var(--global-theme-color) 12%, transparent);
+    transition:
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+  .cv-card:hover {
+    border-color: var(--cv-accent);
+    box-shadow: 0 0 28px color-mix(in srgb, var(--global-theme-color) 24%, transparent);
+  }
+  .cv-degree {
+    display: inline-block;
+    margin-right: 0.35rem;
+    padding: 0.1rem 0.55rem;
+    border-radius: 999px;
+    background: var(--cv-accent-soft);
+    color: var(--cv-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+  }
+  .cv-page .cv-card-title {
+    margin: 0;
+    color: var(--cv-text);
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  .cv-meta {
+    margin: 0;
+    color: var(--cv-muted);
+    font-size: 0.82rem;
+  }
+  .cv-highlights {
+    margin: 0.2rem 0 0;
+    padding-left: 1.1rem;
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+  .cv-highlights li {
+    margin-bottom: 0.25rem;
+  }
+
+  /* ---------- lists (education, experience, service) ---------- */
+  .cv-timeline {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .cv-item {
+    display: grid;
+    grid-template-columns: 9.5rem minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--cv-border);
+  }
+  .cv-item:first-child {
     padding-top: 0;
   }
-  .cv .cv-section .card-title {
-    margin-bottom: 1.25rem;
+  .cv-item:last-child {
+    border-bottom: 0;
   }
-</style> <div class="post"> <header class="post-header"> <h1 class="post-title"> About Me </h1> </header> <article> <div class="cv"> <a class="anchor" id="experience"></a> <div class="cv-section"> <h3 class="card-title font-weight-medium">Experience</h3> <div> <ul class="card-text font-weight-light list-group list-group-flush"> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column"> <table class="table-cv"> <tbody> <tr> <td> <span class="badge danger-color-dark text-uppercase align-middle" style="min-width: 75px">2026-10 - Present</span> </td> </tr> </tbody> </table> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title ml-1 ml-md-4">Postdoctoral Fellow, Dept. of Civil &amp; Systems Engineering</h6> <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem"> <h6 class="font-weight-bold mb-0">Johns Hopkins University</h6> <h6 class="font-italic mb-0 text-right">Baltimore, MD</h6> </div> </div> </div> </li> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column"> <table class="table-cv"> <tbody> <tr> <td> <span class="badge danger-color-dark text-uppercase align-middle" style="min-width: 75px">Feb 2026 - Sep 2026</span> </td> </tr> </tbody> </table> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title ml-1 ml-md-4">Postdoctoral Researcher, Dept. of Civil &amp; Environmental Engineering</h6> <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem"> <h6 class="font-weight-bold mb-0">Princeton University</h6> <h6 class="font-italic mb-0 text-right">Princeton, NJ</h6> </div> </div> </div> </li> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column"> <table class="table-cv"> <tbody> <tr> <td> <span class="badge danger-color-dark text-uppercase align-middle" style="min-width: 75px">Jun 2020 - Aug 2020</span> </td> </tr> </tbody> </table> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title ml-1 ml-md-4">Summer Intern, Structural Engineering Group</h6> <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem"> <h6 class="font-weight-bold mb-0">Arup</h6> <h6 class="font-italic mb-0 text-right">Shanghai, China</h6> </div> </div> </div> </li> </ul> </div> </div> <a class="anchor" id="education"></a> <div class="cv-section"> <h3 class="card-title font-weight-medium">Education</h3> <div> <ul class="card-text font-weight-light list-group list-group-flush"> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column"> <table class="table-cv"> <tbody> <tr> <td> <span class="badge danger-color-dark text-uppercase align-middle" style="min-width: 75px">Sep 2020 - Nov 2025</span> </td> </tr> </tbody> </table> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title ml-1 ml-md-4">PhD</h6> <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem"> <h6 class="font-weight-bold mb-0">Princeton University</h6> <h6 class="font-italic mb-0 text-right">Princeton, NJ</h6> </div> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">Civil and Environmental Engineering</h6> <ul class="items"> <li> <span class="item">Dissertation: Enhancing Coastal Resilience of Infrastructure via Structural Shape Modification and Optimization </span> </li> <li> <span class="item">Advisor: Prof. Maria Garlock </span> </li> </ul> </div> </div> </li> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column"> <table class="table-cv"> <tbody> <tr> <td> <span class="badge danger-color-dark text-uppercase align-middle" style="min-width: 75px">Sep 2016 - Jun 2020</span> </td> </tr> </tbody> </table> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title ml-1 ml-md-4">BEng</h6> <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem"> <h6 class="font-weight-bold mb-0">Tongji University</h6> <h6 class="font-italic mb-0 text-right">Shanghai, China</h6> </div> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">Civil Engineering</h6> <ul class="items"> <li> <span class="item">Graduated with honor: Outstanding Graduate Award of Shanghai Municipality (上海市优秀毕业生) </span> </li> </ul> </div> </div> </li> </ul> </div> </div> <a class="anchor" id="teaching"></a> <div class="cv-section"> <h3 class="card-title font-weight-medium">Teaching</h3> <div> <ul class="card-text font-weight-light list-group list-group-flush"> <li class="list-group-item"> <h6 class="title ml-1 ml-md-4">CEE 262: Structures and the Urban Environment</h6> <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem"> <h6 class="font-weight-bold mb-0">Princeton University</h6> <h6 class="font-italic mb-0 text-right">Princeton, NJ</h6> </div> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic"> Spring 2022, Spring 2025 </h6> </li> <li class="list-group-item"> <h6 class="title ml-1 ml-md-4">CEE 478: Senior Thesis</h6> <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem"> <h6 class="font-weight-bold mb-0">Princeton University</h6> <h6 class="font-italic mb-0 text-right">Princeton, NJ</h6> </div> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic"> Fall 2024 </h6> </li> <li class="list-group-item"> <h6 class="title ml-1 ml-md-4">CEE 102: Engineering in the Modern World</h6> <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem"> <h6 class="font-weight-bold mb-0">Princeton University</h6> <h6 class="font-italic mb-0 text-right">Princeton, NJ</h6> </div> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic"> Spring 2023, Spring 2025 </h6> </li> <li class="list-group-item"> <h6 class="title ml-1 ml-md-4">CEE 467: Design and Behavior of Steel Structures</h6> <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem"> <h6 class="font-weight-bold mb-0">Princeton University</h6> <h6 class="font-italic mb-0 text-right">Princeton, NJ</h6> </div> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic"> Fall 2021 </h6> </li> </ul> </div> </div> <a class="anchor" id="academic-service"></a> <div class="cv-section"> <h3 class="card-title font-weight-medium">Academic Service</h3> <div> <ul class="card-text font-weight-light list-group list-group-flush"> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column"> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title ml-1 ml-md-4">Referee for Journals</h6> <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem"> <h6 class="font-weight-bold mb-0">Computers &amp; Structures; Engineering Structures</h6> </div> </div> </div> </li> </ul> </div> </div> <a class="anchor" id="other-service"></a> <div class="cv-section"> <h3 class="card-title font-weight-medium">Other Service</h3> <div> <ul class="card-text font-weight-light list-group list-group-flush"> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column"> <table class="table-cv"> <tbody> <tr> <td> <span class="badge danger-color-dark text-uppercase align-middle" style="min-width: 75px">2023 - 2025</span> </td> </tr> </tbody> </table> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title ml-1 ml-md-4">Residential Graduate Student</h6> <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem"> <h6 class="font-weight-bold mb-0">Forbes College, Princeton University</h6> <h6 class="font-italic mb-0 text-right">Princeton, NJ</h6> </div> </div> </div> </li> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column"> <table class="table-cv"> <tbody> <tr> <td> <span class="badge danger-color-dark text-uppercase align-middle" style="min-width: 75px">2023 - 2024</span> </td> </tr> </tbody> </table> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title ml-1 ml-md-4">Co-organizer and Barista</h6> <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem"> <h6 class="font-weight-bold mb-0">CEE Coffee Hour</h6> <h6 class="font-italic mb-0 text-right">Princeton, NJ</h6> </div> </div> </div> </li> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column"> <table class="table-cv"> <tbody> <tr> <td> <span class="badge danger-color-dark text-uppercase align-middle" style="min-width: 75px">2022 - 2023</span> </td> </tr> </tbody> </table> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title ml-1 ml-md-4">Co-organizer</h6> <div class="d-flex justify-content-between align-items-baseline ml-1 ml-md-4" style="font-size: 0.95rem"> <h6 class="font-weight-bold mb-0">CEE Lunch Seminar</h6> <h6 class="font-italic mb-0 text-right">Princeton, NJ</h6> </div> </div> </div> </li> </ul> </div> </div> </div> </article> </div> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Gaoyuan Wu. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  .cv-when {
+    color: var(--cv-accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.5;
+  }
+  .cv-page .cv-item-title {
+    margin: 0;
+    color: var(--cv-text);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+  .cv-item .cv-meta {
+    margin-top: 0.15rem;
+  }
+
+  /* ---------- teaching ---------- */
+  .cv-course {
+    display: inline-block;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    background: var(--cv-accent);
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    align-self: flex-start;
+  }
+  .cv-terms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: auto;
+  }
+  .cv-term {
+    padding: 0.15rem 0.55rem;
+    border: 1px solid var(--cv-border);
+    border-radius: 999px;
+    background: var(--cv-accent-soft);
+    font-size: 0.75rem;
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 1000px) {
+    .cv-layout {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    .cv-sidebar {
+      display: none;
+    }
+    .cv-mobile-nav {
+      position: sticky;
+      top: 3.5rem;
+      z-index: 2;
+      display: flex;
+      gap: 0.5rem;
+      margin: 0 0 1.5rem;
+      padding: 0.6rem 0;
+      overflow-x: auto;
+      background: var(--global-bg-color);
+    }
+    .cv-page .cv-mobile-nav a {
+      flex: 0 0 auto;
+      padding: 0.45rem 0.8rem;
+      border: 1px solid var(--cv-border);
+      border-radius: 999px;
+      color: var(--cv-muted);
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+    .cv-page .cv-mobile-nav a.active {
+      border-color: var(--cv-accent);
+      background: var(--cv-accent-soft);
+      color: var(--cv-text);
+    }
+  }
+  @media (max-width: 640px) {
+    .cv-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .cv-item {
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
+    }
+  }
+</style> <section class="cv-page" aria-label="About me"> <nav class="cv-mobile-nav" aria-label="Sections"> <a href="#education" class="cv-tracker" data-target="education">Education</a> <a href="#experience" class="cv-tracker" data-target="experience">Experience</a> <a href="#teaching" class="cv-tracker" data-target="teaching">Teaching</a> <a href="#service" class="cv-tracker" data-target="service">Service</a> </nav> <div class="cv-layout"> <aside class="cv-sidebar"> <nav class="cv-nav" aria-label="Sections"> <a href="#education" class="cv-nav-link cv-tracker" data-target="education">Education</a> <a href="#experience" class="cv-nav-link cv-tracker" data-target="experience">Experience</a> <a href="#teaching" class="cv-nav-link cv-tracker" data-target="teaching">Teaching</a> <a href="#service" class="cv-nav-link cv-tracker" data-target="service">Service</a> </nav> </aside> <div class="cv-content"> <section id="education" class="cv-section"> <header class="cv-section-header"> <h2 class="cv-section-title">Education</h2> </header> <ol class="cv-timeline"> <li class="cv-item"> <span class="cv-when">2020 – 2025</span> <div> <h3 class="cv-item-title">Princeton University</h3> <p class="cv-meta"><span class="cv-degree">PhD</span> Civil and Environmental Engineering · Princeton, NJ</p> <ul class="cv-highlights"> <li>Dissertation: Enhancing Coastal Resilience of Infrastructure via Structural Shape Modification and Optimization</li> <li>Advisor: Prof. Maria Garlock</li> </ul> </div> </li> <li class="cv-item"> <span class="cv-when">2016 – 2020</span> <div> <h3 class="cv-item-title">Tongji University</h3> <p class="cv-meta"><span class="cv-degree">BEng</span> Civil Engineering · Shanghai, China</p> <ul class="cv-highlights"> <li>Graduated with honor: Outstanding Graduate Award of Shanghai Municipality (上海市优秀毕业生)</li> </ul> </div> </li> </ol> </section> <section id="experience" class="cv-section"> <header class="cv-section-header"> <h2 class="cv-section-title">Experience</h2> </header> <ol class="cv-timeline"> <li class="cv-item"> <span class="cv-when">Oct 2026 –<br>Present</span> <div> <h3 class="cv-item-title">Johns Hopkins University</h3> <p class="cv-meta">Postdoctoral Fellow, Dept. of Civil &amp; Systems Engineering · Baltimore, MD</p> </div> </li> <li class="cv-item"> <span class="cv-when">Feb 2026 –<br>Sep 2026</span> <div> <h3 class="cv-item-title">Princeton University</h3> <p class="cv-meta">Postdoctoral Researcher, Dept. of Civil &amp; Environmental Engineering · Princeton, NJ</p> </div> </li> <li class="cv-item"> <span class="cv-when">Jun 2020 –<br>Aug 2020</span> <div> <h3 class="cv-item-title">Arup</h3> <p class="cv-meta">Summer Intern, Structural Engineering Group · Shanghai, China</p> </div> </li> </ol> </section> <section id="teaching" class="cv-section"> <header class="cv-section-header"> <h2 class="cv-section-title">Teaching</h2> <p class="cv-section-sub">Teaching assistant, Princeton University</p> </header> <div class="cv-grid"> <article class="cv-card"> <span class="cv-course">CEE 262</span> <h3 class="cv-card-title">Structures and the Urban Environment</h3> <div class="cv-terms"> <span class="cv-term">Spring 2022</span> <span class="cv-term">Spring 2025</span> </div> </article> <article class="cv-card"> <span class="cv-course">CEE 478</span> <h3 class="cv-card-title">Senior Thesis</h3> <div class="cv-terms"> <span class="cv-term">Fall 2024</span> </div> </article> <article class="cv-card"> <span class="cv-course">CEE 102</span> <h3 class="cv-card-title">Engineering in the Modern World</h3> <div class="cv-terms"> <span class="cv-term">Spring 2023</span> <span class="cv-term">Spring 2025</span> </div> </article> <article class="cv-card"> <span class="cv-course">CEE 467</span> <h3 class="cv-card-title">Design and Behavior of Steel Structures</h3> <div class="cv-terms"> <span class="cv-term">Fall 2021</span> </div> </article> </div> </section> <section id="service" class="cv-section"> <header class="cv-section-header"> <h2 class="cv-section-title">Service</h2> </header> <ol class="cv-timeline"> <li class="cv-item"> <span class="cv-when"></span> <div> <h3 class="cv-item-title">Referee for Journals</h3> <p class="cv-meta">Computers &amp; Structures; Engineering Structures</p> </div> </li> <li class="cv-item"> <span class="cv-when">2023–2025</span> <div> <h3 class="cv-item-title">Residential Graduate Student</h3> <p class="cv-meta">Forbes College, Princeton University</p> </div> </li> <li class="cv-item"> <span class="cv-when">2023–2024</span> <div> <h3 class="cv-item-title">Co-organizer and Barista</h3> <p class="cv-meta">CEE Coffee Hour</p> </div> </li> <li class="cv-item"> <span class="cv-when">2022–2023</span> <div> <h3 class="cv-item-title">Co-organizer</h3> <p class="cv-meta">CEE Lunch Seminar</p> </div> </li> </ol> </section> </div> </div> </section> <script>
+  (function () {
+    var links = document.querySelectorAll(".cv-tracker");
+    var sections = document.querySelectorAll(".cv-section");
+    if (!("IntersectionObserver" in window) || !sections.length) return;
+    function setActive(id) {
+      links.forEach(function (l) {
+        l.classList.toggle("active", l.dataset.target === id);
+      });
+    }
+    var obs = new IntersectionObserver(
+      function (entries) {
+        var v = entries
+          .filter(function (e) {
+            return e.isIntersecting;
+          })
+          .sort(function (a, b) {
+            return b.intersectionRatio - a.intersectionRatio;
+          });
+        if (v.length) setActive(v[0].target.id);
+      },
+      { rootMargin: "-20% 0px -55% 0px", threshold: [0, 0.25, 0.5, 1] }
+    );
+    sections.forEach(function (s) {
+      obs.observe(s);
+    });
+    setActive(sections[0].id);
+  })();
+</script> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Gaoyuan Wu. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
-</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script defer src="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.min.js" integrity="sha256-lo/r+jQ81wWrxdIiiiEEd538z4+dTJTt+leOuAS7GCw=" crossorigin="anonymous"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
     addBackToTop();
-  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
-// get the ninja-keys element
-const ninja = document.querySelector('ninja-keys');
-
-// add the home and posts menu items
-ninja.data = [{
-    id: "nav-home",
-    title: "Home",
-    section: "Navigation",
-    handler: () => {
-      window.location.href = "/";
-    },
-  },{id: "nav-about-me",
-          title: "About Me",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
-          },
-        },{id: "nav-publications",
-          title: "Publications",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/publications/";
-          },
-        },{id: "nav-codes",
-          title: "Codes",
-          description: "Open-source computational tools and software.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/codes/";
-          },
-        },{id: "news-our-new-work-on-multi-objective-bayesian-optimization-to-enhance-coastal-resilience-of-infrastructure-is-available-online-in-engineering-structures-doi-10-1016-j-engstruct-2026-122780",
-          title: 'Our new work on multi-objective Bayesian Optimization to enhance coastal resilience of infrastructure...',
-          description: "",
-          section: "News",},{id: "news-officially-hooded",
-          title: 'Officially hooded!',
-          description: "",
-          section: "News",},{id: "projects-jaxsso",
-          title: 'JaxSSO',
-          description: "A differentiable finite element analysis (FEA) solver for structural optimization, enabled by JAX.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_jaxsso/";
-            },},{id: "projects-fem-solver-for-structural-dynamics",
-          title: 'FEM Solver for Structural Dynamics',
-          description: "A finite element solver for 2D frame systems under static and dynamic loads.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_fem_solver/";
-            },},{
-        id: 'social-email',
-        title: 'email',
-        section: 'Socials',
-        handler: () => {
-          window.open("mailto:%67%77%75%33%37@%6A%68.%65%64%75", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=2aTANLwAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-github',
-        title: 'GitHub',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://github.com/GaoyuanWu", "_blank");
-        },
-      },{
-        id: 'social-linkedin',
-        title: 'LinkedIn',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.linkedin.com/in/gaoyuan-wu-6a4983194", "_blank");
-        },
-      },{
-        id: 'social-researchgate',
-        title: 'ResearchGate',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.researchgate.net/profile/Gaoyuan_Wu/", "_blank");
-        },
-      },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
-        },
-      },{
-      id: 'light-theme',
-      title: 'Change theme to light',
-      description: 'Change the theme of the site to Light',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("light");
-      },
-    },
-    {
-      id: 'dark-theme',
-      title: 'Change theme to dark',
-      description: 'Change the theme of the site to Dark',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("dark");
-      },
-    },
-    {
-      id: 'system-theme',
-      title: 'Use system default theme',
-      description: 'Change the theme of the site to System Default',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("system");
-      },
-    },];
-
-</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
+  </script> </body> </html>
