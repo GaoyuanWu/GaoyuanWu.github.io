@@ -333,7 +333,6 @@ endcapture %} {% assign sections = sections | split: ',' %}
 
   <div class="cv-layout">
     <aside class="cv-sidebar">
-      <span class="cv-sidebar-label">On this page</span>
       <nav class="cv-nav" aria-label="Sections">
         {% for sec in sections %}{% assign p = sec | split: '|' %}
         <a href="#{{ p[0] }}" class="cv-nav-link cv-tracker" data-target="{{ p[0] }}">{{ p[1] }}</a>
