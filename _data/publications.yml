@@ -9,6 +9,55 @@
 #   links   – label/url pairs (e.g. Paper, arXiv, Code)
 
 themes:
+  - id: differentiable-physics
+    title: Differentiable Physics and Machine Learning for Optimization
+    vision: >-
+      Gradient-based design has transformed many fields, yet most engineering simulators remain black boxes.
+      My vision is to make physics solvers <em>differentiable</em> so that exact gradients flow through
+      the simulation — enabling fast, scalable optimization of efficient, low-carbon
+      structures, and letting neural networks be trained with physics enforced in the loop for
+      optimization and control of engineered systems.
+    tools:
+      - Differentiable physics / simulations
+      - JAX & automatic differentiation
+      - GPU / XLA acceleration
+      - Finite Element Analysis
+      - Force density method
+      - Neural networks
+    papers:
+      - id: wu2024jaxsso
+        title: "JAX-SSO: Differentiable Finite Element Analysis Solver for Structural Optimization and Seamless Integration with Neural Networks"
+        authors: Gaoyuan Wu
+        venue: arXiv preprint
+        year: 2024
+        image: graphical_abstracts/wu2024jaxsso.webp
+        image_static: graphical_abstracts/wu2024jaxsso.png
+        links:
+          - { label: arXiv, url: "https://arxiv.org/abs/2407.20026" }
+          - { label: Code, url: "https://github.com/GaoyuanWu/JaxSSO" }
+      - id: wu2023framework
+        title: A framework for structural shape optimization based on automatic differentiation, the adjoint method and accelerated linear algebra
+        authors: Gaoyuan Wu
+        venue: Structural and Multidisciplinary Optimization
+        year: 2023
+        image: graphical_abstracts/wu2023framework.webp
+        image_static: graphical_abstracts/wu2023framework.png
+        links:
+          - { label: Paper, url: "https://doi.org/10.1007/s00158-023-03601-0" }
+          - { label: Code, url: "https://github.com/GaoyuanWu/JaxSSO" }
+      - id: wu2023gridshells
+        title: A numerical comparison between geometric stiffness- and elastic stiffness-based structural shape optimization for gridshells
+        authors: Gaoyuan Wu, Rafael Pastrana, Sigrid Adriaenssens, Maria Garlock
+        venue: Proceedings of the IASS 2023 Symposium
+        year: 2023
+        image: graphical_abstracts/wu2023gridshells.webp
+        image_static: graphical_abstracts/wu2023gridshells.png
+        links:
+          - {
+              label: Paper,
+              url: "https://www.researchgate.net/profile/Gaoyuan_Wu/publication/372888982_A_numerical_comparison_between_geometric_stiffness-and_elastic_stiffness-based_structural_shape_optimization_for_gridshells/links/64cc6c33806a9e4e5ce6bb33/A-numerical-comparison-between-geometric-stiffness-and-elastic-stiffness-based-structural-shape-optimization-for-gridshells.pdf",
+            }
+
   - id: coastal-resilience
     title: Enhancing Coastal Resilience of Infrastructure
     vision: >-
@@ -87,55 +136,6 @@ themes:
         image_static: graphical_abstracts/wu2022decoupled.png
         links:
           - { label: Paper, url: "https://doi.org/10.1016/j.engstruct.2022.114738" }
-
-  - id: differentiable-physics
-    title: Differentiable Physics and Machine Learning for Optimization
-    vision: >-
-      Gradient-based design has transformed many fields, yet most engineering simulators remain black boxes.
-      My vision is to make physics solvers <em>differentiable</em> so that exact gradients flow through
-      the simulation — enabling fast, scalable optimization of efficient, low-carbon
-      structures, and letting neural networks be trained with physics enforced in the loop for
-      optimization and control of engineered systems.
-    tools:
-      - Differentiable physics / simulations
-      - JAX & automatic differentiation
-      - GPU / XLA acceleration
-      - Finite Element Analysis
-      - Force density method
-      - Neural networks
-    papers:
-      - id: wu2024jaxsso
-        title: "JAX-SSO: Differentiable Finite Element Analysis Solver for Structural Optimization and Seamless Integration with Neural Networks"
-        authors: Gaoyuan Wu
-        venue: arXiv preprint
-        year: 2024
-        image: graphical_abstracts/wu2024jaxsso.webp
-        image_static: graphical_abstracts/wu2024jaxsso.png
-        links:
-          - { label: arXiv, url: "https://arxiv.org/abs/2407.20026" }
-          - { label: Code, url: "https://github.com/GaoyuanWu/JaxSSO" }
-      - id: wu2023framework
-        title: A framework for structural shape optimization based on automatic differentiation, the adjoint method and accelerated linear algebra
-        authors: Gaoyuan Wu
-        venue: Structural and Multidisciplinary Optimization
-        year: 2023
-        image: graphical_abstracts/wu2023framework.webp
-        image_static: graphical_abstracts/wu2023framework.png
-        links:
-          - { label: Paper, url: "https://doi.org/10.1007/s00158-023-03601-0" }
-          - { label: Code, url: "https://github.com/GaoyuanWu/JaxSSO" }
-      - id: wu2023gridshells
-        title: A numerical comparison between geometric stiffness- and elastic stiffness-based structural shape optimization for gridshells
-        authors: Gaoyuan Wu, Rafael Pastrana, Sigrid Adriaenssens, Maria Garlock
-        venue: Proceedings of the IASS 2023 Symposium
-        year: 2023
-        image: graphical_abstracts/wu2023gridshells.webp
-        image_static: graphical_abstracts/wu2023gridshells.png
-        links:
-          - {
-              label: Paper,
-              url: "https://www.researchgate.net/profile/Gaoyuan_Wu/publication/372888982_A_numerical_comparison_between_geometric_stiffness-and_elastic_stiffness-based_structural_shape_optimization_for_gridshells/links/64cc6c33806a9e4e5ce6bb33/A-numerical-comparison-between-geometric-stiffness-and-elastic-stiffness-based-structural-shape-optimization-for-gridshells.pdf",
-            }
 
 # Conference talks, newest first ("G. Wu" is bolded automatically).
 talks:

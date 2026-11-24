@@ -5,8 +5,8 @@ served to visitors who prefer reduced motion). All figures are 1200×620 px.
 
 | Paper id                  | Data / solver script | Renderer         | Notes                                                                                   |
 | ------------------------- | -------------------- | ---------------- | --------------------------------------------------------------------------------------- |
-| `wu2023framework`         | `mm_run.py`          | `r_framework.py` | Real JaxSSO run of the Mannheim Multihalle example (200 GD iterations)                  |
-| `wu2024jaxsso`            | `nn_run.py`          | `r_jaxsso.py`    | MLP → shell heights, trained with JaxSSO strain energy as the loss                      |
+| `wu2023framework`         | —                    | —                | From `jaxsso_ii_multihalle_shape` (JaxSSO animations set); still is its `_final.png`    |
+| `wu2024jaxsso`            | —                    | —                | From `jaxsso_i_nn_topo_shape` (JaxSSO animations set); still is its `_final.png`        |
 | `wu2023gridshells`        | `grid_run.py`        | `r_grid.py`      | Paper's barrel vault / dome / free-form shapes + Table 1 (`grid_run.py` no longer used) |
 | `wu2026bayes`             | —                    | `r_bayes.py`     | Samples (Fig. 15c) and water levels (Fig. 17) digitized from the paper                  |
 | `wu2025sph`               | —                    | `r_sph.py`       | Force traces digitized + pressure fields from the elevated-case figures                 |
