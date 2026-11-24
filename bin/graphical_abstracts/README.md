@@ -31,3 +31,18 @@ example data at `ref/JaxSSO/Examples/Data/Mannheim_Quad/`. `r_bayes.py` expects 
 `r_pawitan.py` expects `ga/pawitan_series.npy` (digitized curves) and `ga/pawitan/ins_*.png` (photo crops). The renderers
 write to `ga/out/`; copy the results into `assets/img/graphical_abstracts/`. Newer JAX/SciPy releases make
 JaxSSO's sparse solve return NaN, hence the pins above. The renderers use the Inter font when it is installed.
+
+## GIF copies
+
+Each animated `.webp` also has a `.gif` copy alongside it in `assets/img/graphical_abstracts/` (extra assets, not
+referenced by the site). Regenerate them from the site root with Pillow and NumPy:
+
+```bash
+pip install pillow numpy
+python bin/graphical_abstracts/webp_to_gif.py               # all GIFs
+python bin/graphical_abstracts/webp_to_gif.py wu2024jaxsso  # just one
+```
+
+The script keeps every frame and its duration (loop forever). All frames share one adaptive palette and are
+dithered against it. A GIF over 3.5 MB at 1200 px is redone at 800 px wide (`--max-mb`, `--fallback-width`).
+`--width` forces a size and `--step 2` keeps every other frame.
